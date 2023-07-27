@@ -159,14 +159,12 @@ body.black {
   overflow: hidden;
   box-sizing: border-box;
   transition: .3s;
-  border: 4px solid transparent;
 }
 .go_top:hover{
   opacity: 1;
   cursor: pointer;
-  border-color: #0e2071;
+  border:4px solid #0E2071;
 }
-
 .inner_top{
   position: absolute;
   top: 0; left: 0;
