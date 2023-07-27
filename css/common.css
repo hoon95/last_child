@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --base-unit: 17px;
+
+  --h1-size: 128px;
+  --h2-size: 96px;
+  --h3-size: 64px;
+  --h4-size: 32px;
+  --default-size: 20px;
+
+  --dark-blue: #0e2071;
+  --blue: #0077ff;
+  --light-blue: #76b6ff;
+  --white: #fff;
+  --light-gray: #adadad;
+  --gray: #777;
+  --dark-gray: #2d2d2d;
+  --black: #121212;
+}
+
+.heading-1 {
+  font-size: var(--h1-size);
+  line-height: 1;
+}
+
+.heading-2 {
+  font-size: var(--h2-size);
+  line-height: calc(var(--base-unit)*8);
+}
+
+.heading-3 {
+  font-size: var(--h3-size);
+  line-height: calc(var(--base-unit)*6);
+}
+
+.heading-4 {
+  font-size: var(--h4-size);
+  line-height: calc(var(--base-unit)*4);
+}
+
+body {
+  font-size: var(--default-size);
+  line-height: calc(var(--base-unit)*2);
+  font-family: 'Pretendard-Regular';
+  color: var(--black);
+}
+
+body.black {
+  background: var(--black);
+  color: var(--white);
+}
