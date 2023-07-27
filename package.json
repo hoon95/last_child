@@ -1,0 +1,16 @@
+{
+  "name": "lesson",
+  "version": "1.0.0",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bxslider": "^4.2.14",
+    "cleave.js": "^1.6.0",
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.7.0",
+    "jquery-circle-progress": "^1.2.2",
+    "react": "^18.2.0",
+    "swiper": "^10.0.4",
+    "vue": "^3.3.4",
+    "waypoints": "^4.0.1"
+  }
+}
