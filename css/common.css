@@ -159,11 +159,10 @@ body.black {
   overflow: hidden;
   box-sizing: border-box;
   transition: .3s;
-}
-.go_top:hover{
-  opacity: 1;
   cursor: pointer;
-  border:4px solid #0E2071;
+}
+.go_top:active{
+  height: 35px;
 }
 .inner_top{
   position: absolute;
@@ -178,4 +177,70 @@ body.black {
   position: fixed;
   right: 30px;
   bottom: 50px;
+}
+
+
+/* slide button */
+.round-btn{
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+.slide_btn{
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+  background-color: var(--light-gray);
+  color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slide_btn:hover{
+  background-color: var(--blue);
+}
+.slide_btn.active{
+  background: none;
+  color: var(--blue);
+  box-shadow: 0 0 0 5px var(--blue) inset;
+}
+
+
+/* media query */
+@media (max-width: 768px){
+  :root {
+    --base-unit: 15px;
+    --h1-size: 80px;
+    --h2-size: 61px;
+    --h3-size: 42px;
+    --h4-size: 28px;
+    --default-size: 18px;
+  }
+  .go_top, .slide_btn{
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+  }
+  .go_top_btn{
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px){
+  :root {
+    --base-unit: 13px;
+    --h1-size: 50px;
+    --h2-size: 42px;
+    --h3-size: 32px;
+    --h4-size: 24px;
+    --default-size: 16px;
+  }
+  .go_top, .slide_btn{
+    width: 45px;
+    height: 45px;
+    font-size: 45px;
+  }
+  .go_top_btn{
+    font-size: 45px;
+  }
 }
