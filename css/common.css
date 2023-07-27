@@ -25,24 +25,46 @@
   --black: #121212;
 }
 
+/* reset */
+button {
+  border: none;
+  background: none;
+}
+
+/* font */
 .heading-1 {
   font-size: var(--h1-size);
   line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .heading-2 {
   font-size: var(--h2-size);
   line-height: calc(var(--base-unit)*8);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .heading-3 {
   font-size: var(--h3-size);
   line-height: calc(var(--base-unit)*6);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .heading-4 {
   font-size: var(--h4-size);
   line-height: calc(var(--base-unit)*4);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.black .heading-1,
+.black .heading-2,
+.black .heading-3,
+.black .heading-4 {
+  color: var(--white);
 }
 
 body {
@@ -56,3 +78,72 @@ body.black {
   background: var(--black);
   color: var(--white);
 }
+
+
+/* button */
+.btn {
+  padding: 0px 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: var(--default-size);
+  line-height: calc(var(--base-unit)*2 + 6px);
+  height: calc(var(--base-unit)*2 + 6px);
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+.blue-btn {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.blue-btn:hover {
+  background-color: var(--light-blue);
+  color: var(--black);
+}
+
+.blue-btn:active {
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 0 0 0 5px inset var(--light-blue);
+}
+
+.white-btn {
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--black);
+  box-sizing: border-box;
+}
+
+.white-btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-color: transparent;
+}
+
+.white-btn:active {
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 0 0 0 5px inset var(--dark-blue);
+  border-color: transparent;
+}
+
+.black-btn {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.black-btn:hover {
+  background-color: var(--light-blue);
+  border-color: transparent;
+}
+
+.black-btn:active {
+  background-color:var(--white);
+  color: var(--black);
+  box-shadow: 0 0 0 5px inset var(--light-blue);
+  border-color: var(--light-blue);
+}
+
+
