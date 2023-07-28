@@ -251,13 +251,3 @@ body.black {
     font-size: 45px;
   }
 }
-
-
-body {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/times-square-perspective.jpg) no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-position: center top;
-  padding-top: calc(var(--base-unit) * 3);
-  color: #fff;
-}
