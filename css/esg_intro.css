@@ -1,0 +1,45 @@
+.container{
+    padding: calc(var(--base-unit) * 5) 0;
+}
+/* 1. 3S */
+.threeS{
+    height: 100vh;
+    color: var(--light-gray);
+}
+.threeS .sustain_title{
+    font-size: calc(var(--h1-size) * 2);
+    line-height: calc(var(--h1-size) * 2);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.threeS .safety{
+    text-align: right;
+}
+
+
+/* 2. ESG 핵심가치 */
+.value .value_intro{
+    text-align: center;
+    padding: calc(var(--base-unit) * 5) 0;
+}
+.value .value_list{
+    padding: calc(var(--base-unit) * 2) 0;
+}
+.value .value_list:nth-child(2n-1){
+    text-align: right;
+}
+.value .value_list:nth-child(2n){
+    text-align: left;
+}
+.value .value_list:last-child{
+    padding-top: calc(var(--base-unit) * 5);
+    text-align: center;
+}
+
+
+/* 3. 지속가능경영 보고서 */
+.report{
+    color: var(--white);
+    background: url('../img/esg_report.png') no-repeat;
+    padding: calc(var(--base-unit) * 3);
+}
