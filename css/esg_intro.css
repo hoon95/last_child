@@ -39,7 +39,30 @@
 
 /* 3. 지속가능경영 보고서 */
 .report{
-    color: var(--white);
+    position: relative;
     background: url('../img/esg_report.png') no-repeat;
+    background-size: cover;
+    color: var(--white);
     padding: calc(var(--base-unit) * 3);
+}
+  
+  /* Add the ::before pseudo-element */
+.report::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 9;
+}
+.report_desc{
+    z-index: 10;
+}
+
+.report a {
+    color: var(--white);
+    text-decoration: none;
+    z-index: 10;
 }
