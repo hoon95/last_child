@@ -1,23 +1,51 @@
 .container{
     padding: calc(var(--base-unit) * 5) 0;
 }
-/* 1. 3S */
-.threeS{
-    height: 100vh;
+/* 1. three S */
+.s3{
+    position: relative;
     color: var(--light-gray);
 }
-.threeS .sustain_title{
-    font-size: calc(var(--h1-size) * 2);
-    line-height: calc(var(--h1-size) * 2);
-    font-weight: bold;
-    text-transform: uppercase;
+.s3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
-.threeS .safety{
+.s3 > div{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.s3 .sustain{
+    background: url(../img/esg_sustain.png);
+}
+.s3 .safety{
+    background: url(../img/esg_safety.png);
     text-align: right;
 }
+.s3 .social{
+    background: url(../img/esg_social.png);
+}
+.s3 .s3_title{
+    font-size: calc(var(--h1-size) * 1.8);
+    line-height: calc(var(--h1-size) * 1.8);
+    text-transform: uppercase;
+}
+.s3_title, .s3_content{
+    font-weight: bold;
+    z-index: 2;
+}
+    
 
-
-/* 2. ESG 핵심가치 */
+/* 2. Sustainable Value */
+.value_bg{
+    height: 1000px;
+    background: url(../img/esg_value.png) no-repeat;
+    background-size: cover;
+}
 .value .value_intro{
     text-align: center;
     padding: calc(var(--base-unit) * 5) 0;
@@ -37,7 +65,7 @@
 }
 
 
-/* 3. 지속가능경영 보고서 */
+/* 3. ESG Report */
 .report{
     position: relative;
     background: url('../img/esg_report.png') no-repeat;
@@ -45,22 +73,19 @@
     color: var(--white);
     padding: calc(var(--base-unit) * 3);
 }
-  
-  /* Add the ::before pseudo-element */
 .report::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.5);
-z-index: 9;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
 }
 .report_desc{
     z-index: 10;
 }
-
 .report a {
     color: var(--white);
     text-decoration: none;
