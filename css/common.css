@@ -186,7 +186,7 @@ body.black {
   margin-top: 30px;
   gap: 30px;
 }
-.slide_btn{
+.slide_btn, .slide_btn_dark{
   width: 70px;
   height: 70px;
   font-size: 70px;
@@ -199,12 +199,19 @@ body.black {
 .slide_btn:hover{
   background-color: var(--blue);
 }
-.slide_btn.active{
+.slide_btn_dark:hover{
+  background-color: var(--dark-blue);
+}
+.slide_btn:active{
   background: none;
   color: var(--blue);
   box-shadow: 0 0 0 5px var(--blue) inset;
 }
-
+.slide_btn_dark:active{
+  background: none;
+  color: var(--dark-blue);
+  box-shadow: 0 0 0 5px var(--dark-blue) inset;
+}
 
 /* media query */
 @media (max-width: 768px){

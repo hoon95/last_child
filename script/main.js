@@ -47,9 +47,3 @@ $gotop.click(function(){
   $('html,body').animate({scrollTop : 0}, 400);
 });
 
-
-$('.slide_btn').click(function(){
-  $(this).addClass('active');
-}).mouseleave(function(){
-  $(this).removeClass('active');
-})
