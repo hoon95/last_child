@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
+
+main {
+  margin-top: 100px;
+  position: relative;
+}
+
+.ceo_greeting h2 {
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 430px;
+  letter-spacing: -40.5px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  margin-top: 1040px;
+  text-shadow: -1px 0 var(--black), 0 1px var(--black), 1px 0 var(--black), 0 -1px var(--black);
+  color: white;
+}
+
+.ceo_greeting .content {
+  text-align: right;
+}
+
+.ceo_greeting .content figure {
+  width: 65%;
+  position: relative;
+}
+
+.ceo_greeting .content figure img {
+  object-fit: cover;
+}
+
+.ceo_greeting .content figcaption {
+  position: absolute;
+  bottom: var(--base-unit);
+  right: 40px;
+  color: var(--white);
+}
