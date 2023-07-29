@@ -32,38 +32,38 @@ button {
 }
 
 /* font */
-.heading-1 {
+.h1 {
   font-size: var(--h1-size);
   line-height: 1;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.heading-2 {
+.h2 {
   font-size: var(--h2-size);
   line-height: calc(var(--base-unit)*8);
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.heading-3 {
+.h3 {
   font-size: var(--h3-size);
   line-height: calc(var(--base-unit)*6);
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.heading-4 {
+.h4 {
   font-size: var(--h4-size);
   line-height: calc(var(--base-unit)*4);
   font-weight: 500;
   text-transform: capitalize;
 }
 
-.black .heading-1,
-.black .heading-2,
-.black .heading-3,
-.black .heading-4 {
+.black .h1,
+.black .h2,
+.black .h3,
+.black .h4 {
   color: var(--white);
 }
 
@@ -92,54 +92,54 @@ body.black {
   box-sizing: border-box;
 }
 
-.blue-btn {
+.blue_btn {
   background: var(--blue);
   color: var(--white);
 }
 
-.blue-btn:hover {
+.blue_btn:hover {
   background-color: var(--light-blue);
   color: var(--black);
 }
 
-.blue-btn:active {
+.blue_btn:active {
   background-color: var(--white);
   color: var(--black);
   box-shadow: 0 0 0 5px inset var(--light-blue);
 }
 
-.white-btn {
+.white_btn {
   background: transparent;
   color: var(--black);
   border: 1px solid var(--black);
   box-sizing: border-box;
 }
 
-.white-btn:hover {
+.white_btn:hover {
   background-color: var(--dark-blue);
   color: var(--white);
   border-color: transparent;
 }
 
-.white-btn:active {
+.white_btn:active {
   background-color: var(--white);
   color: var(--black);
   box-shadow: 0 0 0 5px inset var(--dark-blue);
   border-color: transparent;
 }
 
-.black-btn {
+.black_btn {
   background-color: transparent;
   color: var(--white);
   border: 1px solid var(--white);
 }
 
-.black-btn:hover {
+.black_btn:hover {
   background-color: var(--light-blue);
   border-color: transparent;
 }
 
-.black-btn:active {
+.black_btn:active {
   background-color:var(--white);
   color: var(--black);
   box-shadow: 0 0 0 5px inset var(--light-blue);
@@ -181,7 +181,7 @@ body.black {
 
 
 /* slide button */
-.round-btn{
+.round_btn{
   display: flex;
   margin-top: 30px;
   gap: 30px;
