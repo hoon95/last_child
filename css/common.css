@@ -229,6 +229,13 @@ body.black {
   box-shadow: 0 0 0 5px var(--dark-blue) inset;
 }
 
+/* bootstrap layout */
+@media (min-width: 1550px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1420px;
+  }
+}
+
 /* media query */
 @media (max-width: 768px){
   :root {
