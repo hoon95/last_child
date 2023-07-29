@@ -13,7 +13,6 @@ main {
   text-transform: uppercase;
   transform: rotate(90deg);
   white-space: nowrap;
-  margin-top: 1040px;
   text-shadow: -1px 0 var(--black), 0 1px var(--black), 1px 0 var(--black), 0 -1px var(--black);
   color: white;
 }
@@ -25,10 +24,12 @@ main {
 .ceo_greeting .content figure {
   width: 65%;
   position: relative;
+  margin-bottom: calc(var(--base-unit)*4);
 }
 
 .ceo_greeting .content figure img {
-  object-fit: cover;
+  /* object-fit: cover; */
+  width: 100%;
 }
 
 .ceo_greeting .content figcaption {
@@ -37,3 +38,14 @@ main {
   right: 40px;
   color: var(--white);
 }
+.ceo_greeting .content p {
+  margin-top: calc(var(--base-unit)*13);
+}
+
+.ceo_greeting .content .greeting_p_1 {
+  width: 88%;
+}
+.ceo_greeting .content .greeting_p_2 {
+  width: 77%;
+}
+
