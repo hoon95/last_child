@@ -1,0 +1,7 @@
+/* section1_video */
+.section1 .main_video{
+    width: 100%;
+}
+.section1 .main_video video{
+    width: 100%;
+}
