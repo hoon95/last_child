@@ -1,3 +1,4 @@
+/* 1. 상생협력 목록 */
 .coop_desc{
     padding: calc(var(--base-unit) * 8) 0 calc(var(--base-unit) * 11) 0;
     text-align: center;
@@ -5,12 +6,25 @@
 .coop_list, .coop_list > div{
     padding: calc(var(--base-unit) * 10) 0;
 }
-.coop_list > div:nth-child(2n){
+.grow,.fund{
     text-align: right;
-}
-.coop_content{
-    text-align: center;
 }
 .smart .coop_content{
     margin-bottom: calc(var(--base-unit) * 4);
+    text-align: center;
+}
+
+/* 2. 제련소 인증현황 */
+.rec_desc h2{
+    text-align: center;
+}
+.rec_desc p{
+    text-align: right;
+    margin-bottom: calc(var(--base-unit) * 10);
+}
+.rec_circle > div > span{
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 0 15px #d8d8d8 inset;
+    border-radius: 50%;
 }
