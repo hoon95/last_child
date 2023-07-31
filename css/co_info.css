@@ -57,11 +57,17 @@
 
 /* co_image */
 .co_image {
+  height: calc(100vh + 1420px);
+}
+
+.co_image .content {
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
   margin: calc(var(--base-unit)*10) 0;
+  position: sticky;
+  top: 0;
 }
 
 .co_image h2 {
@@ -71,6 +77,11 @@
   transform: translate(-50%,-50%);
   margin-top: -110px;
   margin-left: -110px;
+  z-index: 20;
+}
+
+.co_image img {
+  transform: scale(0.5);
 }
 /* //co_image */
 
@@ -169,9 +180,6 @@
   width: 580px;
 }
 
-.business_area .slide .tablet img {
-  transform: translateY(-50%) rotate(90deg);
-}
 .business_area .slide .it {
   grid-column: 6;
   grid-row: 1/-1;
