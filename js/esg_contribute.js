@@ -7,6 +7,14 @@ $('article').bxSlider({
     moveSlides: 1,
     slideMargin: 100,
     slideWidth: 1280,
-    pause: 2000,
-    speed: 2000
+    pause: 4000,
+    speed: 4000
+});
+
+$('.ctr_sub').bxSlider({
+    pager: false,
+    controls: false,
+    mode: 'vertical',
+    randomStart: true,
+    infiniteLoop: false
 });
