@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion test</title>
+    <style>
+        #accordion{
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="accordion">
+        <h3>COMPANY</h3>
+        <div>
+          <p>기업개요</p>
+          <p>연혁</p>
+          <p>사업장 정보</p>
+          <p>기업문화</p>
+        </div>
+        <h3>TECONOLOGY</h3>
+        <div>
+          <p>OLED</p>
+          <p>QD-OLED</p>
+        </div>
+        <h3>ESG</h3>
+        <div>
+            <p>ESG전략</p>
+            <p>사회공헌</p>
+            <p>경영정책</p>
+            <p>상생협력</p>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+  $(function() {
+    $("#accordion").accordion({
+      collapsible: true,    // 닫히는 옵션
+      active: false,        // 닫힌 상태로 시작
+      event: "mouseover"
+    });
+  });
+</script>
+
+</body>
+</html>
