@@ -7,6 +7,17 @@ $('.hamburger-button').on('click', function(event){
   $('body').toggleClass('black');
 });
 
+let menuList = $('.menu_overlay > li');
+let subMenuList = $('.submenu_overlay > li')
+
+menuList.hover(function(){
+  $(this).find('.submenu_overlay > li').slideToggle();
+  
+  menuList.find('ul').stop().animate({height:'60%'}),
+  menuList.css({padding:'calc(var(--base-unit)*2)'});
+  $(this).find('.submenu_overlay > li').addClass('visible');
+});
+
 
 
 /* Go-top btn*/
