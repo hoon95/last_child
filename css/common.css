@@ -33,6 +33,10 @@ button {
   background: none;
 }
 
+.hidden {
+  display: none;
+}
+
 /* font */
 .h1 {
   font-size: var(--h1-size);
