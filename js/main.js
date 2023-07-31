@@ -1,18 +1,15 @@
-// let $top = document.querySelector('.top');
-// let top_inner = $top.querySelector('.inner_top');
-// let topH = $top.offsetHeight;
-// let innerH = top_inner.offsetHeight;
-// let bodyH = document.body.offsetHeight;
+/* Header menu*/
+$('.hamburger-button').on('click', function(event){
+  event.preventDefault();
+  
+  $(this).toggleClass('active');
+  $('.overlay').toggleClass('visible');
+  $('body').toggleClass('black');
+});
 
-// console.log(bodyH);
 
-// window.addEventListener('scroll',()=>{
-//   let sct = window.scrollY;
-//   // console.log(sct);
-//   let myHeight = 100*sct/bodyH;
-//   console.log(myHeight);
-//   top_inner.style.height = `${myHeight}%`;
-// });
+
+/* Go-top btn*/
 
 let $gotop = $('.go_top');
 let $gotopInner = $('.inner_top');
