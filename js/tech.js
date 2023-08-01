@@ -19,4 +19,6 @@ $(".section2 .tec_tab p").click(function (e) {
 
     techBar.css({ top: techBarTop });
     //console.log(techOST);
+
+    $(this).toggleClass('active')
 });

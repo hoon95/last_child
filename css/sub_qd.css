@@ -1,21 +1,43 @@
 .qd {
 	width: 100%;
-	height: 100%;
-  
+	height: 100vh;
+}
+.qd h2 {
+	text-align: center;
 }
 .qd_bg {
 	background: url(../img/qd/qd_banner.jpg) no-repeat 0 0 /cover;
 }
-.qd_tree {
+.qd_dot {
+	position: relative;
 	text-align: center;
 }
-.qd_tree span {
-	display: block;
-	width: 100%;
-	height: 100vh;
-	text-indent: -9999em;
-	background: url(../img/qd/qd_tree.png) no-repeat center/contain;
+.cube div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.5; */
 }
+
+.qd_dot span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-block;
+	width: 100%;
+	height: 42%;
+	text-indent: -9999em;
+	background: url(../img/qd/qd_dot.png) no-repeat center/contain;
+	transform: translate(-50%, -50%) rotateX(-80deg);
+}
+
+.qd_dot .qd_dot_front.animate {
+	transform: rotateX(0deg);
+}
+.qd_dot .qd_dot_back.animate {
+	transform: rotateX(153deg);
+}
+
 body .qd.qd_info {
 	background: var(--white);
   color: var(--black);
@@ -23,3 +45,41 @@ body .qd.qd_info {
 .qd_info .qd_left strong {
 	font-weight: bold;
 }
+.qd_oled {
+	position: relative;
+}
+.qd_oled_box li {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.qd_oled_box li:nth-of-type(1) {
+	left: 47%;
+}
+.qd_oled_box li:nth-of-type(2) {
+	left: 50%;
+}
+.qd_oled_box li:nth-of-type(3) {
+	left: 58%;
+}
+
+
+.qd_oled_box li span {
+	visibility: hidden;
+	opacity: 0;
+}
+.qd_oled_box.acvite li span {
+	visibility: visible;
+	opacity: 1;
+}
+/* .qd_oled_box li:nth-of-type(1).active{
+	left: 33%;
+}
+.qd_oled_box li:nth-of-type(2).active {
+	left: 45%;
+}
+.qd_oled_box li:nth-of-type(3).active {
+	left: 63%;
+} */
+

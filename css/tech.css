@@ -19,6 +19,9 @@
 .section2 .tec_tab p {
 	margin-bottom: 0;
 }
+.section2 .tec_tab p.active {
+	color: #000;
+}
 .section2 .tec_tab p a {
 	display: inline-block;
 	padding-left: 32px;
