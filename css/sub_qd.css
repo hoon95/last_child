@@ -1,0 +1,21 @@
+.qd {
+	width: 100%;
+	height: 100%;
+   
+}
+.qd_bg {
+	background: url(../img/qd/qd_banner.jpg) no-repeat 0 0 /cover;
+}
+.qd_tree {
+	text-align: center;
+}
+.qd_tree span {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	text-indent: -9999em;
+	background: url(../img/qd/qd_tree.png) no-repeat center/contain;
+}
+.qd_info .qd_left strong {
+	font-weight: bold;
+}
