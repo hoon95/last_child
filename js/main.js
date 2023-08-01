@@ -1,7 +1,7 @@
 /* Header menu*/
 $('.hamburger-button').on('click', function(event){
   event.preventDefault();
-  $(this).toggleClass('active');
+  $(this).toggleClass('active'); 
   $('.overlay').toggleClass('visible');
   $('body').toggleClass('black');
   $('header').toggleClass('active');
