@@ -67,10 +67,6 @@
 
 
 /* co_map */
-.co_map {
-  height: 100vh;
-}
-
 .co_map h2 {
   text-align: center;
   margin-top: calc(var(--base-unit)*8);
@@ -81,7 +77,7 @@
 }
 
 .co_map .map {
-  height: 70vh;
+  /* height: 70vh; */
   overflow: hidden;
 }
 
