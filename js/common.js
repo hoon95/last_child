@@ -9,11 +9,16 @@ $('.hamburger-button').on('click', function(event){
 });
 
 let menuList = $('.menu_overlay > li');
+let menuListLink = $('.menu_overlay > li a');
 let subMenuList = $('.submenu_overlay > li');
 
 menuList.hover(function(){
   $(this).find('.submenu_overlay > li').stop().slideToggle();
-  menuList.find('ul').stop().animate({height:'60%'}),
+
+  // $(this).parent('li').find('.submenu_overlay > li').stop().slideDown();
+  // $(this).parent('li').find('.submenu_overlay > li').stop().slideDown();
+  
+  menuList.find('ul').stop().animate({height:'10%'}),
   menuList.css({padding:'calc(var(--base-unit)*2)'});
   $(this).find('.submenu_overlay > li').addClass('visible');
 });

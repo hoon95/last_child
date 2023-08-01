@@ -296,8 +296,11 @@ header nav *{
   position: sticky;
   top: 0;
   z-index: 10000;
-  background: transparent
+  background: transparent;
+  margin-top: -102px;
 }
+/* esg파트 - margin-top:0 */
+
 .menubar.active{
   background: #fff;
 }
@@ -305,11 +308,12 @@ header nav *{
 /* Menu list */
 header nav ul:first-child > li{
   font-size: var(--h3-size);
-  line-height: calc(var(--base-unit)*6);
+  line-height: calc(var(--base-unit)*4);
   padding: calc(var(--base-unit)*1.5);
   font-weight: bold;
   text-transform: uppercase;
 }
+
 header nav a{
   text-decoration: none;
   z-index: 500;
@@ -389,6 +393,7 @@ header .menu_overlay li{
 .menu_overlay li a:hover+ul li.visible{
   visibility: visible;
   display: block;
+  padding: auto 0;
 }
 .language a:hover{
   color: var(--dark-blue);
@@ -396,6 +401,7 @@ header .menu_overlay li{
 .submenu_overlay li.visible{
   visibility: visible;
   display: block;
+  padding: auto 0;
 }
 
 /* Hamburger button styles. */
