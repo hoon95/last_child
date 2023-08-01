@@ -1,2 +1,2 @@
-// OLED_video
+// oled_video
 $('iframe[src*="vimeo"]').parent().fitVids();

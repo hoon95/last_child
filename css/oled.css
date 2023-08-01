@@ -28,44 +28,79 @@
   font-size: calc(var(--base-unit)*2);
   padding-bottom: var(--base-unit);
 }
-/* is-unfold 효과 */
+.layers_txt{
+  padding-bottom: calc(var(--base-unit)*4);
+}
 
+.lcd_layer{
+  width: 520px;
+  height: 835px;
+  position: relative;
+}
+.lcd_layer_txt {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  transition: 0.8s;
+}
+.oled_layer{
+  width: 520px;
+  height: 835px;
+  position: relative;
+}
+.oled_layer_txt {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+/* lcd_layer is-unfold 효과 
+Javascript 식 잘 생각 */
 
 .lcd_layer .lcd_layer_item.nth_1 {
-  transform: translateX(-180px);
+  position: absolute;
+  left:-60px
 }
 .lcd_layer .lcd_layer_item.nth_2 {
-  transform: translateX(-180px);
+  position: absolute;
+  left:0px;
 }
 .lcd_layer .lcd_layer_item.nth_3 {
-  transform: translateX(-120px);
+  position: absolute;
+  left:60px;
 }
 .lcd_layer .lcd_layer_item.nth_4 {
-  transform: translateX(-60px);
+  position: absolute;
+  left:120px;
 }
 .lcd_layer .lcd_layer_item.nth_5 {
-  transform: translateX(0px);
+  position: absolute;
+  left:180px;
 }
 .lcd_layer .lcd_layer_item.nth_6 {
-  transform: translateX(60px);
+  position: absolute;
+  left:240px;
 }
-/* transform 3d
-.lcd_layer .lcd_layer_item.nth_1 {
-  transform: translate3d(-240px, 0, 0);
+
+.oled_layer .oled_layer_item.nth_1 {
+  position: absolute;
+  left:0px
 }
-.lcd_layer .lcd_layer_item.nth_2 {
-  transform: translate3d(-180px, 0, 0);
+.oled_layer .oled_layer_item.nth_2 {
+  position: absolute;
+  left:60px
 }
-.lcd_layer .lcd_layer_item.nth_3 {
-  transform: translate3d(-120px, 0, 0);
+.oled_layer .oled_layer_item.nth_3 {
+  position: absolute;
+  left:120px
 }
-.lcd_layer .lcd_layer_item.nth_4 {
-  transform: translate3d(-60px, 0, 0);
+.oled_layer .oled_layer_item.nth_4 {
+  position: absolute;
+  left:180px
 }
-.lcd_layer .lcd_layer_item.nth_5 {
-  transform: translate3d(0px, 0, 0);
-}
-.lcd_layer .lcd_layer_item.nth_6 {
-  transform: translate3d(60px, 0, 0);
-}
-*/
+

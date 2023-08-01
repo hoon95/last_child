@@ -30,7 +30,7 @@ let innerH = $gotopInner.outerHeight();
 let bodyH = $('body').outerHeight();
 let $windowH = $(window).innerHeight();
 
-console.log(bodyH);
+// console.log(bodyH);
 
 $(window).scroll(function(){
   //현재 지금 높이 - 실제
@@ -40,7 +40,7 @@ $(window).scroll(function(){
 
    /* (바디 전체 높이 - 화면 높이) = 실제 스크롤양 */
   let myHeightPercent = sct/(bodyH-$windowH)*100;
-  console.log(myHeightPercent);
+  // console.log(myHeightPercent);
 
   $gotopInner.css({height:`${myHeightPercent}%`});
   if(myHeightPercent >= 100){
