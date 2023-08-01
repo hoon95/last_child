@@ -24,8 +24,8 @@
   margin: 0 auto;
 }
 .layers_title{
+  font-size: calc(var(--base-unit)*3);
   font-weight: bold;
-  font-size: calc(var(--base-unit)*2);
   padding-bottom: var(--base-unit);
 }
 .layers_txt{
@@ -59,9 +59,9 @@
   transition: 0.8s;
 }
 
-/* lcd_layer is-unfold 효과 
-Javascript 식 잘 생각 */
-
+/* lcd_layer / oled is-unfold 효과 */
+/* Javascript 식 잘 생각 */
+/* lcd img 순서*/
 .lcd_layer .lcd_layer_item.nth_1 {
   position: absolute;
   left:-60px
@@ -86,7 +86,7 @@ Javascript 식 잘 생각 */
   position: absolute;
   left:240px;
 }
-
+/* oled img 순서*/
 .oled_layer .oled_layer_item.nth_1 {
   position: absolute;
   left:0px
@@ -103,4 +103,129 @@ Javascript 식 잘 생각 */
   position: absolute;
   left:180px
 }
-
+/* wrap_name */
+.lcd_layer .layer_name_wrap{
+  width: 520px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  text-align: left;
+}
+.oled_layer .layer_name_wrap{
+  width: 360px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+}
+.lcd_layer .layer_name_list{
+  display: flex;
+}
+.oled_layer .layer_name_list{
+  display: flex;
+  flex-direction: column;
+}
+.layer_name{
+  padding-left:10px;
+  color: var(--gray);
+}
+/* hover시 active 고려 */
+.layer_name.active{
+  color: var(--white);
+}
+.layer_name:hover{
+  color: var(--white);
+}
+/* section3 */
+.section3{
+  height: 100%;
+  padding: calc(var(--base-unit)*6) 0;
+  text-align: center;
+}
+.section3 h3{
+  padding-bottom: calc(var(--base-unit)*4);
+}
+.lcd_oled_img{
+  position: relative;
+  padding: 0;
+}
+/* lce_oled 파트 왼쪽 img */
+.lcd_oled_img .lcd_oled_left{
+  width: 720px;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* lce_oled 파트 오른쪽 img */
+.lcd_oled_img .lcd_oled_right{
+  width: 720px;
+  height: 700px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.lcd_oled_img img{
+  opacity: 0.5;
+  transition: 0.3s;
+}
+/* scroll시 opacity 변경*/
+.lcd_oled_img:hover img{
+  opacity: 1;
+}
+/* lcd_oled_img 안 왼쪽 텍스트 */
+.lcd_oled_left .lcd_left_content{
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
+  text-align: right;
+  position: absolute;
+  right: 140px;
+  bottom: 70px;
+}
+.lcd_oled_left .lcd_left_content p:first-child{
+  font-size: 14px;
+}
+.lcd_oled_left .lcd_left_content p:last-child{
+  font-size: 32px;
+  line-height: 34px;
+}
+/* lcd_oled_img 안 오른쪽 텍스트 */
+.lcd_oled_right .lcd_right_content{
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
+  text-align: left;
+  position: absolute;
+  left: 150px;
+  bottom: 70px;
+}
+.lcd_oled_right .lcd_right_content p:first-child{
+  font-size: 16px;
+}
+.lcd_oled_right .lcd_right_content p:last-child{
+  font-size: 32px;
+  line-height: 40px;
+}
+.lcd_oled_info{
+  padding-top: calc(var(--base-unit)*6);
+}
+/* section 4 */
+.section4{
+  padding: calc(var(--base-unit)*14) 0;
+  width: 100%;
+}
+.contrast_ratio{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.contrast_ratio img{
+  height: 700px;
+  object-fit: cover;
+}
+.contrast_ratio_info{
+  padding-left: 50px;
+  padding-right: 140px;
+  width: 100%;
+  
+}
