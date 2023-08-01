@@ -28,6 +28,10 @@
   margin-bottom: calc(var(--base-unit)*4);
 }
 
+.co_intro p {
+  color: var(--dark-gray);
+}
+
 .co_intro .slide_btn_dark {
   background: var(--dark-blue);
   position: absolute;
@@ -84,9 +88,4 @@
 .co_map .map object {
   transform: scale(0.95);
 }
-
-
-
-
-
 /* //co_map */
