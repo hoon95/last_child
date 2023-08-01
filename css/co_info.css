@@ -186,12 +186,12 @@
   width: 580px;
 }
 .business_area .slide .notebook {
-  grid-row: 1/span 3;
+  grid-row: 1/span 2;
   grid-column: -4;
   width: 580px;
 }
 .business_area .slide .automotive {
-  grid-row: 5/-1;
+  grid-row: 4/-1;
   grid-column: -4;
   width: 580px;
 }
