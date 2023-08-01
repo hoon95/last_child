@@ -217,6 +217,7 @@ a {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+  padding: 0;
 }
 .slide_btn:hover{
   background-color: var(--blue);
