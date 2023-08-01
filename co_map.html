@@ -9,7 +9,61 @@
   <link rel="stylesheet" href="css/co_map.css">
 </head>
 <body>
-  <header></header>
+  <header>
+    <h1>
+      <a href="#">
+        <img src="img/logo.png" alt="Logo" id="logo">
+      </a>
+    </h1>
+    <a href="#" class="hamburger-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <div class="overlay">
+      <nav class="menu">
+        <ul class="overlay-content">
+          <li>
+            <a href="">Company</a>
+            <ul>
+              <li><a href="">기업개요</a></li>
+              <li><a href="">연혁</a></li>
+              <li><a href="">사업장정보</a></li>
+              <li><a href="">기업문화</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Technology</a>
+            <ul>
+              <li><a href="">OLED</a></li>
+              <li><a href="">QD-OLED</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">ESG</a>
+            <ul>
+              <li><a href="esg_intro.html">ESG전략</a></li>
+              <li><a href="">사회공헌</a></li>
+              <li><a href="">경영정책</a></li>
+              <li><a href="">상생협력</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">NEWS</a>
+          </li>
+          <li>
+            <a href="">인재 / 채용</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="language">
+          <a href="" class="Eng">ENG</a><span> / </span><a href="">CHN</a><span> / </span><a href="">VIT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <section class="co_intro d-flex justify-content-center align-items-center flex-column">
     <h2 class="h1">사업장정보</h2>
     <p class="h4">삼성디스플레이의 사업장, 글로벌 네트워크, 연구소 정보입니다.</p>
@@ -19,18 +73,18 @@
     </div>
   </section>
   <section class="co_map">
-    <h2>
-      삼성 디스플레이<br>
-      사업장, 글로벌 네트워크, 연구소
-    </h2>
-    <span>원하는 지역을 클릭해보세요</span>
-    <div class="map">
-      <div class="map_area">
-        <div class="germay">
-          <div>독일</div>
+    <div class="container">
+      <h2>
+        삼성 디스플레이<br>
+        사업장, 글로벌 네트워크, 연구소
+      </h2>
+      <span>원하는 지역을 클릭해보세요</span>
+      <div class="map">
+        <div class="map_area">
+          <object data="img/co_map.svg" type=""></object>
         </div>
+        <svg></svg>
       </div>
-      <svg></svg>
     </div>
   </section>
 </body>
