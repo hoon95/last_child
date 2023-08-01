@@ -8,6 +8,7 @@
 .co_intro {
   height: 100vh;
   position: relative;
+  margin-top: -102px;
 }
 
 .co_intro:after {
