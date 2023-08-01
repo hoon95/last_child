@@ -6,7 +6,7 @@
 
 /* co_intro */
 .co_intro {
-  height: 100vh;
+  height: calc(100vh + 102px);
   position: relative;
   margin-top: -102px;
 }
@@ -67,5 +67,12 @@
 
 
 /* co_map */
-/* .co_map .map_area  */
+.co_map h2 {
+  text-align: center;
+}
+
+
+
+
+
 /* //co_map */
