@@ -10,7 +10,7 @@ $(".section2 .tech_wrapper .next").click(function () {
 });
 
 $(".section2 .tec_tab p").click(function (e) {
-    let techBarTop = $(this).offset().top;
+    let techBarTop = $(this).position().top;
     e.preventDefault();
     techContent.goToSlide($(this).index());
 
