@@ -434,3 +434,70 @@ header .menu_overlay li{
 .hamburger-button.active span:nth-child(4) {opacity: 0;}
 .hamburger-button.active span:nth-child(2) {transform: rotate(45deg);}
 .hamburger-button.active span:nth-child(3) {transform: rotate(-45deg);}
+
+/* footer */
+footer {
+	border-top: 1px solid var(--light-gray);
+	padding: 34px 60px;
+  background: var(--white);
+}
+footer span {
+  color: var(--black);
+}
+footer .foot_top  {
+	margin-bottom: 88px;
+}
+footer .foot_top .foot_left > p {
+	margin-bottom: 38px;
+} 
+footer .foot_left .foot_list ul {
+	gap: 0 20px;
+}
+footer .foot_left .foot_list ul a {
+	position: relative;
+}
+footer .foot_left .foot_list ul a::after {
+	position: absolute;
+	top: 0;
+	right: -10px;
+	content: "";
+	display: block;
+	width: 1px;
+	height: 26px;
+	background-color: var(--light-gray);
+}
+footer .foot_left .foot_list ul li:last-child a::after {
+	background: none;
+} 
+footer .foot_left li:hover {
+  text-decoration: underline;
+}
+footer .foot_right ul {
+	gap: 26px;
+}
+footer .foot_right i {
+	display: inline-block;
+	width: 35px;
+  height: 35px;
+  background-image: url(../img/footer/foot_icon.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+	text-indent: -9999em;
+}
+footer .foot_right .foot_youtube {
+  background-position: 0px -35px;
+}
+footer .foot_right .foot_naverpost {
+  background-position: 0px -70px;
+}
+
+footer .foot_right .foot_facebook:hover {
+ background-position: -35px 0px;
+}
+footer .foot_right .foot_youtube:hover {
+ background-position: -35px -35px;
+}
+footer .foot_right .foot_naverpost:hover {
+ background-position: -35px -70px;
+}
+
