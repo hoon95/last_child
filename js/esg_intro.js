@@ -30,42 +30,27 @@ $(window).scroll(function(){
 
 $('.s3_title').lettering();
 $('.s3_content').lettering();
+$('.value_title').lettering();
+$('.value_content').lettering();
+$('.value_list_title').lettering();
+$('.value_list_content p').lettering();
 
-// $(window).scroll(function(){
-//     let scrollAmt = $(window).scrollTop(),
-//         sTitle = $('.s3_title span'),
-//         sTitleLen = sTitle.length;
+    $(window).scroll(function(){
+        scrollFill($('.s3_title span'), 'white')
+        scrollFill($('.s3_content span'), 'white')
+        scrollFill($('.value_title span'), '#121212')
+        scrollFill($('.value_content span'), '#121212')
+        scrollFill($('.value_list_title span'), '#121212')
+        scrollFill($('.value_list_content p span'), '#121212')
+    })
 
-//     sTitle.each(function(i){
-//         if(scrollAmt > i * sTitleLen){
-//             sTitle.eq(sTitleLen).css({color:'white'});
-//         }
-        
-//     })
-// })
-    // Lettering.js로 분리된 각 문자를 숨깁니다.
-
-    // 스크롤 이벤트를 처리하는 함수
-    let txtEvent = function handleScroll() {
-      // 현재 스크롤 위치를 가져옵니다.
-      let scrollAmt = $(window).scrollTop();
-
-      // 화면에 표시할 문자의 인덱스를 계산합니다.
-      let currentIdx = Math.floor(scrollAmt / 50);
-
-      // Lettering.js로 분리된 각 문자를 순회하며, 선택할 문자는 보이게 하고, 나머지 문자는 숨깁니다.
-      $('.s3_title span').each(function(idx) {
-        if(idx === currentIdx){
-            $(this).css({color: '#121212'})
-        }
-        // $(this).css("opacity", index === currentIndex ? 1 : 0);
-      });
-
-
-
-    }
-
-    
-
-    // 스크롤 이벤트 핸들러를 연결합니다.
-    $(window).on('scroll', txtEvent);
+    function scrollFill(scrVar, scrColor) {
+        let scrollAmt = $(window).scrollTop() - scrVar.offset().top,
+        currentIdx = Math.floor(scrollAmt / 20);
+  
+        scrVar.each(function(idx) {
+          if(idx === currentIdx){
+              $(this).css({color: scrColor})
+          }
+        });
+      }

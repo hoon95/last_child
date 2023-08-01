@@ -4,8 +4,8 @@
 
 /* 1. three S */
 .s3{
-    height: 100vh;
     position: relative;
+    height: 100vh;
     color: var(--light-gray);
 }
 .s3::before{
@@ -33,6 +33,7 @@
     background: url(../img/esg_social.png);
 }
 .s3 .s3_title{
+    flex-basis: 200px;
     font-size: calc(var(--h1-size) * 1.8);
     line-height: calc(var(--h1-size) * 1.8);
     text-transform: uppercase;
@@ -41,13 +42,18 @@
     font-weight: bold;
     z-index: 2;
 }
+.sustain .s3_title,
+.sustain .s3_content{
+    width: max-content;
+}
     
 
 /* 2. Sustainable Value */
-.value_bg{
-    height: 1000px;
+.value{
     background: url(../img/esg_value.png) no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    color: var(--light-gray);
 }
 .value .value_intro{
     text-align: center;
@@ -91,6 +97,5 @@
 }
 .report a {
     color: var(--white);
-    text-decoration: none;
     z-index: 10;
 }
