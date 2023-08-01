@@ -1,0 +1,107 @@
+/* 1. 녹색경영 개요 */
+
+.green_title{
+    padding: calc(var(--base-unit) * 4) 0 calc(var(--base-unit) * 11) 0;
+    text-align: center;
+}
+.green_circle{
+    padding: calc(var(--base-unit) * 4) 0;
+}
+.ideology, .vision, .slogan{
+    position: relative;
+}
+.green_outer_circle{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: lightgreen;
+    /* background: var(--light-blue); */
+    opacity: 0.7;
+}
+.green_inner_circle{
+    position: absolute; 
+    top: 25px;
+    left: 25px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: green;
+    /* background: var(--blue); */
+    opacity: 0.9;
+}
+.green_inner_circle h3{
+    position: absolute;
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+}
+.circle_content{
+    margin-top: var(--base-unit);
+}
+
+
+
+
+/* 2. 녹색경영 부가설명 */
+.green_sub, .sub_wrapper{
+    padding: calc(var(--base-unit) * 5) 0;
+}
+.sub_wrapper:nth-child(2n-1){
+    text-align: right;
+}
+.sub_wrapper:nth-child(2n){
+    text-align: left;
+}
+
+
+
+
+/* 17 */
+
+
+/* 3. 지속 가능한 개발 */
+.sustdev_desc{
+    padding: calc(var(--base-unit) * 12) 0 calc(var(--base-unit) * 7) 0;
+}
+.sustdev hgroup{
+    text-align: center;
+}
+
+.sustdev_outer_circle{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: lightgreen;
+    opacity: 0.7;
+}
+.iso14001, .iso50001, .iso14001{
+    position: relative;
+}
+.sustdev_inner_circle{
+    position: absolute; 
+    top: 25px;
+    left: 25px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: green;
+    color: var(--white);
+    opacity: 0.9;
+    gap: 34px;
+}
+.sustdev_inner_circle hgroup h4{
+    text-transform: uppercase;
+}
+.sustdev_content{
+    text-transform: capitalize;
+}
+.sustdev_download{
+    margin: calc(var(--base-unit) * 5) 0;
+    color: var(--dark-blue);
+}
+.sustdev_download > span{
+    font-size: 64px;
+}
+.sustdev_download > a{
+    text-decoration: none;
+}

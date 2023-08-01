@@ -1,8 +1,10 @@
 .container{
-    padding: calc(var(--base-unit) * 5) 0;
+    padding: calc(var(--base-unit) * 6) 0 calc(var(--base-unit) * 10) 0;
 }
+
 /* 1. three S */
 .s3{
+    height: 100vh;
     position: relative;
     color: var(--light-gray);
 }
@@ -18,6 +20,7 @@
 .s3 > div{
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    /* background-position: center !important; */
 }
 .s3 .sustain{
     background: url(../img/esg_sustain.png);
