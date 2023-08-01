@@ -1,25 +1,30 @@
 /* section1 */
 .oled_video{
-    width: 100%;
-    height: 100%;
-    /* height: 100vh; */
+  width: 100%;
+  height: 100%;
+  /* height: 100vh; */
 }
 .oled_video video{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 /* section2 */
 .section2{
-    height: 100%;
-    padding: calc(var(--base-unit)*6) 0;
-    text-align: center;
+  height: 100%;
+  padding: calc(var(--base-unit)*6) 0;
+  text-align: center;
 }
 .section2 h3{
-    padding-bottom: calc(var(--base-unit)*6);
+  padding-bottom: calc(var(--base-unit)*6);
 }
 .section2 p + p{
-    padding-bottom: calc(var(--base-unit)*9);
+  padding-bottom: calc(var(--base-unit)*9);
 }
 .layers{
-    margin: 0 auto;
+  margin: 0 auto;
+}
+.layers_title{
+  font-weight: bold;
+  font-size: calc(var(--base-unit)*2);
+  padding-bottom: var(--base-unit);
 }
