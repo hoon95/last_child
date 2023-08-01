@@ -3,33 +3,13 @@
     box-sizing: border-box;
 }
 /* 1. 사회공헌 개요 */
-/* .ctr_main{
-    height: 100vh;
-} */
+.ctr_main{
+    /* height: 100vh; */
+}
 .ctr_main hgroup{
     margin-bottom: calc(var(--base-unit) * 3);
     box-sizing: content-box;
 }
-/* .ctr_main article::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    width: 50px;
-    z-index: 1;
-}
-.ctr_main article::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    width: 50px;
-    z-index: 1;
-} */
 .ctr_main article > div{
     text-align: center;
 }
