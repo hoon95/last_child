@@ -98,7 +98,10 @@ body.black {
   background: var(--black);
   color: var(--white);
 }
-
+a {
+  color: var(--black);
+  text-decoration: none;
+}
 
 /* button */
 .btn {
