@@ -93,7 +93,10 @@ body {
   font-family: 'Pretendard-Regular';
   color: var(--black);
 }
-
+body {
+  background: var(--black);
+  color: var(--white);
+}
 body.black {
   background: var(--black);
   color: var(--white);
@@ -436,9 +439,9 @@ footer {
 	padding: 34px 60px;
   background: var(--white);
 }
-/* footer a {
-  color: var(--white);
-} */
+footer span {
+  color: var(--black);
+}
 footer .foot_top  {
 	margin-bottom: 88px;
 }

@@ -33,7 +33,7 @@
     left: 50px;
     width: 4px;
     height: 20%;
-    background: #fff;
+    background: var(--white);
     -webkit-transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
     transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
 }
