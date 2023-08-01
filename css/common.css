@@ -292,7 +292,15 @@ header h1{
 header nav *{
   text-align: center;
 }
-
+.menubar{
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background: transparent
+}
+.menubar.active{
+  background: #fff;
+}
 
 /* Menu list */
 header nav ul:first-child > li{
@@ -378,7 +386,14 @@ header .menu_overlay li{
   visibility: hidden;
   display: none;
 }
-.menu_overlay li:hover ul li.visible{
+.menu_overlay li a:hover+ul li.visible{
+  visibility: visible;
+  display: block;
+}
+.language a:hover{
+  color: var(--dark-blue);
+}
+.submenu_overlay li.visible{
   visibility: visible;
   display: block;
 }
