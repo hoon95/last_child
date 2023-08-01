@@ -120,8 +120,7 @@
 
 /* business_area */
 .business_area {
-  height: var(--business-height);
-  margin-bottom: 300px;
+  padding: calc(var(--base-unit)*14) 0 calc(var(--base-unit)*8);
 }
 
 .business_area img {
