@@ -93,22 +93,18 @@
 .qd_compare .qd > div {
 	position: relative;
 }
-.qd_compare .qd > div ul {
+
+.qd_compare .qd > div img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.qd_compare .qd > div ul img {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
 
 .qd_compare li i {
 	position: relative;
 }
-.qd_compare ul .qd_arrow{
+.qd_compare .qd_arrow{
 	position: absolute;
 	top: 0;
 	left: 0;
