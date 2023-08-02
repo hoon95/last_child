@@ -128,6 +128,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: width .3s;
 }
 
 .business_area figure {
@@ -139,10 +140,24 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -100px;
   background-color: var(--black);
   color: var(--white);
   padding: 20px 20px;
+  transition: bottom .3s;
+}
+
+.business_area figure:hover figcaption {
+  bottom: 0;
+}
+
+.business_area figure:hover img {
+  width: 105%;
+}
+
+.business_area .slide .smartphone:hover img {
+  height: 105%;
+  width: 100%;
 }
 
 .business_area .slide .content {
@@ -166,6 +181,8 @@
 
 .business_area .slide .smartphone img {
   height: 100%;
+  object-fit: cover;
+  transition: height .3s;
 }
 
 .business_area .slide .wearable {
