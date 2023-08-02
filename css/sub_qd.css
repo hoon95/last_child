@@ -2,8 +2,13 @@
 	width: 100%;
 	height: 100vh;
 }
-.qd h2 {
+/* img {
+	width: 100%;
+	height: 100%;
+} */
+.qd_oled_index section h2 {
 	text-align: center;
+	margin: calc(var(--base-unit)*5) 0;
 }
 .qd_bg {
 	background: url(../img/qd/qd_banner.jpg) no-repeat 0 0 /cover;
@@ -24,11 +29,11 @@
 	top: 50%;
 	left: 50%;
 	display: inline-block;
-	width: 100%;
-	height: 42%;
+	width: 1044px;
+	height: 594px;
 	text-indent: -9999em;
 	background: url(../img/qd/qd_dot.png) no-repeat center/contain;
-	transform: translate(-50%, -50%) rotateX(-80deg);
+	transform: translate(-50%, -50%) rotateX(-290deg);
 }
 
 .qd_dot .qd_dot_front.animate {
@@ -38,7 +43,7 @@
 	transform: rotateX(153deg);
 }
 
-body .qd.qd_info {
+.qd_info {
 	background: var(--white);
   color: var(--black);
 }
@@ -48,38 +53,115 @@ body .qd.qd_info {
 .qd_oled {
 	position: relative;
 }
-.qd_oled_box li {
+.qd_oled .qd_oled_box li {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.qd_oled_box li:nth-of-type(1) {
+.qd_oled .qd_oled_box li:nth-of-type(1) {
 	left: 47%;
 }
-.qd_oled_box li:nth-of-type(2) {
+.qd_oled .qd_oled_box li:nth-of-type(2) {
 	left: 50%;
 }
-.qd_oled_box li:nth-of-type(3) {
+.qd_oled .qd_oled_box li:nth-of-type(3) {
 	left: 58%;
 }
 
 
-.qd_oled_box li span {
+.qd_oled .qd_oled_box li span {
 	visibility: hidden;
 	opacity: 0;
 }
-.qd_oled_box.acvite li span {
+.qd_oled .qd_oled_box.acvite li span {
 	visibility: visible;
 	opacity: 1;
 }
-/* .qd_oled_box li:nth-of-type(1).active{
+/* .qd_oled .qd_oled_box li:nth-of-type(1).active{
 	left: 33%;
 }
-.qd_oled_box li:nth-of-type(2).active {
+.qd_oled .qd_oled_box li:nth-of-type(2).active {
 	left: 45%;
 }
-.qd_oled_box li:nth-of-type(3).active {
+.qd_oled .qd_oled_box li:nth-of-type(3).active {
 	left: 63%;
 } */
+.qd_compare .qd {
+	text-align: center;
+}
+.qd_compare .qd > div {
+	position: relative;
+}
+.qd_compare .qd > div ul {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.qd_compare .qd > div ul img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
+.qd_compare li i {
+	position: relative;
+}
+.qd_compare ul .qd_arrow{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-indent: -9999em;
+}
+.qd_oled_arrow {
+	width: 362px;
+	height: 212px;
+	background-image: url(../img/qd/qd-oled_sec1_arrow.png);
+}
+.qd_compare .qd_oled_arrow2 {
+	width: 366px;
+	height: 106px;
+	background-image: url(../img/qd/qd-oled_sec1_arrow2.png);
+}
+.qd_compare .qd_oled_arrow3 {
+	width: 401px;
+	height: 182px;
+	background-image: url(../img/qd/qd-oled_sec2_arrow.png);
+}
+.qd_compare .qd_oled_arrow4 {
+	width: 460px;
+	height: 78px;
+	background-image: url(../img/qd/qd-oled_sec2_arrow2.png);
+}
+.qd_drag .qd{
+	position: relative;
+}
+.qd_foot {
+	padding: 620px 0 0 0;
+	text-align: center;
+	background: url(../img/qd/qd_bg.jpg) 0 0 /cover;
+	box-sizing: border-box;
+}
+.qd_foot > p {
+	margin-bottom: calc(var(--base-unit)*2);
+}
+.qd_foot a {
+	color: var(--white);
+}
+.qd_foot ul a {
+	color: var(--white);
+	gap: calc(var(--base-unit)*2) 0;
+}
+.qd_foot ul a img:hover {
+	transform: scale(1.1);
+}
+.qd_foot .btn {
+	margin: calc(var(--base-unit)*2) 0;
+} 
+.qd_figure {
+	background: url(../img/qd/qd_bg_2.jpg) 0 0 /cover;
+}
