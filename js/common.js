@@ -1,19 +1,24 @@
 /* Header menu*/
+
 $('.hamburger-button').on('click', function(event){
   event.preventDefault();
-  
-  $(this).toggleClass('active');
+  $(this).toggleClass('active'); 
   $('.overlay').toggleClass('visible');
   $('body').toggleClass('black');
+  $('header').toggleClass('active');
 });
 
 let menuList = $('.menu_overlay > li');
-let subMenuList = $('.submenu_overlay > li')
+let menuListLink = $('.menu_overlay > li a');
+let subMenuList = $('.submenu_overlay > li');
 
 menuList.hover(function(){
-  $(this).find('.submenu_overlay > li').slideToggle();
+  $(this).find('.submenu_overlay > li').stop().slideToggle();
+
+  // $(this).parent('li').find('.submenu_overlay > li').stop().slideDown();
+  // $(this).parent('li').find('.submenu_overlay > li').stop().slideDown();
   
-  menuList.find('ul').stop().animate({height:'60%'}),
+  menuList.find('ul').stop().animate({height:'10%'}),
   menuList.css({padding:'calc(var(--base-unit)*2)'});
   $(this).find('.submenu_overlay > li').addClass('visible');
 });
