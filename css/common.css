@@ -443,7 +443,8 @@ header .menu_overlay li{
 footer {
 	border-top: 1px solid var(--light-gray);
 	padding: 34px 60px;
-  background: var(--white);
+ 	background: var(--white);
+	color: var(--black);
 }
 footer span {
   color: var(--black);
