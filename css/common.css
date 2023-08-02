@@ -290,12 +290,11 @@ a {
   }
 }
 
-/* header */
+/* header 최종*/
 header{
   padding:calc(var(--base-unit)*2);
   padding-left: 40px;
   padding-right: 40px;
-  height: 34px;
 }
 header h1{
   display: block;
@@ -308,7 +307,7 @@ header nav *{
   top: 0;
   z-index: 10000;
   background: transparent;
-  margin-top: -102px;
+  margin-top: -114px;
 }
 /* esg파트 - margin-top:0 */
 
