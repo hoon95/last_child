@@ -104,28 +104,39 @@
   align-items: flex-end;
 }
 
-.co_his_content .item1 {top: 0;}
-.co_his_content .item2 {top: 353px;}
-.co_his_content .item3 {top: 934px;}
-.co_his_content .item4 {top: 1400px;}
-.co_his_content .item5 {top: 1915px;}
-.co_his_content .item6 {top: 2720px;}
-.co_his_content .item7 {top: 3275px;}
-.co_his_content .item8 {top: 3785px;}
-.co_his_content .item9 {top: 4330px;}
+.co_his_content .item1 {top: 20px;}
+.co_his_content .item2 {top: 404px;}
+.co_his_content .item3 {top: 985px;}
+.co_his_content .item4 {top: 1445px;}
+.co_his_content .item5 {top: 1950px;}
+.co_his_content .item6 {top: 2775px;}
+.co_his_content .item7 {top: 3325px;}
+.co_his_content .item8 {top: 3830px;}
+.co_his_content .item9 {top: 4374px;}
 
-
-.co_his_content .item h3 {
-  width: 144px;
-  height: 144px;
-  line-height: 144px;
-  background-color: var(--white);
+/* .co_his_content .item h3 {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  background-color: var(--dark-blue);
   position: relative;
   text-align: center;
+  text-indent: -999em;
+  transition: .5s;
 }
 
-.co_his_content .item h3:after {
+.co_his_content .item.active h3 {
+
+  background-color: var(--white);
+  border-radius: 50%;
+  text-indent: 0;
+}
+
+.co_his_content .item.active h3:not(:empty) {
+  transform: scale(3);
+}
+
+.co_his_content .item.active h3:after {
   content: '';
   position: absolute;
   left: 0; top: 0;
@@ -137,16 +148,141 @@
   transform: scale(80%);
   opacity: 1;
   animation: gradient 1.5s infinite linear;
+} */
+
+/*
+.co_his_content .item .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  position: relative;
+  text-align: center;
+  transition: .5s;
+}
+
+.co_his_content .item:hover .circle h4 {
+  font-size: calc(var(--h4-size)/3) ;
+  animation: none;
+}
+
+.co_his_content .item:hover .bg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border-radius: 50%; 
+  z-index: -1;
+  transform: scale(80%);
+  opacity: 1;
+  animation: none;
+}
+
+.co_his_content .item:hover .circle {
+  transform: scale(3);
+  background-color: var(--dark-blue);
+  animation: gradient 1.5s infinite linear;
+}
+*/
+
+.co_his_content .item .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  position: relative;
+  text-align: center;
+  transition: .5s;
+}
+
+.co_his_content .item .circle .bg {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.co_his_content .item .circle .title {
+  opacity: 0;
+}
+
+.co_his_content .item:hover .circle {
+  transform: scale(3);
+}
+
+.co_his_content .item:hover .circle .title {
+  opacity: 1;
+  font-size: calc(var(--h4-size)/3);
+  z-index: 10;
+}
+
+
+
+
+
+/*
+.co_his_content .item .title {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  position: relative;
+  text-align: center;
+  transition: .5s;
+}
+
+.co_his_content .item .title * {
+  animation: none;
+}
+
+.co_his_content .item .title:hover:before {
+  content: attr(data-year);
+  font-size: calc(var(--h4-size)/3) ;
+  animation: none;
+}
+
+.co_his_content .item .title:hover:after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border-radius: 50%; 
+  z-index: -1;
+  transform: scale(80%);
+  opacity: 1;
+  animation: none;
+}
+
+.co_his_content .item .title:hover {
+  transform: scale(3);
+  background-color: var(--dark-blue);
+  animation: gradient 1.5s infinite linear;
+}
+*/
+
+.co_his_content .item.c_right .title {
+  left: -18%;
+}
+
+.co_his_content .item.item4 .title {
+  left: -23%;
+}
+
+.co_his_content .item.c_left .title {
+  left: 10%;
 }
 
 @keyframes gradient {
   0%{
-    transform: scale(100%);
+    transform: scale(3);
     opacity: 1;
   }
   
   100% {
-    transform: scale(130%);
+    transform: scale(3.3);
     opacity: 0;
   }
 }
@@ -154,7 +290,12 @@
 .co_his_content .item img {
   width: 100%;
   object-fit: cover;
-  padding-top: calc(var(--base-unit)*1);
+  padding-top: calc(var(--base-unit)*3);
+  display: none;
+}
+
+.co_his_content .item:hover img {
+  display: block;
 }
 
 .co_his_content .item.col-5 img {
@@ -167,6 +308,11 @@
 
 .co_his_content .item ul {
   width: 100%;
+  display: none;
+}
+
+.co_his_content .item:hover ul {
+  display: block;
 }
 
 
