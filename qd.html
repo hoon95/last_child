@@ -15,7 +15,7 @@
 
 <body>
   <header class="menubar">
-    <div>
+    <div class="black">
       <h1>
         <a href="index.html">
           <img src="img/logo.png" alt="Logo" id="logo">
@@ -114,21 +114,25 @@
 		<section class="qd_compare">
 			<h2 class="h3">Comparison with conventional OLED</h2>
       <div class="qd row">
-        <div class="qd_oled_tv col">
+        <div class="qd_oled_tv col qdposi">
           <h3 class="h3">OLED TV</h3> 
-          <img src="img/qd/qd-oled_sec1_3.png" alt="oled BP">
-          <img src="img/qd/qd-oled_sec1_2.png" alt="rgb 컬러필터"></li>
-          <img src="img/qd/qd-oled_sec1.png" alt="oled white 발광원">
+          <div class="qd_oled_ani">
+            <img src="img/qd/qd-oled_sec1_3.png" alt="oled BP">
+            <img src="img/qd/qd-oled_sec1_2.png" alt="rgb 컬러필터">
+            <img src="img/qd/qd-oled_sec1.png" alt="oled white 발광원">
+          </div>
+          <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
+          <span class="qd_arrow qd_oled_arrow">oled 화살표</span>
         </div>
-        <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
-        <span class="qd_arrow qd_oled_arrow">oled 화살표</span>
-        <div class="qd_display_od col">
+        <div class="qd_display_od col qdposi">
           <h3 class="h3">QD-Display</h3>     
-          <img src="img/qd/qd-oled_sec2_2.png" alt="qd layer">          
-          <img src="img/qd/qd-oled_sec2_1.png" alt="qd oled blue 발광원">
+          <div class="qd_oled_ani">
+            <img src="img/qd/qd-oled_sec2_2.png" alt="qd layer">          
+            <img src="img/qd/qd-oled_sec2_1.png" alt="qd oled blue 발광원">
+          </div>
+          <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
+          <span class="qd_arrow qd_oled_arrow3">oled 화살표</span> 
         </div>
-         <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
-         <span class="qd_arrow qd_oled_arrow3">oled 화살표</span> 
       </div>
 		</section>
 		<section class="qd_drag">
@@ -143,36 +147,46 @@
       <p class="h4_2">Quantum Dot Technology(QD-OLED)는 그 어떤 디스플레이 기술도 가보지 못한 곳으로<br> 
       대담하게 나아가고 있습니다. 지금까지 본 어떤 것과도 비교할 수 없는 최고의 선명도,<br>
       폭식할 만한 밝기 및 대비의 세계를 탐험하세요.</p>
-      <ul class="d-flex justify-content-between order-2">
+      <a href="" class="btn blue_btn">MORE VIEW</a>
+      <ul class="d-flex justify-content-between container">
         <li>
           <a href="" class="d-flex flex-column align-item-center">
-            <img src="img/qd/qd_Compare.png" alt="비교하다">
+           <div class="qd_foot_img">
+             <img src="img/qd/qd_Compare.png" alt="비교하다">
+           </div>
             <span class="h3">비교하다</span>
           </a>
         <li>
           <a href="" class="d-flex flex-column">
-            <img src="img/qd/qd_Quality.jpg" alt="화질">
+            <div class="qd_foot_img">
+              <img src="img/qd/qd_Quality.jpg" alt="화질">
+            </div>
             <span class="h3">화질</span>
           </a>
         <li>
           <a href="" class="d-flex flex-column">
-            <img src="img/qd/qd_Design.jpg" alt="디자인">
+            <div class="qd_foot_img">
+             <img src="img/qd/qd_Design.jpg" alt="디자인">
+           </div>
             <span class="h3">디자인</span>
           </a>
         <li>
           <a href="" class="d-flex flex-column">
-            <img src="img/qd/qd_SmartTV.png" alt="스마트티비">
+            <div class="qd_foot_img">
+              <img src="img/qd/qd_SmartTV.png" alt="스마트티비">
+            </div>
             <span class="h3">스마트 티비</span>
           </a>
         </li>
       </ul>
-      <a href="" class="btn blue_btn order-1">MORE VIEW</a>
 		</section>
-    <figure class="qd_figure d-flex justify-content-between align-item-center">
-      <img src="img/qd/CES_PC_Mag.svg" alt="">
-      <img src="img/qd/CES_HDTV_TestBestCES_2023.svg" alt="">
-      <img src="img/qd/CES_King_of_TV_ShootOut.svg" alt="">
-      <img src="img/qd/CES_Most_Innovative_TVTech.svg" alt="">
+    <figure class="qd_figure">
+      <div class="d-flex justify-content-between align-item-center container">
+        <img src="img/qd/CES_PC_Mag.svg" alt="">
+        <img src="img/qd/CES_HDTV_TestBestCES_2023.svg" alt="">
+        <img src="img/qd/CES_King_of_TV_ShootOut.svg" alt="">
+        <img src="img/qd/CES_Most_Innovative_TVTech.svg" alt="">
+      </div>
     </figure>
   </main>
   <footer>
