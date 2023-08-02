@@ -1,4 +1,4 @@
-/* section1 */
+/* oled_section1 */
 .oled_video{
   width: 100%;
   height: 100%;
@@ -8,16 +8,16 @@
   width: 100%;
   height: 100%;
 }
-/* section2 */
-.section2{
+/* oled_section2 */
+.oled_section2{
   height: 100%;
   padding: calc(var(--base-unit)*6) 0;
   text-align: center;
 }
-.section2 h3{
+.oled_section2 > h3{
   padding-bottom: calc(var(--base-unit)*6);
 }
-.section2 p + p{
+.oled_section2 p + p{
   padding-bottom: calc(var(--base-unit)*9);
 }
 .layers{
@@ -138,13 +138,13 @@
 .layer_name:hover{
   color: var(--white);
 }
-/* section3 */
-.section3{
+/* oled_section3 압도적인 화질 */
+.oled_section3{
   height: 100%;
   padding: calc(var(--base-unit)*6) 0;
   text-align: center;
 }
-.section3 h3{
+.oled_section3 > h3{
   padding-bottom: calc(var(--base-unit)*4);
 }
 .lcd_oled_img{
@@ -208,9 +208,12 @@
 .lcd_oled_info{
   padding-top: calc(var(--base-unit)*6);
 }
-/* section 4 */
-.section4{
-  padding: calc(var(--base-unit)*14) 0;
+.small_lcd_oled_info{
+  color: var(--gray);
+}
+/* oled_section4 명암비 */
+.oled_section4{
+  padding: calc(var(--base-unit)*7) 0;
   width: 100%;
 }
 .contrast_ratio{
@@ -227,4 +230,188 @@
   padding-left: 50px;
   padding-right: 140px;
   width: 100%;
+  height: 700px;
+  flex-direction: column;
+  justify-content: center;
 }
+/* oled_section5 다이아몬드 픽셀 */
+.oled_section5{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+}
+.diamond_fixel{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.diamond_fixel_info{
+  padding-left: 140px;
+  padding-right: 55px;
+  width: 100%;
+  height: 700px;
+  flex-direction: column;
+  justify-content: center;
+}
+.diamond_fixel img{
+  height: 700px;
+  object-fit: cover;
+}
+
+/* oled_section 6 반응속도 비교 */
+.oled_section6{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+  text-align: center;
+}
+.oled_section6 > h3{
+  padding-bottom: calc(var(--base-unit)*6);
+}
+.reaction_speed{
+  flex-direction: column;
+}
+.reaction_speed_img{
+  width: 800px;
+  margin: 0 auto;
+  transition: 2s;
+  opacity: 0.7;
+}
+/* scroll 이벤트 */
+.reaction_speed_img:hover{
+  width: 946px;
+  margin: 0 auto;
+  transform: translateY(-15%);
+  /* transform: scale(1.2); */
+  opacity: 1;
+}
+/* 스크롤해서 커질때 .reaction_speed_img:hover span{
+  color: var(--black);
+} */
+
+.reaction_speed_img img{
+  width: 100%;
+  border:4px solid var(--white);
+  border-radius: 30px;
+}
+.reaction_speed_info{
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.reaction_speed_info span{
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+/* section7 OLED Finder */
+.section7{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+}
+.oled_finder_video{
+  width: 100%;
+  height: 100%;
+}
+.oled_finder_video video{
+  width: 100%;
+  height: 100%;
+}
+.oled_finder_banner {
+  position: relative;
+  width: 100%; height: 814px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.oled_finder_banner img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: scale(1);
+  transition: all 0.35s ease-in-out;
+  z-index: 20;
+}
+.oled_finder_banner .oled_finder_info {
+  position: absolute; left: 0; bottom: 0;
+  z-index: 10;
+  color: var(--white);
+  background: rgba(0,0,0,0.6);
+  width: 100%; height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.oled_finder_banner .oled_finder_info h3 {
+  position: absolute;
+  left: 40px; top: 20px;
+}
+.oled_finder_banner .oled_finder_info p {
+  position: absolute;
+  right: 40px; bottom: 20px;
+}
+.oled_finder_banner:hover .oled_finder_info {
+  opacity: 1;
+  transform: scale(1);
+}
+.oled_finder_banner:hover img {
+  transform: scale(0.6);
+}
+/* section8 Why Samsung OLED? */
+.section8{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+  text-align: center;
+}
+.section8 > h3{
+  padding-bottom: calc(var(--base-unit)*6);
+}
+/* 배너 div */
+.human_banner,.protect_banner,.future_banner{width: 100%;opacity: 0;}
+
+/* scroll에 따라 시간 순서 표현 active 적용 */
+.human_banner{transition: 1s;}
+.protect_banner{transition: 2s;}
+.future_banner{transition: 3s;}
+
+.human_banner:hover,
+.protect_banner:hover,
+.future_banner:hover{
+  opacity: 1;
+}
+
+/* 배너 이미지*/
+.section8 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.human_banner_img,
+.protect_banner_img,
+.future_banner_img{
+  width: 60%;
+  height: 520px;
+}
+/* 배너 텍스트 */
+.human_banner_info,
+.protect_banner_info,
+.future_banner_info{
+  width: 40%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.human_banner_info{
+  background: #3953A4;
+}
+.protect_banner_info{
+  background: #83C442;
+}
+.future_banner_info{
+  background: #898B8F;
+}
+
+
+
