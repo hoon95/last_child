@@ -87,6 +87,7 @@
 .co_map .map {
   /* height: 70vh; */
   overflow: hidden;
+  margin-top: calc(var(--base-unit)*1);
 }
 
 .co_map .map_area {
