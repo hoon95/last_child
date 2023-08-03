@@ -5,6 +5,8 @@
 .section1 .main_video video{
     width: 100%;
 }
+
+
 /* section2  tech 시작*/
 .section2 .tech_box .tech,
 .section2 .tech_box .tech-wrapper-slide {
@@ -64,3 +66,62 @@
 	right: 0;
 }
 /* section2  tech 종료*/
+
+
+
+
+/* section4_business_area */
+.section4 {
+    width: 100%;
+    /* height: 300vh; */
+    padding: calc(var(--base-unit)*8) 40px;
+    position: relative;
+}
+
+.section4 .content {
+    height: 100%;
+}
+
+.section4 h2 {
+    color: var(--light-blue);
+}
+
+.section4 .text_box {
+    position: sticky;
+    top: calc(var(--base-unit)*11);
+    height: 80vh;
+    width: 35%;
+}
+
+.section4 .text_box h3 {
+    margin: var(--base-unit) 0;
+}
+
+.section4 .text_box .btn {
+    margin-top: calc(var(--base-unit)*3);
+}
+
+.section4 .slide_wrap {
+    width: 60%;
+}
+
+.section4 ul {
+    /* background-color: #ddd; */
+    width: 48%;
+}
+
+.section4 ul:last-child {
+    margin-top: calc(var(--base-unit)*4);
+}
+
+.section4 li {
+    width: 100%;
+    height: 600px;
+    background-color: pink;
+}
+
+.section4 li + li {
+    margin-top: calc(var(--base-unit)*2);
+}
+
+/* //section4_business_area */

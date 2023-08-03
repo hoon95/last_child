@@ -1,0 +1,417 @@
+/* oled_section1 */
+.oled_video{
+  width: 100%;
+  height: 100%;
+  /* height: 100vh; */
+}
+.oled_video video{
+  width: 100%;
+  height: 100%;
+}
+/* oled_section2 */
+.oled_section2{
+  height: 100%;
+  padding: calc(var(--base-unit)*6) 0;
+  text-align: center;
+}
+.oled_section2  h3{
+  padding-bottom: calc(var(--base-unit)*6);
+}
+.oled_section2 p + p{
+  padding-bottom: calc(var(--base-unit)*9);
+}
+.layers{
+  margin: 0 auto;
+}
+.layers_title{
+  font-size: calc(var(--base-unit)*3);
+  font-weight: bold;
+  padding-bottom: var(--base-unit);
+}
+.layers_txt{
+  padding-bottom: calc(var(--base-unit)*4);
+}
+
+.lcd_layer{
+  width: 520px;
+  height: 835px;
+  position: relative;
+}
+.lcd_layer_txt {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  transition: 0.8s;
+}
+.oled_layer{
+  width: 520px;
+  height: 835px;
+  position: relative;
+}
+.oled_layer_txt {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  transition: 0.8s;
+}
+
+/* lcd_layer / oled is-unfold 효과 */
+/* Javascript 식 잘 생각 */
+/* lcd img 순서*/
+.lcd_layer .lcd_layer_item.nth_1 {
+  position: absolute;
+  left:-60px
+}
+.lcd_layer .lcd_layer_item.nth_2 {
+  position: absolute;
+  left:0px;
+}
+.lcd_layer .lcd_layer_item.nth_3 {
+  position: absolute;
+  left:60px;
+}
+.lcd_layer .lcd_layer_item.nth_4 {
+  position: absolute;
+  left:120px;
+}
+.lcd_layer .lcd_layer_item.nth_5 {
+  position: absolute;
+  left:180px;
+}
+.lcd_layer .lcd_layer_item.nth_6 {
+  position: absolute;
+  left:240px;
+}
+/* oled img 순서*/
+.oled_layer .oled_layer_item.nth_1 {
+  position: absolute;
+  left:0px
+}
+.oled_layer .oled_layer_item.nth_2 {
+  position: absolute;
+  left:60px
+}
+.oled_layer .oled_layer_item.nth_3 {
+  position: absolute;
+  left:120px
+}
+.oled_layer .oled_layer_item.nth_4 {
+  position: absolute;
+  left:180px
+}
+/* wrap_name */
+.lcd_layer .layer_name_wrap{
+  width: 520px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  text-align: left;
+}
+.oled_layer .layer_name_wrap{
+  width: 360px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+}
+.lcd_layer .layer_name_list{
+  display: flex;
+}
+.oled_layer .layer_name_list{
+  display: flex;
+  flex-direction: column;
+}
+.layer_name{
+  padding-left:10px;
+  color: var(--gray);
+}
+/* hover시 active 고려 */
+.layer_name.active{
+  color: var(--white);
+}
+.layer_name:hover{
+  color: var(--white);
+}
+/* oled_section3 압도적인 화질 */
+.oled_section3{
+  height: 100%;
+  padding: calc(var(--base-unit)*6) 0;
+  text-align: center;
+}
+.oled_section3 h3{
+  padding-bottom: calc(var(--base-unit)*4);
+}
+.lcd_oled_img{
+  position: relative;
+  padding: 0;
+}
+/* lce_oled 파트 왼쪽 img */
+.lcd_oled_img .lcd_oled_left{
+  width: 720px;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* lce_oled 파트 오른쪽 img */
+.lcd_oled_img .lcd_oled_right{
+  width: 720px;
+  height: 700px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.lcd_oled_img img{
+  opacity: 0.5;
+  transition: 0.3s;
+}
+/* scroll시 opacity 변경*/
+.lcd_oled_img:hover img{
+  opacity: 1;
+}
+/* lcd_oled_img 안 왼쪽 텍스트 */
+.lcd_oled_left .lcd_left_content{
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
+  text-align: right;
+  position: absolute;
+  right: 140px;
+  bottom: 70px;
+}
+.lcd_oled_left .lcd_left_content p:first-child{
+  font-size: 14px;
+}
+.lcd_oled_left .lcd_left_content p:last-child{
+  font-size: 32px;
+  line-height: 34px;
+}
+/* lcd_oled_img 안 오른쪽 텍스트 */
+.lcd_oled_right .lcd_right_content{
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
+  text-align: left;
+  position: absolute;
+  left: 150px;
+  bottom: 70px;
+}
+.lcd_oled_right .lcd_right_content p:first-child{
+  font-size: 16px;
+}
+.lcd_oled_right .lcd_right_content p:last-child{
+  font-size: 32px;
+  line-height: 40px;
+}
+.lcd_oled_info{
+  padding-top: calc(var(--base-unit)*6);
+}
+.small_lcd_oled_info{
+  color: var(--gray);
+}
+/* oled_section4 명암비 */
+.oled_section4{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+}
+.contrast_ratio{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.contrast_ratio img{
+  height: 700px;
+  object-fit: cover;
+}
+.contrast_ratio_info{
+  padding-left: 50px;
+  padding-right: 140px;
+  width: 100%;
+  height: 700px;
+  flex-direction: column;
+  justify-content: center;
+}
+/* oled_section5 다이아몬드 픽셀 */
+.oled_section5{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+}
+.diamond_fixel{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.diamond_fixel_info{
+  padding-left: 140px;
+  padding-right: 55px;
+  width: 100%;
+  height: 700px;
+  flex-direction: column;
+  justify-content: center;
+}
+.diamond_fixel img{
+  height: 700px;
+  object-fit: cover;
+}
+
+/* oled_section 6 반응속도 비교 */
+.oled_section6{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+  text-align: center;
+}
+.oled_section6 h3{
+  padding-bottom: calc(var(--base-unit)*6);
+}
+.reaction_speed{
+  flex-direction: column;
+}
+.reaction_speed_img{
+  width: 800px;
+  margin: 0 auto;
+  transition: 2s;
+  opacity: 0.7;
+}
+/* scroll 이벤트 */
+.reaction_speed_img:hover{
+  width: 946px;
+  margin: 0 auto;
+  transform: translateY(-15%);
+  /* transform: scale(1.2); */
+  opacity: 1;
+}
+/* 스크롤해서 커질때 .reaction_speed_img:hover span{
+  color: var(--black);
+} */
+
+.reaction_speed_img img{
+  width: 100%;
+  border:4px solid var(--white);
+  border-radius: 30px;
+}
+.reaction_speed_info{
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.reaction_speed_info span{
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+/* oled_section7 OLED Finder */
+.oled_section7{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+}
+.oled_finder_video{
+  width: 100%;
+  height: 100%;
+}
+.oled_finder_video video{
+  width: 100%;
+  height: 100%;
+}
+.oled_finder_banner {
+  position: relative;
+  width: 100%; height: 814px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.oled_finder_banner img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: scale(1);
+  transition: all 0.35s ease-in-out;
+  z-index: 20;
+}
+.oled_finder_banner .oled_finder_info {
+  position: absolute; left: 0; bottom: 0;
+  z-index: 10;
+  color: var(--white);
+  background: rgba(0,0,0,0.6);
+  width: 100%; height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.oled_finder_banner .oled_finder_info h3 {
+  position: absolute;
+  left: 40px; top: 20px;
+}
+.oled_finder_banner .oled_finder_info p {
+  position: absolute;
+  right: 40px; bottom: 20px;
+}
+.oled_finder_banner:hover .oled_finder_info {
+  opacity: 1;
+  transform: scale(1);
+}
+.oled_finder_banner:hover img {
+  transform: scale(0.6);
+}
+/* oled_section8 Why Samsung OLED? */
+.oled_section8{
+  padding: calc(var(--base-unit)*7) 0;
+  width: 100%;
+  text-align: center;
+}
+.oled_section8 > h3{
+  padding-bottom: calc(var(--base-unit)*6);
+}
+/* 배너 div */
+.human_banner,.protect_banner,.future_banner{width: 100%;opacity: 0;}
+
+/* scroll에 따라 시간 순서 표현 active 적용 */
+.human_banner{transition: 1s;}
+.protect_banner{transition: 2s;}
+.future_banner{transition: 3s;}
+
+.human_banner:hover,
+.protect_banner:hover,
+.future_banner:hover{
+  opacity: 1;
+}
+
+/* 배너 이미지*/
+.oled_section8 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.human_banner_img,
+.protect_banner_img,
+.future_banner_img{
+  width: 60%;
+  height: 520px;
+}
+/* 배너 텍스트 */
+.human_banner_info,
+.protect_banner_info,
+.future_banner_info{
+  width: 40%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.human_banner_info{
+  background: #3953A4;
+}
+.protect_banner_info{
+  background: #83C442;
+}
+.future_banner_info{
+  background: #898B8F;
+}
+
+
+
