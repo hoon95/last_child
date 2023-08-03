@@ -57,7 +57,7 @@
 
 /* co_image */
 .co_image {
-  height: calc(100vh + 4000px);
+  height: calc(100vh + 3000px);
 }
 
 .co_image .content {
@@ -119,6 +119,7 @@
 
 
 /* business_area */
+/* top: calc(var(--base-unit)*11) */
 .business_area {
   padding: calc(var(--base-unit)*14) 0 calc(var(--base-unit)*8);
 }
@@ -165,6 +166,8 @@
   display: grid;
   grid-template-columns: 460fr 20fr 240fr 340fr 20fr 580fr 20fr 580fr 20fr 460fr;
   grid-template-rows: auto 16.15vh 20px 11.3vh 3.8vh 20px 32.3vh;
+  position: sticky;
+  top: calc(var(--base-unit)*8);
 }
 
 .business_area .slide .oled {
