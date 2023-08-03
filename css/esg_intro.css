@@ -46,6 +46,18 @@
 .sustain .s3_content{
     width: max-content;
 }
+/* text scroll */
+.blank{
+    height: 600vh;
+}
+.target{
+    position: sticky;
+    height: 100vh;
+    top: 0;
+  }
+  .target span.active{
+    color:white;
+  }
     
 
 /* 2. Sustainable Value */
