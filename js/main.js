@@ -18,19 +18,29 @@ let techwrapperSwiper = new Swiper(".tech2-slide", {
   });
   
   let techMenu = $(".section2 .tec_tab_list > a"); //탭메뉴
+  let techBar = $(".section2 .tech_bar");
+ 
   techMenu.on("click", function(e) {
     e.preventDefault();
     let techBarTop = $(this).position().top;
     //let teBox = techContent.index();
-    techwrapperSwiper.slideTo($(this).index());
-    let techBar = $(".section2 .tech_bar");
+    let activeIndex = $(this).index();
+
+    techwrapperSwiper.slideTo(activeIndex);
+
     //  let techTab = $(".section2 .tec_tab");
   
+    $(this).addClass('active').siblings().removeClass('active');
+
+    // if(techwrapp.hasClass("swiper-slide-active")) {
+    //     techBar.css({ top: techBarTop });
+    // }
+
     techBar.css({ top: techBarTop });
-    //console.log(techOST);
-  
-    $(this).addClass('active').siblings().removeClass('active')
-  
     //techwrapperSwiper.slideTo(idx); 
+    //swiper-slide-active
   
   });
+
+  
+
