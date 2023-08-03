@@ -1,0 +1,264 @@
+[{
+  "country":[
+    {
+      "countryName": "한국",
+      "city":[
+        {
+          "cityName":"기흥",
+          "store":[
+            {
+              "storeName":"기흥캠퍼스(본사)",
+              "address":"경기도 용인시 기흥구 삼성로 1",
+              "phone":"+82 31 5181 1114",
+              "type":"국내외 사업장"
+            },
+            {
+              "storeName":"기흥연구소",
+              "address":"경기도 용인시 기흥구 삼성2로 95",
+              "phone":"+82 31 5181 1114",
+              "type":"연구소"
+            }
+          ]
+        },
+        {
+          "cityName":"아산",
+          "store":[
+            {
+              "storeName":"아산1캠퍼스",
+              "address":"충청남도 아산시 탕정면 삼성로 181",
+              "phone":"+82 41 535 1114",
+              "type":"국내외 사업장"
+            },
+            {
+              "storeName":"아산2캠퍼스",
+              "address":"충청남도 아산시 탕정면 삼성로 181",
+              "phone":"+82 41 623 1114",
+              "type":"국내외 사업장"
+            }
+          ]
+        },
+        {
+          "cityName":"천안",
+          "store":[
+            {
+              "storeName":"천안캠퍼스",
+              "address":"충청남도 천안시 서북구 번영로 465",
+              "phone":"+82 41 599 1114",
+              "type":"국내외 사업장"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "일본",
+      "city":[
+        {
+          "cityName":"도쿄",
+          "store":[
+            {
+              "storeName":"도쿄",
+              "address":"108－8240 Tokyo Minato-ku，Kounan 2-16-4，Shinagawa Grand Central Tower",
+              "phone":"+81 3 6369 6000",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        },
+        {
+          "cityName":"요코하마",
+          "store":[
+            {
+              "storeName":"SDJL(Yokohama R&D Japan)",
+              "address":"230-0027 Japan Yokohama Tsurumi-Ku,Sugasawa-Cho, 2-7",
+              "phone":"+81 45 510 4083",
+              "type":"연구소"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "중국",
+      "city":[
+        {
+          "cityName":"동관",
+          "store":[
+            {
+              "storeName":"Samsung Display Dongguan (SDD)",
+              "address":"High Tech Industrial Zone, Houjie, Dongguan, Guangdong, China",
+              "phone":"+86 769 8290 1608",
+              "type":"국내외 사업장"
+            }
+          ]
+        },
+        {
+          "cityName":"충칭",
+          "store":[
+            {
+              "storeName":"충칭",
+              "address":"400023 Room 808,Chongqing IFS Tower 1,No.1 Qingyun Road",
+              "phone":"+86 23 6711 9168",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        },
+        {
+          "cityName":"북경",
+          "store":[
+            {
+              "storeName":"북경",
+              "address":"100190 12F, Tower B, Raycom InfoTech Park , No.2 Kexueyuan South Rd, Haidian District, Beijing, China",
+              "phone":"+86 10 6566 8100 Ext(6508)",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        },
+        {
+          "cityName":"천진",
+          "store":[
+            {
+              "storeName":"Samsung Display Tianjin(SDT)",
+              "address":"No. 25, MipFouch Road, Xiqing District, Tianjin, China",
+              "phone":"+86 22 2380 8100",
+              "type":"국내외 사업장"
+            }
+          ]
+        },
+        {
+          "cityName":"상해",
+          "store":[
+            {
+              "storeName":"상해",
+              "address":"200126 57F, New Bund Center, No.555 Haiyang Xi Road, Pudong District, Shanghai",
+              "phone":"+86 21 5258 2211",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        },
+        {
+          "cityName":"심천",
+          "store":[
+            {
+              "storeName":"심천",
+              "address":"25F, SCC Tower A, No.88, Haide 1st Road, Nanshan District, Shenzhen, P.R. China 518064",
+              "phone":"+86 755 8608 5601",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "베트남",
+      "city":[
+        {
+          "cityName":"박닌",
+          "store":[
+            {
+              "storeName":"Samsung Display Vietnam (SDV)",
+              "address":"Yen Phong Industrial Zone, Yen Trung Communes, Yen Phong District, Bac Ninh Province, Vietnam",
+              "phone":"+84 24 1390 5021",
+              "type":"국내외 사업장"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "타이페이",
+      "city":[
+        {
+          "cityName":"타이페이",
+          "store":[
+            {
+              "storeName":"타이페이",
+              "address":"No. 399, Rui Guang Rd., Nei Hu Dist. 114 Taipei",
+              "phone":"+886 2 2656 8686",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "인도",
+      "city":[
+        {
+          "cityName":"노이다",
+          "store":[
+            {
+              "storeName":"Samsung Display Noida (SDN)",
+              "address":"B-1D, Sector-81, Phase II, Noida PIN No. 201305, (U.P) India",
+              "phone":"+91 120 6275500",
+              "type":"국내외 사업장"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "미국",
+      "city":[
+        {
+          "cityName":"산호세",
+          "store":[
+            {
+              "storeName":"SDAL(R&D US)",
+              "address":"95134 CA San Jose 3655 North First Street",
+              "phone":"+1 408 544 4000",
+              "type":"연구소"
+            },
+            {
+              "storeName":"산호세",
+              "address":"95134 CA San Jose 3655 North First Street",
+              "phone":"+1 408 544 4000",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        },
+        {
+          "cityName":"샌디에이고",
+          "store":[
+            {
+              "storeName":"샌디에이고",
+              "address":"91911 CA Chula Vista 1261 3rd Ave. Suite E",
+              "phone":"+1 408 544 4000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "독일",
+      "city":[
+        {
+          "cityName":"뮌헨",
+          "store":[
+            {
+              "storeName":"뮌헨",
+              "address":"81677 Munich Samsung Semiconductor GmbH, Einsteinstrasse 174",
+              "phone":"+49 6196 66 3300",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "countryName": "싱가폴",
+      "city":[
+        {
+          "cityName":"싱가폴",
+          "store":[
+            {
+              "storeName":"싱가폴",
+              "address":"049483 Singapore 3 Church Street #26-01/02 Samsung Hub",
+              "phone":"+65 6933 2703",
+              "type":"글로벌 네트워크"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]
