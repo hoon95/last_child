@@ -71,6 +71,10 @@
 
 
 /* co_map */
+.co_map {
+  padding-bottom: calc(var(--base-unit)*5);
+}
+
 .co_map h2 {
   text-align: center;
   margin-top: calc(var(--base-unit)*8);
@@ -85,7 +89,15 @@
   overflow: hidden;
 }
 
-.co_map .map object {
-  transform: scale(0.95);
+.co_map .map_area {
+  position: relative;
+}
+
+.co_map .map_area > svg:not(:nth-child(1)) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 /* //co_map */
