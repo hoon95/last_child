@@ -42,6 +42,10 @@ a {
   color: inherit;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /* font */
 .h1 {
   font-size: var(--h1-size);
