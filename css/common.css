@@ -102,12 +102,18 @@ body {
   font-family: 'Pretendard-Regular';
   color: var(--black);
 }
-
+body {
+  background: var(--black);
+  color: var(--white);
+}
 body.black {
   background: var(--black);
   color: var(--white);
 }
-
+a {
+  color: var(--black);
+  text-decoration: none;
+}
 
 /* button */
 .btn {
@@ -208,7 +214,6 @@ body.black {
   bottom: 50px;
 }
 
-
 /* slide button */
 .round_btn{
   display: flex;
@@ -224,6 +229,7 @@ body.black {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+  padding: 0;
 }
 .slide_btn:hover{
   background-color: var(--blue);
@@ -509,4 +515,3 @@ footer .foot_right .foot_youtube:hover {
 footer .foot_right .foot_naverpost:hover {
  background-position: -35px -70px;
 }
-

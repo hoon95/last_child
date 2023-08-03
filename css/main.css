@@ -7,6 +7,66 @@
 }
 
 
+/* section2  tech 시작*/
+.section2 .tech_box .tech,
+.section2 .tech_box .tech-wrapper-slide {
+	padding: calc(var(--base-unit)*5) 0;
+	box-sizing: border-box;
+}
+.section2 .tech {
+	display: inline-block;
+	width: 730px;
+	height: 100vh;
+	background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
+}
+
+.section2 .tech h2 {
+	color: var(--light-blue);
+}
+.section2 .tech > p {
+	color: var(--white);
+	margin-bottom: 68px;
+}
+.section2 .tec_tab {
+	position: relative;
+}
+
+.section2 .tec_tab p.active {
+	color: #000;
+}
+.section2 .tec_tab p a {
+	display: inline-block;
+	padding-left: 32px;
+	border-left: 4px solid rgba(255,255,255,0.3);
+	color: var(--white);
+	text-transform: uppercase;	
+	margin-left: 50px;
+}
+.section2 .tech_2 {
+	position: relative;
+}
+
+.section2 .tech_box .swiper {
+	position: relative;
+	max-width: 1023px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section2 .tech_2 button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+.section2 .tech_2 button.prev {
+	left: 0;
+}
+.section2 .tech_2 button.next {
+	right: 0;
+}
+/* section2  tech 종료*/
+
 
 
 
