@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samsung Display Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css" integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.css" integrity="sha512-1mKT2l92H6btoIkk6fIotzeArJ3G59u/xMsDyBb/XROahx4zpXeXucqzVYssrrK0AHSNjSfe4QVE/loSr85jfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-  <body class="black">
+<!-- <body class="black"> -->
+<body class="black">
   <header class="menubar">
     <div>
       <h1>
-        <a href="#">
+        <a href="index.html">
           <img src="img/logo.png" alt="Logo" id="logo">
         </a>
         <a href="#" class="hamburger-button">
@@ -37,8 +40,8 @@
           <li>
             <a href="">Technology</a>
             <ul class="submenu_overlay">
-              <li><a href="">OLED</a></li>
-              <li><a href="">QD-OLED</a></li>
+              <li><a href="OLED.html">OLED</a></li>
+              <li><a href="qd.html">QD-OLED</a></li>
             </ul>
           </li>
           <li>
@@ -65,23 +68,142 @@
   </header>
   <section class="section1">
     <div class="main_video">
-      <video src="video/2023_samsung_display_foldable(720p).mp4" class="object-fit-contain" autoplay muted loop></video>
-      <!-- <video src="video/2023_samsung_display_foldable(720p).mp4" muted autoplay></video> -->
+      <video src="https://res.cloudinary.com/dtbswuma8/video/upload/v1691066867/main_samsung_display_foldable_2023_rs16sh.mp4" class="object-fit-contain" autoplay muted loop></video>
     </div>
   </section>
-
-  <section class="section2">
-  </section>
+  <section class="section2" id="tech_tab">
+    <div class="tech_box  d-flex justify-content-between align-items-start"> <!--  -->
+      <div class="tech">
+        <h2 class="h4">TECHNOLOGY</h2>
+        <p class="h4_2">혁신적인 삼성디스플레이의<br>기술을 발전시키고<br>상상 속에만 존재하던 디스플레이를<br>현실로 만들어 가고 있습니다</p>
+        <div class="tec_tab">
+          <p class="h4"><a href="">tv</a></p>
+          <p class="h4"><a href="">it</a></p>
+          <p class="h4"><a href="">기술</a></p>
+          <p class="h4"><a href="">award</a></p>
+          <p class="h4"><a href="">전시</a></p>
+          <div class="tech_bar"></div>
+        </div>
+      </div>
+      <div class="tech_2">
+        <div class="swiper tech-wrapper-slide">
+          <div class="swiper-wrapper tech_tab_content">
+            <div class="swiper-slide tech_tabs_tv">
+              <h3 class="h3">tv display</h3>
+              <p class="h4">더 얇고 선명하며, 완전히 새로운 Display 제품들로 최적의 시청환경을 제공합니다.</p>
+              <img src="img/tech/tech_tv.png" alt="tv display">
+            </div>
+            <div class="swiper-slide tech_tabs_it">
+              <h3 class="h3">it display</h3>
+              <p class="h4">사용자 편의성을 극대화시킬 수 있는 다양한 IT 제품들을 선보이고 있습니다.</p>
+              <img src="img/tech/tech_it.png" alt="tv display">
+            </div>
+            <div class="swiper-slide tech_tabs_tec">
+              <h3 class="h3">future display</h3>
+              <p class="h4">폴더블 스마트폰 및 디스플레이 혁신으로 한층 더 진화된 기술력과 디자인을 사용할 수 있습니다.</p>
+              <img src="img/tech/tech_tec.jpg" alt="it display">
+            </div>
+            <div class="swiper-slide tech_tabs_award">
+              <h3 class="h3">samsung award</h3>
+              <p class="h4">삼성 QD-OLED, 디스플레이 최초로 팬톤 인증,
+                최고 수준의 컬러 자신감과 실제 사물을 보는 것과 같은 경험을 제공할 수 있습니다.
+              </p>
+              <img src="img/tech/tech_award.png" alt="samsung award">
+            </div>
+            <div class="swiper-slide tech_tabs_display">
+              <h3 class="h3">samsung SID</h3>
+              <p class="h4">2023 세계정보디스플레이학회(Society for Information Display),
+                SID에서 디스플레이 산업의 패러다임이 또 한번의 진화를 만날 수 있습니다.
+              </p>
+              <img src="img/tech/tech_display.png" alt="tv display">
+            </div>
+          </div>
+        </div>
+          <button class="slide_btn prev material-symbols-outlined"><span>keyboard_arrow_left</span></button>
+        <button class="slide_btn next material-symbols-outlined"><span>keyboard_arrow_right</span></button>
+      </div>
+    </div>
+  </section> 
 
   <section class="section3">
   </section>
 
-  <section class="section4">
+  <section class="section4 business_area">
+    <div class="content d-flex justify-content-between">
+      <div class="text_box">
+        <h2 class="h4_2">사업영역</h2>
+        <h3 class="h3_2">
+          화면의 혁신을 선도하는<br>
+          삼성디스플레이
+        </h3>
+        <p>미래를 밝히는 기술의 아름다운 만남, 삼성디스플레이는 자연을 그대로 담아내는 뛰어난 기술로 디스플레이를 제공하고 있습니다.</p>
+        <a href="co_info.html" class="btn black_btn">자세히 보기</a>
+      </div>
+      <div class="slide_wrap d-flex justify-content-between">
+        <ul>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+        </ul>
+        <ul>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+        </ul>
+      </div>
+    </div>
   </section>
+
+  <!-- go_top_btn -->
+  <div class="go_top">
+    <div class="inner_top">
+      <span class="go_top_btn material-symbols-outlined">
+          keyboard_arrow_up
+        </span>
+    </div>
+  </div>
   
-  <footer></footer>
+  <footer>
+    <div class="foot_top d-flex justify-content-between align-items-start">
+      <div class="foot_left">
+        <p><img src="img/footer/foot_logo.png" alt="삼성디스플레이 로고"></p> 
+        <div class="foot_list d-flex flex-column">
+          <ul class="d-flex">
+            <li><a href="">사이트맵</a></li>
+            <li><a href="">윤리경영</a></li>
+            <li><a href="">사외내방신청</a></li>
+            <li><a href="">협력회사 Voice</a></li>
+            <li><a href="">신규거래제안(오픈소싱)</a></li>
+          </ul>
+          <ul class="d-flex">
+            <li><a href="">B2B대금결제안내</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">특허/상표</a></li>
+            <li><a href="">보안신고센터</a></li>
+            <li><a href="">업데이트 이력</a></li>
+            <li><a href="">공정위 4대 실천 사항</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot_right d-flex  justify-content-between flex-column">
+        <ul class="d-flex">
+          <li><a href=""><i class="foot_facebook">facebook</i></a></li>
+          <li><a href=""><i class="foot_youtube">youtube</i></a></li>
+          <li><a href=""><i class="foot_naverpost">naverpost</i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot_bot d-flex justify-content-between align-items-end">
+      <span>Copyright © SAMSUNG DISPLAY All rights reserved. 대표번호 : 031-5181-1114</span>
+      <span><img src="img/footer/foot_websiteicon.png" alt="웹접근성 아이콘"></span>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

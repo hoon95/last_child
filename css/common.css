@@ -41,6 +41,10 @@ a{
   color: inherit;
 }
 
+img, video {
+  vertical-align: bottom;
+}
+
 /* font */
 .h1 {
   font-size: var(--h1-size);
@@ -80,7 +84,7 @@ a{
 .h4_2 {
   font-size: var(--h4-size);
   line-height: calc(var(--base-unit)*3);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -102,7 +106,6 @@ body.black {
   background: var(--black);
   color: var(--white);
 }
-
 
 /* button */
 .btn {
@@ -203,7 +206,6 @@ body.black {
   bottom: 50px;
 }
 
-
 /* slide button */
 .round_btn{
   display: flex;
@@ -219,6 +221,7 @@ body.black {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+  padding: 0;
 }
 .slide_btn:hover{
   background-color: var(--blue);
@@ -283,25 +286,27 @@ body.black {
   }
 }
 
-/* header */
-header{
+/* header 최종*/
+.menubar{
   padding:calc(var(--base-unit)*2);
   padding-left: 40px;
   padding-right: 40px;
-  height: 34px;
-}
-header h1{
-  display: block;
-}
-header nav *{
-  text-align: center;
-}
-.menubar{
   position: sticky;
   top: 0;
   z-index: 10000;
   background: transparent;
-  margin-top: -102px;
+  margin-top: -114px;
+}
+header h1{
+  display: block;
+}
+header h1 #logo{
+  width: 330px;
+  height: 36px;
+  z-index: 1000;
+}
+header nav *{
+  text-align: center;
 }
 /* esg파트 - margin-top:0 */
 
@@ -342,11 +347,6 @@ header .language a{
 header .language span:after{
   content: '';
   border: 2px solid var(--dark-gray);
-}
-header h1 #logo{
-  width: 330px;
-  height: 36px;
-  z-index: 1000;
 }
 /* Menu overlay*/
 
@@ -443,7 +443,8 @@ header .menu_overlay li{
 footer {
 	border-top: 1px solid var(--light-gray);
 	padding: 34px 60px;
-  background: var(--white);
+ 	background: var(--white);
+	color: var(--black);
 }
 footer span {
   color: var(--black);
@@ -496,11 +497,11 @@ footer .foot_right .foot_naverpost {
 }
 
 footer .foot_right .foot_facebook:hover {
- background-position: -35px 0px;
+  background-position: -35px 0px;
 }
 footer .foot_right .foot_youtube:hover {
- background-position: -35px -35px;
+  background-position: -35px -35px;
 }
 footer .foot_right .foot_naverpost:hover {
- background-position: -35px -70px;
+  background-position: -35px -70px;
 }
