@@ -1,20 +1,13 @@
-$('article').bxSlider({
-    pager: false,
-    auto: true,
-    controls: false,
+let ctrSlide = $('article').bxSlider({
     minSlides: 2,
-    maxSlides: 2,
-    moveSlides: 1,
-    slideMargin: 100,
-    slideWidth: 1280,
-    pause: 4000,
-    speed: 4000
-});
+    maxSlides: 4,
+    slideWidth: 1000,
+    ticker: true,
+    tickerHover: true,
+    speed: 50000
+  });
 
-$('.ctr_sub').bxSlider({
-    pager: false,
-    controls: false,
-    mode: 'vertical',
-    randomStart: true,
-    infiniteLoop: false
-});
+
+AOS.init();
+
+pushInStart();
