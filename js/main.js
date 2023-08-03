@@ -3,7 +3,6 @@ let techwrapperSwiper = new Swiper(".tech2-slide", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
-    slidesPerView: 1,
     // If we need pagination
     pagination: {
         el: ".swiper-pagination",
