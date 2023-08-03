@@ -42,6 +42,10 @@ a {
   color: inherit;
 }
 
+img, video {
+  vertical-align: bottom;
+}
+
 /* font */
 .h1 {
   font-size: var(--h1-size);
@@ -103,7 +107,6 @@ body.black {
   background: var(--black);
   color: var(--white);
 }
-
 
 /* button */
 .btn {
@@ -204,7 +207,6 @@ body.black {
   bottom: 50px;
 }
 
-
 /* slide button */
 .round_btn{
   display: flex;
@@ -220,6 +222,7 @@ body.black {
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s;
+  padding: 0;
 }
 .slide_btn:hover{
   background-color: var(--blue);
@@ -497,12 +500,11 @@ footer .foot_right .foot_naverpost {
 }
 
 footer .foot_right .foot_facebook:hover {
- background-position: -35px 0px;
+  background-position: -35px 0px;
 }
 footer .foot_right .foot_youtube:hover {
- background-position: -35px -35px;
+  background-position: -35px -35px;
 }
 footer .foot_right .foot_naverpost:hover {
- background-position: -35px -70px;
+  background-position: -35px -70px;
 }
-

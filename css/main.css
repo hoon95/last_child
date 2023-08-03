@@ -1,0 +1,127 @@
+/* section1_video */
+.section1 .main_video{
+    width: 100%;
+}
+.section1 .main_video video{
+    width: 100%;
+}
+
+
+/* section2  tech 시작*/
+.section2 .tech_box .tech,
+.section2 .tech_box .tech-wrapper-slide {
+	padding: calc(var(--base-unit)*5) 0;
+	box-sizing: border-box;
+}
+.section2 .tech {
+	display: inline-block;
+	width: 730px;
+	height: 100vh;
+	background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
+}
+
+.section2 .tech h2 {
+	color: var(--light-blue);
+}
+.section2 .tech > p {
+	color: var(--white);
+	margin-bottom: 68px;
+}
+.section2 .tec_tab {
+	position: relative;
+}
+
+.section2 .tec_tab p.active {
+	color: #000;
+}
+.section2 .tec_tab p a {
+	display: inline-block;
+	padding-left: 32px;
+	border-left: 4px solid rgba(255,255,255,0.3);
+	color: var(--white);
+	text-transform: uppercase;	
+	margin-left: 50px;
+}
+.section2 .tech_2 {
+	position: relative;
+}
+
+.section2 .tech_box .swiper {
+	position: relative;
+	max-width: 1023px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section2 .tech_2 button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+.section2 .tech_2 button.prev {
+	left: 0;
+}
+.section2 .tech_2 button.next {
+	right: 0;
+}
+/* section2  tech 종료*/
+
+
+
+
+/* section4_business_area */
+.section4 {
+    width: 100%;
+    /* height: 300vh; */
+    padding: calc(var(--base-unit)*8) 40px;
+    position: relative;
+}
+
+.section4 .content {
+    height: 100%;
+}
+
+.section4 h2 {
+    color: var(--light-blue);
+}
+
+.section4 .text_box {
+    position: sticky;
+    top: calc(var(--base-unit)*11);
+    height: 80vh;
+    width: 35%;
+}
+
+.section4 .text_box h3 {
+    margin: var(--base-unit) 0;
+}
+
+.section4 .text_box .btn {
+    margin-top: calc(var(--base-unit)*3);
+}
+
+.section4 .slide_wrap {
+    width: 60%;
+}
+
+.section4 ul {
+    /* background-color: #ddd; */
+    width: 48%;
+}
+
+.section4 ul:last-child {
+    margin-top: calc(var(--base-unit)*4);
+}
+
+.section4 li {
+    width: 100%;
+    height: 600px;
+    background-color: pink;
+}
+
+.section4 li + li {
+    margin-top: calc(var(--base-unit)*2);
+}
+
+/* //section4_business_area */

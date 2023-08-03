@@ -1,0 +1,37 @@
+.container{
+    padding: calc(var(--base-unit) * 3) 0 calc(var(--base-unit) * 9) 0;
+    box-sizing: border-box;
+}
+/* 1. 사회공헌 개요 */
+.ctr_main{height: 100vh;}
+.ctr_main hgroup{
+    margin-bottom: calc(var(--base-unit) * 3);
+    box-sizing: content-box;
+}
+.ctr_main article > div{
+    text-align: center;
+}
+.ctr_main_title{
+    margin-top: var(--base-unit);
+}
+.ctr_main_content{
+    padding: 0 100px;
+}
+.ctr_main article{
+    gap: 30px;
+}
+
+
+/* 2. 사회공헌 목록 */
+/* .ctr_sub{
+    width: 80%;
+    margin: 0 auto;
+} */
+.ctr_sub_page{
+    width: 80%;
+    margin: 0 auto;
+}
+.ctr_sub_page img{
+    width: 50%;
+}
+
