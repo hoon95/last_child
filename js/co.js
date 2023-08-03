@@ -12,8 +12,6 @@ $(window).scroll(function(){
   
   if(imageWidth == 1){
     imageWidth = 1;
-  } else if(imageWidth == 0.5){
-    imageWidth = 0.5;
   } else {
     imageWidth += mathScroll;
   }

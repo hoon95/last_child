@@ -7,7 +7,7 @@
 
 /* ceo_greeting */
 .ceo_greeting {
-  padding: calc(var(--base-unit)*4) 0 calc(var(--base-unit)*10);
+  padding: calc(var(--base-unit)*14) 0 calc(var(--base-unit)*10);
 }
 
 .ceo_greeting h2 {
@@ -57,7 +57,7 @@
 
 /* co_image */
 .co_image {
-  height: calc(100vh + 1420px);
+  height: calc(100vh + 3500px);
 }
 
 .co_image .content {
