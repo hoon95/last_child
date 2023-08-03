@@ -99,7 +99,7 @@
   object-fit: cover;
 }
 
-/* co_culture_section5 active-slide */
+/* co_culture_section5  */
 
 .co_culture_section5{
   padding: calc(var(--base-unit)*6) 0;
@@ -112,22 +112,30 @@
 }
 /* active-slide */
 .swiper {
-  width: 1440px;
-  height: 525px;
+  width: 100%;
+  height: 100%;
+}
 
   /* 반응형 
   max-width: 600px;
   margin:2rem auto; */
-}
+
 .swiper-wrapper{
   width: 100%;
   margin:0 auto;
   display: flex;
 }
+.swiper-slide{
+  display: flex;
+}
+.swiper-slide .welfare_info{
+  width: 30%;
+}
 .swiper-slide img{
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4px;
   object-fit: cover;
 }
 .active-slide h4{
@@ -141,7 +149,8 @@
   /* opacity: 0; */
   transition: 0.3s 0.5s ease-out;
 }
-/* section6 */
+
+/* section6 video */
 
 .co_culture_section6{
   padding-top: calc(var(--base-unit)*14);
@@ -160,7 +169,6 @@
   color: var(--white);
 }
 
-/* section6 video */
 .co_culture_ending_video{
   width: 60%;
   display: flex;
