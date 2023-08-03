@@ -80,6 +80,10 @@
   height: 4386px;
 }
 
+.co_his_content .container > svg {
+  margin-top: 28px;
+}
+
 .co_his_content .line {
   margin-top: 30px;
   width: 100%;
