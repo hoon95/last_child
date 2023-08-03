@@ -313,6 +313,7 @@
   width: 100%;
   height: 100%;
 }
+
 .oled_finder_video video{
   width: 100%;
   height: 100%;
@@ -322,7 +323,22 @@
   position: relative;
   width: 100%; height: 814px;
   overflow: hidden;
-  cursor: pointer;
+}
+.oled_finder_banner .oled_finder_move_btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:30;
+  border: 1px solid var(--white);
+  padding: 10px 20px;
+  border-radius: 20px;
+  
+}
+.oled_finder_banner .oled_finder_move_btn:hover{
+  font-weight: bold;
+  background: var(--blue);
+  border: 3px solid var(--white);
 }
 .oled_finder_banner img {
   width: 100%;
@@ -331,6 +347,7 @@
   transform: scale(1);
   transition: all 0.35s ease-in-out;
   z-index: 20;
+  object-fit: cover;
 }
 .oled_finder_banner .oled_finder_info {
   position: absolute; left: 0; bottom: 0;
