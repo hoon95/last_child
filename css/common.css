@@ -42,7 +42,7 @@ a {
   color: inherit;
 }
 
-img {
+img, video {
   vertical-align: bottom;
 }
 
@@ -102,17 +102,10 @@ body {
   font-family: 'Pretendard-Regular';
   color: var(--black);
 }
-body {
-  background: var(--black);
-  color: var(--white);
-}
+
 body.black {
   background: var(--black);
   color: var(--white);
-}
-a {
-  color: var(--black);
-  text-decoration: none;
 }
 
 /* button */
@@ -507,11 +500,11 @@ footer .foot_right .foot_naverpost {
 }
 
 footer .foot_right .foot_facebook:hover {
- background-position: -35px 0px;
+  background-position: -35px 0px;
 }
 footer .foot_right .foot_youtube:hover {
- background-position: -35px -35px;
+  background-position: -35px -35px;
 }
 footer .foot_right .foot_naverpost:hover {
- background-position: -35px -70px;
+  background-position: -35px -70px;
 }
