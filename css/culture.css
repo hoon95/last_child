@@ -3,7 +3,7 @@
 .co_culture_thumbnail_img{
   width: 100%;
   height: 1080px;
-  background: url("/img/co_culture/sdc_info.png") no-repeat 50% 50%;
+  background: url("../img/co_culture/sdc_info.png") no-repeat 50% 50%;
   background-size: cover; 
   background-attachment: fixed; 
 }
@@ -32,7 +32,7 @@
 /* co_culture_section2 */
 
 .co_culture_section2 .co_culture_info{
-  padding: calc(var(--base-unit)*7) 0;
+  padding: calc(var(--base-unit)*6) 0;
   text-align: left;
 }
 .co_culture_section2 h3{
@@ -40,7 +40,7 @@
   padding-bottom: calc(var(--base-unit)*1);
 }
 .co_culture_section2 .co_culture_info_p{
-  padding-bottom: calc(var(--base-unit)*6);
+  padding-bottom: calc(var(--base-unit)*2);
   font-weight: bold;
 }
 .co_culture_section2 .co_culture_img{
@@ -55,7 +55,7 @@
 /* co_culture_section3 */
 
 .co_culture_section3 .co_culture_info2{
-  padding: calc(var(--base-unit)*7) 0;
+  padding: calc(var(--base-unit)*6) 0;
   text-align: right;
 }
 .co_culture_section3 h3{
@@ -63,7 +63,7 @@
   padding-bottom: calc(var(--base-unit)*1);
 }
 .co_culture_section3 .co_culture_info_p{
-  padding-bottom: calc(var(--base-unit)*6);
+  padding-bottom: calc(var(--base-unit)*2);
   font-weight: bold;
 }
 .co_culture_section3 .co_culture_img{
@@ -78,7 +78,7 @@
 /* co_culture_section4 */
 
 .co_culture_section4 .co_culture_info{
-  padding: calc(var(--base-unit)*7) 0;
+  padding: calc(var(--base-unit)*6) 0;
   text-align: left;
 }
 .co_culture_section4 h3{
@@ -86,7 +86,7 @@
   padding-bottom: calc(var(--base-unit)*1);
 }
 .co_culture_section4 .co_culture_vision_info_p{
-  padding-bottom: calc(var(--base-unit)*6);
+  padding-bottom: calc(var(--base-unit)*2);
   font-weight: bold;
 }
 .co_culture_section4 .co_culture_img{
@@ -102,7 +102,7 @@
 /* co_culture_section5 active-slide */
 
 .co_culture_section5{
-  padding: calc(var(--base-unit)*7) 0;
+  padding: calc(var(--base-unit)*6) 0;
   text-align: center;
   width: 100%;
 }
@@ -149,7 +149,7 @@
 .co_culture_ending_img{
   width: 100%;
   height: 1080px;
-  background: url("/img/co_culture/announce.jpg") no-repeat 50% 50%;
+  background: url("../img/co_culture/announce.jpg") no-repeat 50% 50%;
   background-size: cover; 
   background-attachment: fixed;
   margin: 0 auto;
@@ -169,4 +169,5 @@
 }
 .co_culture_ending_video video{
   width: 100%;
+  /* object-fit: cover; */
 }
