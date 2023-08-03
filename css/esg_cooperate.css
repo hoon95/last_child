@@ -22,9 +22,16 @@
     text-align: right;
     margin-bottom: calc(var(--base-unit) * 10);
 }
-.rec_circle > div > span{
+/* .rec_circle > div > span{
     width: 350px;
     height: 350px;
     box-shadow: 0 0 0 15px #d8d8d8 inset;
     border-radius: 50%;
+} */
+
+#target1, #target2, #target3 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
 }
