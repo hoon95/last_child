@@ -6,14 +6,12 @@
   <title>Samsung Display Home</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css" integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/tech.css">
   <link rel="stylesheet" href="css/sub_qd.css">
 </head>
 
-<body>
+<body class="black">
   <header class="menubar">
     <div class="black">
       <h1>
@@ -117,29 +115,36 @@
         <div class="qd_oled_tv col qdposi">
           <h3 class="h3">OLED TV</h3> 
           <div class="qd_oled_ani">
-            <img src="img/qd/qd-oled_sec1_3.png" alt="oled BP">
-            <img src="img/qd/qd-oled_sec1_2.png" alt="rgb 컬러필터">
-            <img src="img/qd/qd-oled_sec1.png" alt="oled white 발광원">
-          </div>
-          <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
-          <span class="qd_arrow qd_oled_arrow">oled 화살표</span>
+            <div class="qd_olde_img">
+             <img src="img/qd/qd-oled_sec1_3.png" alt="oled BP">
+             <img src="img/qd/qd-oled_sec1_2.png" alt="rgb 컬러필터">
+             <img src="img/qd/qd-oled_sec1.png" alt="oled white 발광원">
+             <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
+             <span class="qd_arrow qd_oled_arrow">oled 화살표</span>
+            </div>
+           </div>
         </div>
         <div class="qd_display_od col qdposi">
           <h3 class="h3">QD-Display</h3>     
           <div class="qd_oled_ani">
-            <img src="img/qd/qd-oled_sec2_2.png" alt="qd layer">          
-            <img src="img/qd/qd-oled_sec2_1.png" alt="qd oled blue 발광원">
+            <div class="qd_olde_img">
+              <img src="img/qd/qd-oled_sec2_2.png" alt="qd layer">          
+              <img src="img/qd/qd-oled_sec2_1.png" alt="qd oled blue 발광원">
+              <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
+              <span class="qd_arrow qd_oled_arrow3">oled 화살표</span> 
+            </div>
           </div>
-          <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
-          <span class="qd_arrow qd_oled_arrow3">oled 화살표</span> 
         </div>
       </div>
 		</section>
 		<section class="qd_drag">
 			<h2 class="h3">drag</h2>
       <div class="qd">
-        <div><img src="img/qd/qd_drag_1.PNG" alt=""></div>
-        <div><img src="img/qd/qd_drag_2.PNG" alt=""></div>
+        <div>
+          <img src="img/qd/qd_drag_1.PNG" alt="이미지 전">
+          <img src="img/qd/qd_drag_2.PNG" alt="이미지 후">
+        </div>
+        </div>
       </div>
 		</section>
 		<section class="qd_foot">
@@ -224,8 +229,9 @@
       <span><img src="img/footer/foot_websiteicon.png" alt="웹접근성 아이콘"></span>
     </div>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="js/main.js"></script>
   <script src="js/tech.js"></script>
 </body>
