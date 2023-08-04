@@ -4,6 +4,18 @@ AOS.init({
   delay: 200
 });
 
+/* co_info title 이동 */
+let co_infoTitle = $('.ceo_greeting .title');
+let moveTop = 2467;
+
+$(window).scroll(function(){
+  let scrollMove = 0;
+  scrollMove += $(this).scrollTop()/2.5;
+  console.log(co_infoTitle);
+  co_infoTitle.css({top:`-${scrollMove}px`});
+});
+
+
 
 /* co_info co_image 확대 */
 let co_imageH = $('.co_image').outerHeight(); // 4291 <- 1040 + 3251
@@ -29,21 +41,22 @@ $(window).scroll(function(){
 
 
 /* co_info business_area 가로스크롤 */
-let co_business = $('.business_area .content'), 
-    co_businessW = co_business.outerWidth(),//2740
-    co_businessLeft = co_business.position().left,//41.5
+let co_business = $('.business_area .slide'), 
+    co_businessW = co_business.find('.content').outerWidth(),//2740
     windowW = $(window).innerWidth(),//1043
     co_businessSlideH = co_business.height(),//787.969
     co_businessOST = co_business.offset().top,//9596.296875
-    co_addHeight = (co_businessW - co_businessLeft - windowW) + 17*8; //1760
+    co_addHeight = co_businessW - windowW; //1760
 
 
-console.log(co_addHeight);
-$('.business_area .slide').css({height:co_businessSlideH+co_addHeight});
+console.log(co_businessW);
+console.log(windowW);
+$('.business_area .slide').css({height:`${co_businessSlideH+co_addHeight}px`});
+
 $(window).scroll(function(){
-  let myScroll = $(window).scrollTop() - co_businessOST;
-  if(myScroll > 0 || myScroll < $('footer').offset().top){
-    co_business.css({transform:`translateX(-${myScroll}px)`});
+  let myScroll = $(window).scrollTop() - co_businessOST + 17*8;
+  if($(window).scrollTop() > myScroll || myScroll > $('footer').offset().top){
+    $('.business_area .content').css({transform:`translateX(-${myScroll}px)`});
   }
 });
 

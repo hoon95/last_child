@@ -19,6 +19,12 @@
   white-space: nowrap;
   text-shadow: -1px 0 var(--black), 0 1px var(--black), 1px 0 var(--black), 0 -1px var(--black);
   color: white;
+  position: relative;
+  transition: .1s;
+}
+
+.ceo_greeting h2:after {
+  content: 'samsung display';
 }
 
 .ceo_greeting .content {
@@ -122,6 +128,9 @@
 /* top: calc(var(--base-unit)*11) */
 .business_area {
   padding: calc(var(--base-unit)*14) 0 calc(var(--base-unit)*8);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .business_area img {
@@ -156,9 +165,8 @@
   width: 105%;
 }
 
-.business_area .slide .smartphone:hover img {
-  height: 105%;
-  width: 100%;
+.business_area .slide {
+  padding: 0 60px;
 }
 
 .business_area .slide .content {
@@ -185,7 +193,6 @@
 .business_area .slide .smartphone img {
   height: 100%;
   object-fit: cover;
-  transition: height .3s;
 }
 
 .business_area .slide .wearable {
