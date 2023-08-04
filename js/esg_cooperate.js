@@ -3,7 +3,10 @@ pushInStart({
 
 AOS.init();
 
-var bar1 = new ProgressBar.Circle(target1, {
+
+
+
+let bar1 = new ProgressBar.Circle(target1, {
     color: '#963131',
     strokeWidth: 6,
     easing: 'easeInOut',
@@ -16,7 +19,7 @@ var bar1 = new ProgressBar.Circle(target1, {
       circle.setText(value);
     }
   });
-var bar2 = new ProgressBar.Circle(target2, {
+let bar2 = new ProgressBar.Circle(target2, {
     color: '#0077ff',
     strokeWidth: 6,
     easing: 'easeInOut',
@@ -29,7 +32,7 @@ var bar2 = new ProgressBar.Circle(target2, {
       circle.setText(value);
     }
   });
-var bar3 = new ProgressBar.Circle(target3, {
+let bar3 = new ProgressBar.Circle(target3, {
     color: '#ffe600',
     strokeWidth: 6,
     easing: 'easeInOut',
@@ -45,17 +48,16 @@ var bar3 = new ProgressBar.Circle(target3, {
   
 
 
-
+let isActive = false;
 $(window).scroll(function(){
-  if($(window).scrollTop() > $('.rec_desc').offset().top-1000){
-    $('.rec_desc').addClass('active')
-  }else{
-    $('.rec_desc').removeClass('active')
-  }
-  if($('.rec_desc').hasClass('active')){
-    bar1.animate(0.39);
-    bar2.animate(0.51);
-    bar3.animate(0.8);
+  if(!isActive){
+      if($(window).scrollTop() >= $('.rec_desc').offset().top - 500){
+          isActive = true;
+          bar1.animate(0.39);
+          bar2.animate(0.51);
+          bar3.animate(0.8);
+      }
+      
   }
 })
 
