@@ -1,4 +1,4 @@
-[{
+{
   "country":[
     {
       "countryName": "한국",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "countryName": "타이페이",
+      "countryName": "대만",
       "city":[
         {
           "cityName":"타이페이",
@@ -261,4 +261,4 @@
       ]
     }
   ]
-}]
+}
