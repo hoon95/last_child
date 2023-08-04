@@ -288,23 +288,26 @@ body.black {
 }
 
 /* header 최종*/
-header{
+.menubar{
   padding:calc(var(--base-unit)*2);
   padding-left: 40px;
   padding-right: 40px;
-}
-header h1{
-  display: block;
-}
-header nav *{
-  text-align: center;
-}
-.menubar{
   position: sticky;
   top: 0;
   z-index: 10000;
   background: transparent;
   margin-top: -114px;
+}
+header h1{
+  display: block;
+}
+header h1 #logo{
+  width: 330px;
+  height: 36px;
+  z-index: 1000;
+}
+header nav *{
+  text-align: center;
 }
 /* esg파트 - margin-top:0 */
 
@@ -345,11 +348,6 @@ header .language a{
 header .language span:after{
   content: '';
   border: 2px solid var(--dark-gray);
-}
-header h1 #logo{
-  width: 330px;
-  height: 36px;
-  z-index: 1000;
 }
 /* Menu overlay*/
 
