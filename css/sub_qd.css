@@ -6,48 +6,126 @@
 	width: 100%;
 	height: 100%;
 } */
+.qd_oled_index section {
+	padding: calc(var(--base-unit)*10) 0;
+	box-sizing: border-box;
+}
 .qd_oled_index section h2 {
+	margin-bottom: calc(var(--base-unit)*5);
 	text-align: center;
-	margin: calc(var(--base-unit)*5) 0 calc(var(--base-unit)*3);
 }
 .qd_bg {
 	background: url(../img/qd/qd_banner.jpg) no-repeat 0 0 /cover;
 }
+
+.qd.qd_dot {
+	height: 150vh;
+}
+
 .qd_dot {
 	position: relative;
 	text-align: center;
 }
-.cube div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /* opacity: 0.5; */
-}
 
-.qd_dot span {
+/* .qd_dot .qd_dot_ani {
 	position: absolute;
-	top: 36%;
+	top: 72%;
 	left: 50%;
 	display: inline-block;
-	width: 968px;
+	transform: translate(-50%, -50%);
+} */
+
+/* .perspective{
+  perspective: 2000px;
+  perspective-origin: 50% -200px;
+} */
+
+.qd_dot_ani{
+ 	position: relative;
+	max-width: 968px;
 	height: 594px;
+	margin: 0 auto; 
+  transform-style:preserve-3d;
+}
+.qd_dot_ani > .qd_dot_ani1{
+	position: absolute;
+	top: 0;
+	left: 22.5%;
+}
+.qd_dot_ani > .qd_dot_ani2{
+	position: absolute;
+	top: 0;
+	right: 22.5%;
+}
+.qd_dot_ani > div > span {
+	display: block;
+	width: 303px;
+	height: 662px;
 	text-indent: -9999em;
-	background: url(../img/qd/qd_dot.png) no-repeat center/contain;
-	transform: translate(-50%, -50%) rotateX(-290deg);
+	background: url(../img/qd/flip.png) no-repeat center/contain;
+}
+.qd_dot_ani > .qd_dot_ani2 > span {
+	background: url(../img/qd/flip2.png) no-repeat center/contain;
+}
+.qd_dot_ani .qd_dot_ani1 span {
+	transform-origin: 100% 50%;
+	transform:rotateY(56deg);
 }
 
-.qd_dot .qd_dot_front.animate {
-	transform-origin: 50% 0;
-	transform: translate(-50%, -50%) rotateX(0deg);
+.qd_dot_ani .qd_dot_ani2 span {
+	transform-origin: 0% 50%;
+	transform:rotateY(-56deg);
 }
-.qd_dot .qd_dot_back.animate {
-	top: 66%;
+
+
+.perspective .qd_dot_ani .qd_dot_ani1.animate span {
+	transform:rotateY(0);	
+	transition: all 1s;
+}
+.perspective .qd_dot_ani .qd_dot_ani2.animate span {
+	transform:rotateY(0);
+	transition: all 1s;
+}
+/* .qd_dot_ani.active .qd_dot_ani1 span {
+	transform:rotateX(-90deg);
+}
+
+.qd_dot_ani.active .qd_dot_ani2 span {
+  transform:rotateX(90deg);
+} */
+
+
+/* .qd_dot .qd_dot_ani.animate {
+	transform: rotateX(16deg);
+	transition: 0.5s;
+	transform:rotateX(-90deg);
+  animation:none;
+}
+.qd_dot .qd_dot_ani.animate  span{
+	display: block;
+	transform: rotateX(62deg);
+	transform:rotateX(90deg);
+  animation:none;
+	transition: 0.5s;
+	transition-delay: 1s;
+}
+.qd_dot .qd_dot_ani .qd_dot_ani2 span {
+	display: none;
+}
+
+.qd_dot_ani.animate .qd_dot_back {
 	transform-origin: 100% 50%;
-	transform: translate(-50%, -50%) rotateX(130deg);
 }
+.qd_dot_ani.animate .qd_dot_back {
+	transform: rotateX(62deg);
+	transition: 0.5s;
+} */
 
 .qd_info {
 	background: var(--white);
+	color: var(--black);
+}
+.black .qd_info h3  {
   color: var(--black);
 }
 .qd_info .qd_left strong {
@@ -72,38 +150,21 @@
 	transition: 2s;
 }
 
-.qd_oled li:nth-of-type(1) {
+.qd_oled .qd_oled_box.active .qd_oled li:nth-of-type(1) {
 	/* left: 50%; */
 	transform: translateX(-60%);
 }
-.qd_oled li:nth-of-type(2) {
+.qd_oled .qd_oled_box.active li:nth-of-type(2) {
 	/* left: 50%; */
 	transform: translateX(0%);
 }
 
-.qd_oled li:nth-of-type(3) {
+.qd_oled .qd_oled_box.active li:nth-of-type(3) {
 	/* left: 58%; */
 	transform: translateX(45%);
 }
 
 
-.qd_oled .qd_oled_box li span {
-	visibility: hidden;
-	opacity: 0;
-}
-.qd_oled .qd_oled_box.acvite li span {
-	visibility: visible;
-	opacity: 1;
-}
-/* .qd_oled .qd_oled_box li:nth-of-type(1).active{
-	left: 33%;
-}
-.qd_oled .qd_oled_box li:nth-of-type(2).active {
-	left: 45%;
-}
-.qd_oled .qd_oled_box li:nth-of-type(3).active {
-	left: 63%;
-} */
 .qd_oled .qd_oled_text {
 	position: absolute;
 	bottom: 0;
