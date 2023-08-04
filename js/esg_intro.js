@@ -114,6 +114,7 @@ let isScrolling = false;
     loopedSlides: 1,
     slidesPerView: 'auto',
     disableOnInteraction: true,
+    allowTouchMove: false,
     initialSlide: 3
   });
 
