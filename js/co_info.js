@@ -10,8 +10,8 @@ let moveTop = 2467;
 
 $(window).scroll(function(){
   let scrollMove = 0;
-  scrollMove += $(this).scrollTop()/2.5;
-  console.log(co_infoTitle);
+  scrollMove += $(this).scrollTop()/2;
+  // console.log(co_infoTitle);
   co_infoTitle.css({top:`-${scrollMove}px`});
 });
 
@@ -41,6 +41,47 @@ $(window).scroll(function(){
 
 
 /* co_info business_area 가로스크롤 */
+let co_slideContainer = $('.business_area'),
+    windowW = $(window).innerWidth(), //1903 viewport width <- 전체화면 기준
+    co_slide = co_slideContainer.find('.content'), 
+    co_slideW = co_slide.outerWidth(),//2740
+    co_slideH = co_slide.outerHeight(); //767.609 <- 전체화면 기준
+
+let getHeight = co_slideW - windowW;//837 <- 전체화면 기준
+co_slideContainer.css({height:`${co_slideH + getHeight + 500}px`});//+500체류시간
+
+
+let windowH = $(window).innerHeight(),//931
+    contentOST = co_slide.offset().top,//9564.296875
+    lastTras = 0;
+
+$(window).scroll(function(){
+  let SCT = $(this).scrollTop();
+  let myScroll2 = SCT - contentOST ;
+  console.log(myScroll2);
+  if(myScroll2 > 0 && myScroll2 < getHeight+100){//+100 content오른쪽여백
+    co_slide.css({transform: `translateX(-${myScroll2}px)`});
+    lastTras = myScroll2;
+  } else{
+    co_slide.css({transform: `translateX(-${lastTras}px)`});
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let co_business = $('.business_area .slide'), 
     co_businessW = co_business.find('.content').outerWidth(),//2740
     windowW = $(window).innerWidth(),//1043
@@ -49,16 +90,35 @@ let co_business = $('.business_area .slide'),
     co_addHeight = co_businessW - windowW; //1760
 
 
-console.log(co_businessW);
-console.log(windowW);
-$('.business_area .slide').css({height:`${co_businessSlideH+co_addHeight}px`});
+// console.log(co_businessW);
+// console.log(windowW);
+$('.business_area').css({height:`${co_businessSlideH+co_addHeight+100}px`});
+let lastTrans = 0;
 
 $(window).scroll(function(){
-  let myScroll = $(window).scrollTop() - co_businessOST + 17*8;
-  if($(window).scrollTop() > myScroll || myScroll > $('footer').offset().top){
-    $('.business_area .content').css({transform:`translateX(-${myScroll}px)`});
+  let myScroll2 = $(window).scrollTop() - co_businessOST + 17*8;
+  let lastScroll = $('.business_area').height() + co_businessOST - $(window).innerHeight();
+
+  if($(window).scrollTop() == lastScroll){
+    $('.business_area .content').css({transform:`translateX(-${lastTrans}px)`});
+  } else{
+    $('.business_area .content').css({transform:`translateX(-${myScroll2}px)`});
+    lastTrans = myScroll2;
   }
+  
+  if($(window).scrollTop() > myScroll){
+    $('.business_area .content').css({transform:`translateX(-${myScroll}px)`});
+    lastTrans = myScroll;
+  } else if($(window).scrollTop() == lastScroll){
+    $('.business_area .content').css({transform:`translateX(-${lastTrans}px)`});
+  }
+  
+  console.log($(window).scrollTop());
+  console.log(lastScroll);
+  console.log(myScroll2);
+  console.log(lastTrans);
 });
+*/
 
 
 
