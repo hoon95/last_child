@@ -47,7 +47,7 @@
 }
 .swiper-wrapper{
   width: 50%;
-  margin-left: calc(var(--base-unit) * 5);
+  /* margin-left: calc(var(--base-unit) * 10); */
 }
 .swiper-slide-shadow{
   display: none;
