@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
 
 
+header {
+  pointer-events: none;
+}
+
+header h1 >a {
+  pointer-events: all;
+}
 
 
 /* co_intro */
@@ -71,21 +78,88 @@
 
 
 /* co_map */
+.co_map {
+  padding-bottom: calc(var(--base-unit)*5);
+}
+
 .co_map h2 {
   text-align: center;
   margin-top: calc(var(--base-unit)*8);
 }
 
-.co_map span {
+.co_map .map_btn {
   color: var(--blue);
+  cursor: pointer;
+}
+
+.co_map .map_btn:hover {
+  text-decoration: underline;
 }
 
 .co_map .map {
-  /* height: 70vh; */
+  
   overflow: hidden;
+  margin-top: calc(var(--base-unit)*1);
 }
 
-.co_map .map object {
-  transform: scale(0.95);
+.co_map .map_area {
+  position: relative;
+  width: 100%;
+  padding-top: 51.4%;
+}
+
+.co_map .map_area > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.co_map .map_area > svg[class^="c_"] {
+  display: none;
+}
+
+
+.co_map .info_box {
+  position: fixed;
+  left: 0; right: 0; bottom: 0; top: 0;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.co_map .info_box .inner_info {
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  display: none;
+  padding-bottom: 30px;
+}
+
+.co_map .inner_info li {
+  padding: 50px 0;
+}
+
+.co_map .inner_info li+li {
+  border-top: 1px solid var(--light-gray);
+}
+
+.co_map .inner_info span {
+  color: var(--blue);
+}
+
+.co_map .inner_info p {
+  color: var(--dark-gray);
+}
+
+.co_map .inner_info .close_btn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: var(--h3-size);
+  font-weight: bold;
+  color: var(--black);
+  cursor: pointer;
+  pointer-events: all;
 }
 /* //co_map */

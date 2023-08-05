@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>기업소개 - 삼성디스플레이</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css" integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/co_info.css">
 </head>
@@ -68,10 +69,10 @@
     <section class="ceo_greeting">
       <div class="row">
         <div class="greeting_heading d-flex align-items-center justify-content-center col-3">
-          <h2>samsung display<span class="hidden">CEO 인사말</span></h2>
+          <h2 class="title">samsung display<span class="hidden">CEO 인사말</span></h2>
         </div>
         <div class="content d-flex flex-column align-items-end col-9">
-          <figure>
+          <figure  data-aos="fade-left">
             <img src="img/co/co_info_ceo.jpg" alt="">
             <figcaption class="h4_2">
               <p>
@@ -81,21 +82,21 @@
             </figcaption>
           </figure>
   
-          <h3 class="h3_2">
+          <h3 class="h3_2" data-aos="fade-left">
             무한한 확장성을 가진 디스플레이<br>
             기술로 세상을 바꾸겠습니다.
           </h3>
   
-          <p class="h4_2 greeting_p_1">
+          <p class="h4_2 greeting_p_1" data-aos="fade-left">
             ‘디스플레이’는 기술을 넘어 사람과 사람, 사람과 세상을 연결하는 ‘창’입니다. 4차 산업혁명이라는 거대한 물결 속에서 IoT가 현실이 되면 우리를 둘러싼 세상은 아주 빠른 속도로 변화할 것입니다.
           </p>
   
-          <p class="h4_2 greeting_p_2">
+          <p class="h4_2 greeting_p_2" data-aos="fade-left">
             흑백에서 컬러TV로, CRT에서 평판 디스플레이로, 피처폰에서 스마트폰으로 진화했을 때처럼 기술의 변화가 우리의 생활방식과 
             사회의 문화를 완전히 바꾸어 놓을 것입니다. 
           </p>
   
-          <p class="h4_2 greeting_p_1">
+          <p class="h4_2 greeting_p_1" data-aos="fade-left">
             보다 큰 화면과 실제처럼 선명하고 생동감 넘치는 화질, 어떤 정형화된 형태가 
             아닌 새로운 디자인의 디스플레이가 우리의 시선이 닿는 모든 곳에서 새로운 
             세상을 보여줄 것입니다. 삼성디스플레이는 앞으로도 기술로 세상을 
@@ -120,7 +121,7 @@
   <div class="container">
     <section class="co_introduce">
       <h2 class="hidden">기업소개</h2>
-      <article class="row intro1 align-items-end">
+      <article class="row intro1 align-items-end" data-aos="fade-right">
         <div class="col-4">
           <img src="img/co/co_info_intro1.jpg" alt="회의하는 장면">
         </div>
@@ -135,7 +136,7 @@
         </div>
       </article>
 
-      <article class="row intro2 justify-content-end">
+      <article class="row intro2 justify-content-end" data-aos="fade-left">
         <div class="col-7">
           <img src="img/co/co_info_intro2.jpg" alt="스마트기기를 터치하는 장면">
         </div>
@@ -155,7 +156,7 @@
 
   <section class="business_area" id="business_area">
     <h2 class="hidden">사업영역</h2>
-    <div class="slide container">
+    <div class="slide">
       <div class="content">
         <h3 class="h2 oled">oled</h3>
         <figure class="smartphone">
@@ -232,7 +233,8 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/co.js"></script>
+  <script src="js/co_info.js"></script>
 </body>
 </html>

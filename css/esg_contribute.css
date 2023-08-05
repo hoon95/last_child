@@ -1,6 +1,7 @@
 .container{
     padding: calc(var(--base-unit) * 3) 0 calc(var(--base-unit) * 9) 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 /* 1. 사회공헌 개요 */
 .ctr_main{height: 100vh;}
@@ -21,40 +22,41 @@
     gap: 30px;
 }
 
+/* 2. 나눔경영 */
+.share_sub_title{
+  color: var(--blue);
+}
+.share_sub_desc{
+  color: var(--gray);
+}
+.share_content{
+  gap: var(--base-unit)
+}
+/* .share_content:nth-child(1){
+  text-align: right;
+} */
 
-/* 2. 사회공헌 목록 */
+
+/* 3. 사회공헌 목록 */
 .ctr_sub_page img{
-    width: 100%;
-    height: 50%;
-    /* object-fit: cover; */
+    width: 30%;
+    border-radius: 25px;
 }
 .swiper {
+  width: 100%;
+}
+.swiper-wrapper{
   width: 50%;
-  /* height: 100vh; */
+  /* margin-left: calc(var(--base-unit) * 10); */
+}
+.swiper-slide-shadow{
+  display: none;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-}
-
-/* .swiper-slide:nth-child(1) {
-  background-color: rgb(211, 122, 7);
-}
-.swiper-slide:nth-child(2) {
-  background-color: rgb(0, 68, 255);
-}
-.swiper-slide:nth-child(3) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(4) {
-  background-color: rgb(54, 94, 77);
-}
-
-.swiper-slide:nth-child(5) {
-  background-color: rgb(0, 140, 255);
 } */

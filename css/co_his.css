@@ -75,9 +75,20 @@
   padding: calc(var(--base-unit)*16) 0 calc(var(--base-unit)*37);
 }
 
-.co_his_content > .container {
+.content_wrap {
+  height: 9000px;
+  position: relative;
+}
+
+.co_his_content .content {
   position: relative;
   height: 4386px;
+  position: sticky;
+  top: 0;
+}
+
+.co_his_content .content > svg {
+  margin-top: 28px;
 }
 
 .co_his_content .line {
@@ -126,7 +137,7 @@
   position: absolute;
   left: 0; right: 0; top: 0; bottom: 0;
   border-radius: 50%;
-  background-color: var(--dark-blue);
+  background-color: var(--black);
   text-align: center;
   opacity: 1;
   transition: .5s;
@@ -149,6 +160,7 @@
   transform: scale(2.8);
   animation: gradient 1.5s infinite linear;
   opacity: 1;
+  background-color: var(--dark-blue);
 }
 
 .co_his_content .item:hover .circle .w_bg {

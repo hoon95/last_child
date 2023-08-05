@@ -22,4 +22,6 @@ let ctrSlide = $('article').bxSlider({
 let swiper = new Swiper('.mySwiper', {
   effect: "cards",
   grabCursor: true,
+  direction: 'horizontal',
+  slideShadows: false
 });
