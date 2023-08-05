@@ -73,11 +73,11 @@
 
 <div class="container text-center">
 <section class="oled_section2 row">
-  <div class="d-flex">
-    <h3 class="h3 col-12">스스로 빛나니까 더 얇은 삼성 OLED</h3>
-  </div>
-  <p class="h4">백라이트도 컬러 필터도 필요 없습니다. 삼성 OLED는 스스로 빛과 색을 내는 유기물질로 이 모든 걸 대체했죠.</p>
-  <p class="h4">심플한 구조로 놀랍도록 얇은 디스플레이. 물론, 화질은 끝내줍니다.</p>
+      <h3 class="h3 col-12">스스로 빛나니까 더 얇은 삼성 OLED</h3>
+    <div>
+      <p class="h4">백라이트도 컬러 필터도 필요 없습니다. 삼성 OLED는 스스로 빛과 색을 내는 유기물질로 이 모든 걸 대체했죠.</p>
+      <p class="h4">심플한 구조로 놀랍도록 얇은 디스플레이. 물론, 화질은 끝내줍니다.</p>
+    </div>
   <div class="layers d-flex justify-content-evenly">
     <!-- LCD_Layer -->
     <div class="lcd_layer col-6">
@@ -124,13 +124,13 @@
       <div class="layer_name_wrap container">
         <ul class="layer_name_list d-flex">
           <div class="row">
-            <li class="layer_name_item active col">
+            <li class="layer_name_item_lcd1 col">
                 <p class="layer_name">
                     <span class="layer_name_number">1 &nbsp;</span>
                     Backlight
                 </p>
             </li>
-            <li class="layer_name_item">
+            <li class="layer_name_item_lcd2">
                 <p class="layer_name col">
                     <span class="layer_name_number">2 &nbsp;</span>
                     POL
@@ -138,13 +138,13 @@
             </li>
           </div>
           <div class="row">
-            <li class="layer_name_item">
+            <li class="layer_name_item_lcd3">
                 <p class="layer_name">
                     <span class="layer_name_number">3 &nbsp;</span>
                     TFT
                 </p>
             </li>
-            <li class="layer_name_item">
+            <li class="layer_name_item_lcd4">
                 <p class="layer_name">
                     <span class="layer_name_number">4 &nbsp;</span>
                     Liquid Crystal
@@ -152,13 +152,13 @@
             </li>
           </div>
           <div class="row">
-            <li class="layer_name_item">
+            <li class="layer_name_item_lcd5">
                 <p class="layer_name">
                     <span class="layer_name_number">5 &nbsp;</span>
                     Color Filter
                 </p>
             </li>
-            <li class="layer_name_item">
+            <li class="layer_name_item_lcd6">
                 <p class="layer_name">
                     <span class="layer_name_number">6 &nbsp;</span>
                     Cover Window
@@ -201,28 +201,28 @@
       <div class="layer_name_wrap container">
         <ul class="layer_name_list d-flex">
           <div class="row">
-            <li class="layer_name_item active col">
-                <p class="layer_name">
+            <li class="layer_name_item_oled1 col">
+                <p class="layer_name_oled">
                     <span class="layer_name_number">1 &nbsp;</span>
                     Cover Window
                 </p>
             </li>
-            <li class="layer_name_item col">
-                <p class="layer_name">
+            <li class="layer_name_item_oled2 col">
+                <p class="layer_name_oled">
                     <span class="layer_name_number">2 &nbsp;</span>
                     ENCAP
                 </p>
             </li>
           </div>
           <div class="row">
-            <li class="layer_name_item col">
-                <p class="layer_name">
+            <li class="layer_name_item_oled3 col">
+                <p class="layer_name_oled">
                     <span class="layer_name_number">3 &nbsp;</span>
                     Self Emitting Organic Layer
                 </p>
             </li>
-            <li class="layer_name_item col">
-                <p class="layer_name">
+            <li class="layer_name_item_oled4 col">
+                <p class="layer_name_oled">
                     <span class="layer_name_number">4 &nbsp;</span>
                     TFT
                 </p>
@@ -291,7 +291,7 @@
 
   <section class="oled_section6 container">
     <div class="reaction_speed d-flex">
-      <h3 class="h3 col-12">비교할수 없는 반응속도</h3>
+      <h3 class="reaction_speed_title h3 col-12">비교할수 없는 반응속도</h3>
       <div class="reaction_speed_info d-flex">
           <span class="reaction_speed_info_lcd h4 col-4">LCD</span>
           <span class="reaction_speed_info_oled h4 col-4">OLED</span>
@@ -299,6 +299,9 @@
       </div>
       <div class="reaction_speed_img">
         <img src="img/oled/reaction_speed.jpg" alt="">
+        <div class="reaction_speed_double">
+          <h4 class="h4_2">반응속도<br>1.5배 UP</h4>
+        </div>
       </div>
     </div>
   </section>
