@@ -2,6 +2,10 @@
 	width: 100%;
 	height: 100vh;
 }
+.hidden {
+	overflow: hidden;
+}
+
 /* img {
 	width: 100%;
 	height: 100%;
@@ -69,12 +73,12 @@
 }
 .qd_dot_ani .qd_dot_ani1 span {
 	transform-origin: 100% 50%;
-	transform:rotateY(56deg);
+	transform:rotateY(44deg);
 }
 
 .qd_dot_ani .qd_dot_ani2 span {
 	transform-origin: 0% 50%;
-	transform:rotateY(-56deg);
+	transform:rotateY(46deg);
 }
 
 
@@ -86,44 +90,21 @@
 	transform:rotateY(0);
 	transition: all 1s;
 }
-/* .qd_dot_ani.active .qd_dot_ani1 span {
-	transform:rotateX(-90deg);
-}
 
-.qd_dot_ani.active .qd_dot_ani2 span {
-  transform:rotateX(90deg);
-} */
-
-
-/* .qd_dot .qd_dot_ani.animate {
-	transform: rotateX(16deg);
-	transition: 0.5s;
-	transform:rotateX(-90deg);
-  animation:none;
-}
-.qd_dot .qd_dot_ani.animate  span{
-	display: block;
-	transform: rotateX(62deg);
-	transform:rotateX(90deg);
-  animation:none;
-	transition: 0.5s;
-	transition-delay: 1s;
-}
-.qd_dot .qd_dot_ani .qd_dot_ani2 span {
-	display: none;
-}
-
-.qd_dot_ani.animate .qd_dot_back {
-	transform-origin: 100% 50%;
-}
-.qd_dot_ani.animate .qd_dot_back {
-	transform: rotateX(62deg);
-	transition: 0.5s;
-} */
-
-.qd_info {
+.qd_info  {
 	background: var(--white);
 	color: var(--black);
+}
+.qd_info .qd_left {
+	padding-left: 80px;
+	box-sizing: border-box;
+}
+.qd_info .qd_right {
+	padding-right: 80px;
+	box-sizing: border-box;
+}
+.qd_info img {
+	width: 50.3%;
 }
 .black .qd_info h3  {
   color: var(--black);
@@ -131,14 +112,19 @@
 .qd_info .qd_left strong {
 	font-weight: bold;
 }
+.qd_bot  {
+	gap: 103px;
+}
+
 .qd_oled {
 	position: relative;
+	height: 150vh;
 }
 .qd_oled .qd_oled_box {
 	position: absolute;
 	width: 700px;
 	height: 650px;
-	top: 50%;
+	top: 59%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -147,19 +133,19 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	transition: 2s;
+	transition: 1s;
 }
 
-.qd_oled .qd_oled_box.active .qd_oled li:nth-of-type(1) {
+.qd_oled .qd_oled_box.animate li:nth-of-type(1) {
 	/* left: 50%; */
 	transform: translateX(-60%);
 }
-.qd_oled .qd_oled_box.active li:nth-of-type(2) {
+.qd_oled .qd_oled_box.animate li:nth-of-type(2) {
 	/* left: 50%; */
 	transform: translateX(0%);
 }
 
-.qd_oled .qd_oled_box.active li:nth-of-type(3) {
+.qd_oled .qd_oled_box.animate li:nth-of-type(3) {
 	/* left: 58%; */
 	transform: translateX(45%);
 }
@@ -201,35 +187,45 @@
 .qd_compare .qd_olde_img {
 	position: relative;
 }
-.qd_compare .qd > .qd_oled_tv.qdposi img {
+.qd_compare .qd > .qd_oled_tv img {
 	transform: translateY(0%);
-	transition: 3s;
+	transition: 2s;
+	opacity: 0;
 }
-.qd_compare .qd > .qd_display_od.qdposi img {
+.qd_compare .qd > .qd_display_od img {
 	transform: translateY(0%);
-	transition: 3s;
+	transition: 2s;
+	opacity: 0;
 }
-.qd_compare .qd > .qd_oled_tv.qdposi img:nth-of-type(1) {
+.qd_compare .qd > .qd_oled_tv.animate img {
+	opacity: 1;
+}
+.qd_compare .qd > .qd_display_od.animate img {
+	opacity: 1;
+	transition-delay: 1.5s;
+}
+.qd_compare .qd > .qd_oled_tv.animate img:nth-of-type(1) {
 	/* top: 25%; */
 	transform: translateY(20%);
 }
-.qd_compare .qd > .qd_oled_tv.qdposi img:nth-of-type(2) {
+.qd_compare .qd > .qd_oled_tv.animate img:nth-of-type(2) {
 	/* top: 37%; */
 	transform: translateY(30%);
 }
-.qd_compare .qd > .qd_oled_tv.qdposi img:nth-of-type(3) {
+.qd_compare .qd > .qd_oled_tv.animate img:nth-of-type(3) {
 	/* top: 62%; */
 	transform: translateY(150%);
 }
 
-.qd_compare .qd > .qd_display_od.qdposi img:nth-of-type(1) {
+.qd_compare .qd > .qd_display_od.animate img:nth-of-type(1) {
 	/* top: 25%; */
 	transform: translateY(20%);
 }
-.qd_compare .qd > .qd_display_od.qdposi img:nth-of-type(2) {
+.qd_compare .qd > .qd_display_od.animate img:nth-of-type(2) {
 	/* top: 62%; */
 	transform: translateY(110%);
 }
+
 
 .qd_compare .qd_arrow{
 	position: absolute;
@@ -243,6 +239,7 @@
 	width: 362px;
 	height: 212px;
 	background-image: url(../img/qd/qd-oled_sec1_arrow.png);
+	animation: arrow 2s 3s infinite ease-in-out;
 }
 .qd_compare .qd_oled_arrow2 {
 	width: 366px;
@@ -274,6 +271,16 @@
 .qd_compare .qd_arrow.qd_oled_arrow3 {
 	bottom: -13px;
 	left: 0;
+}
+@keyframes arrow {
+	0% { 
+		opacity: 0;
+		transform: scaleY(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleY(1);
+	}
 }
 
 .qd_drag .qd{

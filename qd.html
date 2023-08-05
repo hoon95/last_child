@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/sub_qd.css">
 </head>
 
-<body class="black">
+<body class="black"> 
   <header class="menubar">
     <div>
       <h1>
@@ -67,9 +67,9 @@
       </nav>
     </div>
   </header>
-  <main class="qd_oled_index">
+  <main class="qd_oled_index black">
 		<section class="qd qd_bg">
-			<h1 hidden>QD-OLED</h1>
+			<h1 class="hidden">QD-OLED</h1>
 		</section>
 		<section class="qd qd_dot container">
 			<h2 class="h3_2">스스로 빛을 내는 퀸덤닷!<br>
@@ -86,28 +86,30 @@
       </div>
 		</section>
 		<section class="qd_info">
-			<div class="qd_top d-flex justify-content-between align-items-center">
-				<div class="qd_left">
-					<h3 class="h3">qd</h3>
-					<p class="h4_2"><strong>Quantum dot Light Emitting Diodes</strong><br>
-					나노미터 크기의 반도체 입자,<br>
-					퀸덤닷 하나하나가<br>
-					 스스로 빛과 색을 내는 디스플레이</p>
-				</div>
-				<img src="img/qd/qd_info.webp" alt="Qd란">
-			</div>
-			<div class="qd_bot d-flex justify-content-between align-items-center">
-				<div class="qd_right order-2">
-					<h3 class="h3">WHY QD-OLED?</h3>
-					<p class="h4_2">QD-OLED는 자체광원을 갖고 있지만,<br> 
-						일반 OLED는 자체광원을 갖지 않습니다.<br>
-						QD-OLED는 양자점 레이어에 발광성 물질을 사용하여<br>
-						자체적으로 빛을 발생시키고,<br>
-            OLED는 각각의 픽셀이 자체적으로 발광하여 전체 화면을 조명합니다.
-					</p>
-				</div>		
-        <img src="img/qd/qd_info_2.webp" alt="왜 QD-OLED를 사용해야할까" class="order-1">
-			</div>
+			<div>
+        <div class="qd_top d-flex justify-content-between align-items-center">
+          <div class="qd_left">
+            <h3 class="h3">qd</h3>
+            <p class="h4_2"><strong>Quantum dot Light Emitting Diodes</strong><br>
+            나노미터 크기의 반도체 입자,<br>
+            퀸덤닷 하나하나가<br>
+             스스로 빛과 색을 내는 디스플레이</p>
+          </div>
+          <img src="img/qd/qd_info.webp" alt="Qd란">
+        </div>
+        <div class="qd_bot d-flex justify-content-between align-items-center">
+          <div class="qd_right order-2">
+            <h3 class="h3">WHY QD-OLED?</h3>
+            <p class="h4_2">QD-OLED는 자체광원을 갖고 있지만,<br> 
+              일반 OLED는 자체광원을 갖지 않습니다.<br>
+              QD-OLED는 양자점 레이어에 발광성 물질을 사용하여
+              자체적으로 빛을 발생시키고,<br>
+              OLED는 각각의 픽셀이 자체적으로 발광하여 전체 화면을 조명합니다.
+            </p>
+          </div>		
+          <img src="img/qd/qd_info_2.webp" alt="왜 QD-OLED를 사용해야할까" class="order-1">
+        </div>
+      </div>
 		</section>
 		<section class="qd qd_oled">
 			<h2 class="h3">qd-oled 발광방식</h2>
@@ -120,26 +122,30 @@
 		<section class="qd_compare">
 			<h2 class="h3">Comparison with conventional OLED</h2>
       <div class="qd row">
-        <div class="qd_oled_tv col qdposi">
+        <div class="qd_oled_tv col">
           <h3 class="h3">OLED TV</h3> 
           <div class="qd_oled_ani">
             <div class="qd_olde_img">
              <img src="img/qd/qd-oled_sec1_3.png" alt="oled BP">
              <img src="img/qd/qd-oled_sec1_2.png" alt="rgb 컬러필터">
              <img src="img/qd/qd-oled_sec1.png" alt="oled white 발광원">
-             <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
-             <span class="qd_arrow qd_oled_arrow">oled 화살표</span>
+             <div class="arrow_box">
+              <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
+              <span class="qd_arrow qd_oled_arrow">oled 화살표</span>
+             </div>
             </div>
-           </div>
+          </div>
         </div>
-        <div class="qd_display_od col qdposi">
+        <div class="qd_display_od col">
           <h3 class="h3">QD-Display</h3>     
           <div class="qd_oled_ani">
             <div class="qd_olde_img">
               <img src="img/qd/qd-oled_sec2_2.png" alt="qd layer">          
               <img src="img/qd/qd-oled_sec2_1.png" alt="qd oled blue 발광원">
-              <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
-              <span class="qd_arrow qd_oled_arrow3">oled 화살표</span> 
+              <div class="arrow_box">
+                <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
+                <span class="qd_arrow qd_oled_arrow3">oled 화살표</span> 
+              </div>
             </div>
           </div>
         </div>
