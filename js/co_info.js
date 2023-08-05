@@ -67,58 +67,14 @@ $(window).scroll(function(){
   }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
-let co_business = $('.business_area .slide'), 
-    co_businessW = co_business.find('.content').outerWidth(),//2740
-    windowW = $(window).innerWidth(),//1043
-    co_businessSlideH = co_business.height(),//787.969
-    co_businessOST = co_business.offset().top,//9596.296875
-    co_addHeight = co_businessW - windowW; //1760
-
-
-// console.log(co_businessW);
-// console.log(windowW);
-$('.business_area').css({height:`${co_businessSlideH+co_addHeight+100}px`});
-let lastTrans = 0;
-
-$(window).scroll(function(){
-  let myScroll2 = $(window).scrollTop() - co_businessOST + 17*8;
-  let lastScroll = $('.business_area').height() + co_businessOST - $(window).innerHeight();
-
-  if($(window).scrollTop() == lastScroll){
-    $('.business_area .content').css({transform:`translateX(-${lastTrans}px)`});
-  } else{
-    $('.business_area .content').css({transform:`translateX(-${myScroll2}px)`});
-    lastTrans = myScroll2;
-  }
-  
-  if($(window).scrollTop() > myScroll){
-    $('.business_area .content').css({transform:`translateX(-${myScroll}px)`});
-    lastTrans = myScroll;
-  } else if($(window).scrollTop() == lastScroll){
-    $('.business_area .content').css({transform:`translateX(-${lastTrans}px)`});
-  }
-  
-  console.log($(window).scrollTop());
-  console.log(lastScroll);
-  console.log(myScroll2);
-  console.log(lastTrans);
-});
+//화면 사이즈를 조절하면 슬라이드가 끝까지 안가는 오류...
+if($(window).scrollTop() > contentOST-200){
+  $(window).resize(function(){
+    $('body').css('opacity',0);
+    location.reload();
+    $(window).scrollTop(contentOST-windowH);
+    $('body').css('opacity',1);
+  });
+}
 */
-
-
-
