@@ -6,10 +6,10 @@ header {
   pointer-events: none;
 }
 
-header h1 >a {
+header h1 > a,
+header li {
   pointer-events: all;
 }
-
 
 /* co_intro */
 .co_intro {
