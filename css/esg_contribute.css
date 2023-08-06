@@ -1,10 +1,12 @@
 .container{
-    padding: calc(var(--base-unit) * 3) 0 calc(var(--base-unit) * 9) 0;
+    padding: calc(var(--base-unit) * 9) 0;
     box-sizing: border-box;
     overflow: hidden;
 }
 /* 1. 사회공헌 개요 */
-.ctr_main{height: 100vh;}
+.ctr_main{
+  height: 100vh;
+}
 .ctr_main hgroup{
     margin-bottom: calc(var(--base-unit) * 3);
     box-sizing: content-box;
@@ -32,9 +34,9 @@
 .share_content{
   gap: var(--base-unit)
 }
-/* .share_content:nth-child(1){
-  text-align: right;
-} */
+.share_content:nth-child(1){
+  margin-bottom: calc(var(--base-unit) * 3);
+}
 
 
 /* 3. 사회공헌 목록 */
