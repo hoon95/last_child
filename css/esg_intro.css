@@ -90,12 +90,15 @@
 .value_list img{
     background-size: cover;
 }
-
+.container-fluid{
+    padding: 0;
+    overflow: hidden;
+}
 .value_bottom{
     position: relative;
     text-align: center;
     /* width: 100vw; */
-    margin: auto;
+    margin: 0 auto;
     color: black;
     background: rgba(255, 255, 255, 0.5);
 }
