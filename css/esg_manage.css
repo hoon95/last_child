@@ -40,9 +40,6 @@
     margin-top: var(--base-unit);
 }
 
-
-
-
 /* 2. 녹색경영 부가설명 */
 .green_sub, .sub_wrapper{
     padding: calc(var(--base-unit) * 5) 0;
@@ -53,12 +50,6 @@
 .sub_wrapper:nth-child(2n){
     text-align: left;
 }
-
-
-
-
-/* 17 */
-
 
 /* 3. 지속 가능한 개발 */
 .sustdev_desc{
@@ -105,4 +96,25 @@
 }
 .sustdev_download > a{
     text-decoration: none;
+}
+.sustdev_circle{
+    position: relative;
+}
+.mover {
+    position: absolute;
+    left: 0;
+    offset-path: path("M238,0.5h944c131.168,0,237.5,106.333,237.5,237.5l0,0c0,131.168-106.332,237.5-237.5,237.5H238C106.833,475.5,0.5,369.168,0.5,238l0,0C0.5,106.833,106.833,0.5,238,0.5z");
+    offset-distance: 0%;
+    animation: move 5s linear infinite;
+}
+.mover span{
+    color: green;
+    text-align: center;
+    font-size: 128px;
+    
+    rotate: 90deg;
+}
+
+@keyframes move {
+100% {offset-distance: 100%;}
 }
