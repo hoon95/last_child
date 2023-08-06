@@ -68,8 +68,10 @@
     </div>
   </header>
   <main class="qd_oled_index black">
-		<section class="qd qd_bg">
-			<h1 class="hidden">QD-OLED</h1>
+		<section class="qd pushin">
+			<div class="qd_bg pushin-layer">
+        <h1 class="hidden">QD-OLED</h1>
+      </div>
 		</section>
 		<section class="qd qd_dot container">
 			<h2 class="h3_2">스스로 빛을 내는 퀸덤닷!<br>
@@ -119,7 +121,7 @@
         <li><img src="img/qd/qd_dot3_3_3.png" alt="qd_oled3"></li>
       </ul>
 		</section>
-		<section class="qd_compare">
+		<section class="qd_compare container">
 			<h2 class="h3">Comparison with conventional OLED</h2>
       <div class="qd row">
         <div class="qd_oled_tv col">
@@ -129,9 +131,11 @@
              <img src="img/qd/qd-oled_sec1_3.png" alt="oled BP">
              <img src="img/qd/qd-oled_sec1_2.png" alt="rgb 컬러필터">
              <img src="img/qd/qd-oled_sec1.png" alt="oled white 발광원">
-             <div class="arrow_box">
-              <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
-              <span class="qd_arrow qd_oled_arrow">oled 화살표</span>
+             <div class="qd_arrow">
+               <!-- <span class="qd_arrow qd_oled_arrow2">qd 화살표</span> 
+              <span class="qd_arrow qd_oled_arrow">oled 화살표</span> -->
+              <img src="img/qd/qd-oled_sec1_arrow2.png" alt="qd 화살표" class="qd_arrow.qd_oled_arrow2">
+              <img src="img/qd/qd-oled_sec1_arrow.png" alt="oled 화살표" class="qd_oled_arrow">
              </div>
             </div>
           </div>
@@ -142,25 +146,26 @@
             <div class="qd_olde_img">
               <img src="img/qd/qd-oled_sec2_2.png" alt="qd layer">          
               <img src="img/qd/qd-oled_sec2_1.png" alt="qd oled blue 발광원">
-              <div class="arrow_box">
-                <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
-                <span class="qd_arrow qd_oled_arrow3">oled 화살표</span> 
+              <div class="qd_arrow">
+                 <!-- <span class="qd_arrow qd_oled_arrow4">oled 화살표</span> 
+                <span class="qd_arrow qd_oled_arrow3">oled 화살표</span>  -->
+                <img src="img/qd/qd-oled_sec2_arrow2.png" alt="oled 화살표" class="qd_oled_arrow3">
+                <img src="img/qd/qd-oled_sec2_arrow.png" alt="oled 화살표" class="qd_oled_arrow4">
               </div>
             </div>
           </div>
         </div>
       </div>
 		</section>
-		<section class="qd_drag">
-			<h2 class="h3">drag</h2>
+		<!-- <section class="qd_drag container">
+      <h2 class="h3">drag</h2>
       <div class="qd">
-        <div>
-          <img src="img/qd/qd_drag_1.PNG" alt="이미지 전">
-          <img src="img/qd/qd_drag_2.PNG" alt="이미지 후">
-        </div>
+        <div class="qd_drag_box">
+          <img src="img/qd/qd_drag_1.PNG" alt="이미지 전" class="drag1">
+          <img src="img/qd/qd_drag_2.PNG" alt="이미지 후" class="drag2">
         </div>
       </div>
-		</section>
+    </section> -->
 		<section class="qd_foot">
 			<h2 class="h2">놀라운 사진 및 비교할 수 없는 성능</h2>
       <p class="h4_2">Quantum Dot Technology(QD-OLED)는 그 어떤 디스플레이 기술도 가보지 못한 곳으로<br> 
@@ -246,7 +251,8 @@
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.min.js" integrity="sha512-DjIQO7OxE8rKQrBLpVCk60Zu0mcFfNx2nVduB96yk5HS/poYZAkYu5fxpwXj3iet91Ezqq2TNN6cJh9Y5NtfWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/common.js"></script>
-  <script src="js/tech.js"></script>
+  <script src="js/qd.js"></script>
 </body>
 </html>

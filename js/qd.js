@@ -24,3 +24,21 @@ $(window).scroll(function() {
       $(".qd_display_od").removeClass("animate");
   }
 })
+
+// var drag1Width = $(".drag1").width(); // drag1 이미지의 너비
+// var drag2Width = $(".drag2").width(); // drag2 이미지의 너비
+
+// var containmentArray1 = [0, 0, 200.5, 0]; // drag1 이미지의 범위
+// var containmentArray2 = [0, 0, drag2Width, 0]; // drag2 이미지의 범위
+
+// $(".drag1").draggable({
+//   axis: "x",
+//   containment: containmentArray1,
+//   cancel: false
+// });
+
+// $(".drag2").draggable({
+//   axis: "x",
+//   containment: containmentArray2,
+//   cancel: false
+// });

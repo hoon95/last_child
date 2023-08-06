@@ -11,7 +11,7 @@
 	height: 100%;
 } */
 .qd_oled_index section {
-	padding: calc(var(--base-unit)*10) 0;
+	padding: calc(var(--base-unit)*8) 0;
 	box-sizing: border-box;
 }
 .qd_oled_index section h2 {
@@ -187,55 +187,50 @@
 .qd_compare .qd_olde_img {
 	position: relative;
 }
-.qd_compare .qd > .qd_oled_tv img {
+.qd_compare .qd > .qd_oled_tv .qd_olde_img > img {
 	transform: translateY(0%);
 	transition: 2s;
 	opacity: 0;
 }
-.qd_compare .qd > .qd_display_od img {
+.qd_compare .qd > .qd_display_od .qd_olde_img > img {
 	transform: translateY(0%);
 	transition: 2s;
 	opacity: 0;
 }
-.qd_compare .qd > .qd_oled_tv.animate img {
+.qd_compare .qd > .qd_oled_tv.animate .qd_olde_img > img {
 	opacity: 1;
 }
-.qd_compare .qd > .qd_display_od.animate img {
+.qd_compare .qd > .qd_display_od.animate .qd_olde_img > img {
 	opacity: 1;
 	transition-delay: 1.5s;
 }
-.qd_compare .qd > .qd_oled_tv.animate img:nth-of-type(1) {
+.qd_compare .qd > .qd_oled_tv.animate .qd_olde_img > img:nth-of-type(1) {
 	/* top: 25%; */
 	transform: translateY(20%);
 }
-.qd_compare .qd > .qd_oled_tv.animate img:nth-of-type(2) {
+.qd_compare .qd > .qd_oled_tv.animate .qd_olde_img > img:nth-of-type(2) {
 	/* top: 37%; */
 	transform: translateY(30%);
 }
-.qd_compare .qd > .qd_oled_tv.animate img:nth-of-type(3) {
+.qd_compare .qd > .qd_oled_tv.animate .qd_olde_img > img:nth-of-type(3) {
 	/* top: 62%; */
 	transform: translateY(150%);
 }
 
-.qd_compare .qd > .qd_display_od.animate img:nth-of-type(1) {
+.qd_compare .qd > .qd_display_od.animate .qd_olde_img > img:nth-of-type(1) {
 	/* top: 25%; */
 	transform: translateY(20%);
 }
-.qd_compare .qd > .qd_display_od.animate img:nth-of-type(2) {
+.qd_compare .qd > .qd_display_od.animate .qd_olde_img > img:nth-of-type(2) {
 	/* top: 62%; */
 	transform: translateY(110%);
 }
 
 
 .qd_compare .qd_arrow{
-	position: absolute;
-	/* top: 0; */
-	display: inline-block;
-	background-size: cover;
-	background-repeat: no-repeat;
-	text-indent: -9999em;
+	position: static
 }
-.qd_oled_arrow {
+/* .qd_oled_arrow {
 	width: 362px;
 	height: 212px;
 	background-image: url(../img/qd/qd-oled_sec1_arrow.png);
@@ -255,21 +250,37 @@
 	width: 460px;
 	height: 78px;
 	background-image: url(../img/qd/qd-oled_sec2_arrow2.png);
+} 
+*/
+.qd_compare .qd > .qd_oled_tv .qd_arrow > img,
+.qd_compare .qd > .qd_display_od .qd_arrow > img {
+	opacity: 0;
 }
-.qd_compare .qd_arrow.qd_oled_arrow2 {
-	top: -13px;
+.qd_compare .qd > .qd_oled_tv.animate .qd_arrow > img {
+
+	animation: arrow 2s 3s infinite ease-in-out;
+}
+.qd_compare .qd > .qd_display_od.animate .qd_arrow > img {
+	animation: arrow 2s 3s infinite ease-in-out;
+}
+.qd_compare .qd > .qd_oled_tv .qd_arrow > img:first-child {
+	position: absolute;
+	top: -12px;
 	right: calc(100% - 88%);
 }
-.qd_compare .qd_arrow.qd_oled_arrow {
-	bottom: -144px;
+.qd_compare .qd > .qd_oled_tv .qd_arrow > img:last-child{
+	position: absolute;
+	bottom: -155px;
 	right: calc(100% - 92%);
 }
-.qd_compare .qd_arrow.qd_oled_arrow4 {
+.qd_compare .qd > .qd_display_od .qd_arrow > img:first-child {
+	position: absolute;
 	top: -52px;
 	left: -17px;
 }
-.qd_compare .qd_arrow.qd_oled_arrow3 {
-	bottom: -13px;
+.qd_compare .qd > .qd_display_od .qd_arrow > img:last-child {
+	position: absolute;
+	bottom: -24px;
 	left: 0;
 }
 @keyframes arrow {
@@ -283,13 +294,25 @@
 	}
 }
 
-.qd_drag .qd{
+
+/* .qd_drag .qd_drag_box {
 	position: relative;
+	width: 608px;
+	margin: 0 auto;
+	height: 378px;
+	overflow: hidden;
 }
-.qd_drag .swiper{
-	max-width: 610px;
-	margin:2rem auto;
+.qd_drag .qd_drag_box img {
+	position: absolute;
+	top: 0;
 }
+.qd_drag .qd_drag_box img:first-child {
+	left: 0;
+}
+.qd_drag .qd_drag_box img:last-child {
+	right: 0;
+} */
+
 .qd_foot {
 	padding: 620px 0 calc(var(--base-unit)*5) 0;
 	text-align: center;
