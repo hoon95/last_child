@@ -13,8 +13,12 @@ let secondDisplayOST = secondDisplay.find('h1').offset().top;
 let thirdCulture = $('.third_text');
 let thirdCultureOST = thirdCulture.find('h1').offset().top;
 /* section3 background */
-let mission = $('.co_culture_section3 .co_culture_info');
-let missionOST = mission.offset().top;
+let sdcCulture = $('.co_culture_section2');
+let sdcCultureOST = sdcCulture.find('img').offset().top;
+let mission = $('.co_culture_section3');
+let missionOST = mission.find('img').offset().top;
+let vision = $('.co_culture_section4');
+let visionOST = vision.find('img').offset().top;
 
 $(window).scroll(function(){
   let sct = $(this).scrollTop();
@@ -22,15 +26,28 @@ $(window).scroll(function(){
 
   if(sct >= firstSamsungOST - windowHeight){
     firstSamsung.addClass('active');
-  } 
+  }
   if(sct >= secondDisplayOST - windowHeight){
     secondDisplay.addClass('active');
   } 
   if(sct >= thirdCultureOST - windowHeight){
     thirdCulture.addClass('active');
   }
+
+  if(sct >= sdcCultureOST - windowHeight){
+    sdcCulture.addClass('active');
+  } else {
+    sdcCulture.removeClass('active');
+  }
   if(sct >= missionOST - windowHeight){
     mission.addClass('active');
+  } else {
+    mission.removeClass('active');
+  }
+  if(sct >= visionOST - windowHeight){
+    vision.addClass('active');
+  } else {
+    vision.removeClass('active');
   }
 });
 
