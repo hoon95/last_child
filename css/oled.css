@@ -313,7 +313,7 @@ body{
 
 /* oled_section 6 반응속도 비교 */
 .oled_section6{
-  padding: calc(var(--base-unit)*7) 0;
+  padding-top: calc(var(--base-unit)*7);
   width: 100%;
   text-align: center;
 }
@@ -391,8 +391,12 @@ body{
 
 /* oled_section7 OLED Finder */
 .oled_section7{
-  padding: calc(var(--base-unit)*7) 0;
+  padding: calc(var(--base-unit)*5) 0;
   width: 100%;
+}
+.oled_section7 .use_oled{
+  text-align: center;
+  padding-bottom: calc(var(--base-unit)*4);
 }
 .oled_finder_video{
   width: 100%;
@@ -422,7 +426,9 @@ body{
 }
 .oled_finder_banner .oled_finder_move_btn:hover{
   font-weight: bold;
-  background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+  background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
+  color: var(--black);
+  /* background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%); */
   border: 3px solid var(--white);
 }
 .oled_finder_banner img {
