@@ -260,11 +260,9 @@
 
 
 @media (max-width: 1400px) {
-  /* :root {
-    --h2-size: 85px;
-    --h3-size: 55px;
-    --h4-size: 28px;
-  } */
+  .h2 {font-size: calc(var(--h2-size) - 11px);}
+  .h3,.h3_2 {font-size: calc(var(--h3-size) - 11px);}
+  .h4,.h4_2 {font-size: calc(var(--h4-size) - 4px);}
 
   .ceo_greeting h2 {
     font-size: 380px;
@@ -273,14 +271,15 @@
   .co_introduce .intro1 .text_box {
     margin-left: 30px;
   }
+  .container {
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 1200px){
-  /* :root {
-    --h2-size: 70px;
-    --h3-size: 48px;
-    --h4-size: 24px;
-  } */
+  .h2 {font-size: calc(var(--h2-size) - 26px);}
+  .h3,.h3_2 {font-size: calc(var(--h3-size) - 16px);}
+  .h4,.h4_2 {font-size: calc(var(--h4-size) - 8px);}
 
   .h2 {
     line-height: calc(var(--base-unit)*6);
@@ -293,21 +292,98 @@
   .ceo_greeting h2:after {
     content: 'samsung display samsung display';
   }
+
+  .ceo_greeting .content figure {
+    width: 85%;
+  }
 }
 
 @media (max-width: 992px){
+  :root {
+    --h2-size: 63px;
+    --h3-size: 44px;
+    --h4-size: 24px;
+  }
+
+  .h3_2 {
+    line-height: calc(var(--base-unit)*4);
+  } 
+
   .ceo_greeting h2 {
-    font-size: 260px;
-    transform: none;
-    letter-spacing: -20.5px;
-    line-height: 1;
+    font-size: 280px;
+    letter-spacing: -28.5px;
+    text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black), 0 -2px var(--black);
+  }
+
+  .ceo_greeting h2:after {
+    content: 'samsung display samsung display samsung display samsung';
   }
 
   .ceo_greeting .content figure {
-    width: 80%;
+    width: 90%;
+  }
+
+  .ceo_greeting h3 br {
+    display: none;
+  }
+
+  .co_image h2 {
+    line-height: 70px;
+  }
+
+  .co_introduce .intro1 .text_box {
+    margin-left: 0;
+  }
+
+  .co_introduce article .text_box h3 {
+    margin-top: var(--base-unit);
+  }
+
+  .co_introduce .intro2 .text_box {
+    margin-top: 0;
+  }
+
+  .co_introduce .intro2 .text_box p {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px){
+  .ceo_greeting .content {
+    text-align: left;
+  }
+
+  .ceo_greeting h2 {
+    display: none;
+  }
+
+  .ceo_greeting .content figure {
+    width: 100%;
     margin-bottom: calc(var(--base-unit)*2);
   }
+
   .ceo_greeting .content p {
     margin-top: calc(var(--base-unit)*10);
-}
+    text-align: left;
+  }
+
+  .ceo_greeting .content .greeting_p_1,
+  .ceo_greeting .content .greeting_p_2 {
+    width: 100%;
+  }
+
+  .co_image h2 {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .co_image h2 br {
+    display: none;
+  }
+
+  .business_area figure figcaption {
+    bottom: 0;
+  }
+  
 }
