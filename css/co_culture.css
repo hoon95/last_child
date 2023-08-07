@@ -1,8 +1,11 @@
 /* COMPANY CULTURE */
+body{
+  overflow-x: hidden;
+}
 
 .co_culture_thumbnail_img{
   width: 100%;
-  height: 1080px;
+  height: 150vh;
   background: url("../img/co_culture/sdc_info.png") no-repeat 50% 50%;
   background-size: cover; 
   background-attachment: fixed; 
@@ -10,7 +13,7 @@
 /* co_culture_section1 */
 
 .co_culture_section1{
-  padding-top: calc(var(--base-unit)*10);
+  padding-top: calc(var(--base-unit)*6);
 }
 .samsung_display_culture{
   width: 100%;
@@ -19,18 +22,39 @@
 .samsung_display_culture h1{
   padding: calc(var(--base-unit)*3);
 }
+.co_culture_section1 .first_text{
+  padding-top: calc(var(--base-unit)*8);
+  box-sizing: border-box;
+}
 .co_culture_section1 .first_text h1{
   color: var(--dark-blue);
+}
+.co_culture_section1 .second_text{
+  padding-top: calc(var(--base-unit)*10);
+  box-sizing: border-box;
 }
 .co_culture_section1 .second_text h1{
   color: var(--white);
 }
+.co_culture_section1 .third_text{
+  padding-top: calc(var(--base-unit)*10);
+  box-sizing: border-box;
+}
 .co_culture_section1 .third_text h1{
   color: var(--light-blue);
-  /* color:#83C442;  light-green */
 }
-/* co_culture_section2 */
-
+/* co_culture_section2 SDC Culture 소개 */
+.co_culture_section2{
+  background: var(--white);
+  transform:translateX(40%);
+  transition: 2s;
+  opacity: 0;
+}
+.co_culture_section2.active{
+  background: var(--white);
+  transform:none;
+  opacity: 1;
+}
 .co_culture_section2 .co_culture_info{
   padding: calc(var(--base-unit)*6) 0;
   text-align: left;
@@ -53,8 +77,17 @@
   object-fit: cover;
 }
 /* co_culture_section3 */
-
-.co_culture_section3 .co_culture_info2{
+.co_culture_section3{
+  background: var(--white);
+  transition: 2s;
+  transform:translateX(-40%);
+}
+.co_culture_section3.active{
+  background: var(--black);
+  color: var(--white);
+  transform: none;
+}
+.co_culture_section3 .co_culture_info{
   padding: calc(var(--base-unit)*6) 0;
   text-align: right;
 }
@@ -76,7 +109,16 @@
   object-fit: cover;
 }
 /* co_culture_section4 */
-
+.co_culture_section4{
+  background: var(--white);
+  transition: 2s;
+  transform:translateX(40%);
+}
+.co_culture_section4.active{
+  background: var(--light-blue);
+  color: var(--black);
+  transform: none;
+}
 .co_culture_section4 .co_culture_info{
   padding: calc(var(--base-unit)*6) 0;
   text-align: left;
@@ -107,7 +149,7 @@
   width: 100%;
 }
 .co_culture_section5 h3{
-  padding-bottom: calc(var(--base-unit)*4);
+  padding-bottom: calc(var(--base-unit)*3);
   text-transform: capitalize;
 }
 /* active-slide */
@@ -115,7 +157,6 @@
   width: 1000px;
   height: 650px;
 }
-
   /* 반응형 
   max-width: 600px;
   margin:2rem auto; */
@@ -128,11 +169,21 @@
   width: 100%;
   height: 100%;
 }
+.co_culture_active-slide .swiper-slide p{
+  font-size: 24px;
+  padding: 5px 10px;
+  /* background: var(--blue); */
+  /* background-image: linear-gradient(135deg, rgb(168, 176, 255), rgb(168, 239, 255)); */
+  background-image: linear-gradient(135deg, #56f9f1 0%, #0a1ed0 100%);
+  color: var(--white);
+  /* color: var(--black); */
+  border-radius: 30px;
+  border-bottom: 3px solid #fff;
+}
 .swiper-slide img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
 }
 .swiper-button-prev,
 .swiper-button-next{
@@ -140,17 +191,18 @@
 }
 
 .co_culture_slide_info{
-  padding-top: calc(var(--base-unit)*3);
+  padding-top: calc(var(--base-unit)*2);
 }
 
 /* section6 video */
 
 .co_culture_section6{
   padding-top: calc(var(--base-unit)*12);
+
 }
 .co_culture_ending_img{
   width: 100%;
-  height: 1080px;
+  height: 200vh;
   background: url("../img/co_culture/announce.jpg") no-repeat 50% 50%;
   background-size: cover; 
   background-attachment: fixed;
@@ -158,8 +210,10 @@
   text-align: center;
 }
 .co_culture_ending_img h2{
-  padding: calc(var(--base-unit)*6) 0;
+  margin-bottom: calc(var(--base-unit)*6);
   color: var(--white);
+  background: rgba(0, 0, 0, 0.7);
+  
 }
 
 .co_culture_ending_video{
@@ -167,8 +221,31 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-bottom: calc(var(--base-unit)*3);
 }
 .co_culture_ending_video video{
   width: 100%;
   /* object-fit: cover; */
+}
+.co_culture_section6 .recruit_info{
+  margin: calc(var(--base-unit)*12) 0 calc(var(--base-unit)*2) 0;
+  color: var(--white);
+}
+.co_culture_section6 .recruit_img{
+  padding-bottom: calc(var(--base-unit)*2);
+}
+.co_culture_section6 .recruit_img img{
+  border-radius: 20px;
+}
+.co_culture_section6 .recruit_btn{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.co_culture_section6 .cover_bgimg{
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding-bottom: calc(var(--base-unit)*10);
+
 }

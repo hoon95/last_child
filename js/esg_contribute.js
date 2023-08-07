@@ -25,3 +25,5 @@ let swiper = new Swiper('.mySwiper', {
   direction: 'horizontal',
   slideShadows: false
 });
+
+AOS.init();

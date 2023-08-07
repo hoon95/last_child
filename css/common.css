@@ -188,7 +188,7 @@ body.black {
   box-sizing: border-box;
   transition: .3s;
   cursor: pointer;
-  z-index: 80;
+  z-index: 100;
 }
 .go_top:active{
   height: 35px;

@@ -12,66 +12,134 @@ hr{
 
 
 /* section2  tech 시작*/
-.section2 .tech_box .tech,
-.section2 .tech_box .tech-wrapper-slide {
-	padding: calc(var(--base-unit)*5) 0;
-	box-sizing: border-box;
+
+.section2 .tech_box > div {
+padding: calc(var(--base-unit)*5) 0;
+box-sizing: border-box;
+}
+.section2 .tech_box .tech {
+padding-left: 40px;
+}
+.section2 .tech_box .tech_2 {
+position: relative;
 }
 .section2 .tech {
-	display: inline-block;
-	width: 730px;
-	height: 100vh;
-	background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
+display: inline-block;
+width: 730px;
+height: 100vh;
+background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
 }
 
 .section2 .tech h2 {
-	color: var(--light-blue);
+color: var(--light-blue);
 }
 .section2 .tech > p {
-	color: var(--white);
-	margin-bottom: 68px;
+color: var(--white);
+margin-bottom: 68px;
 }
-.section2 .tec_tab {
-	position: relative;
+.section2 .tec_tab_list {
+position: relative;
 }
 
 .section2 .tec_tab p.active {
-	color: #000;
+color: #000;
 }
-.section2 .tec_tab p a {
-	display: inline-block;
-	padding-left: 32px;
-	border-left: 4px solid rgba(255,255,255,0.3);
-	color: var(--white);
-	text-transform: uppercase;	
-	margin-left: 50px;
-}
-.section2 .tech_2 {
-	position: relative;
+.section2 .tec_tab_list a {
+display: block;
+padding-left: 32px;
+border-left: 5px solid rgba(255,255,255,0.3);
+color: var(--white);
+text-transform: uppercase;	
 }
 
+.tech_2 p {
+margin-bottom: calc(var(--base-unit)*6);
+}
 .section2 .tech_box .swiper {
-	position: relative;
-	max-width: 1023px;
-	margin: 0 auto;
-	text-align: center;
+max-width: 1023px;
+text-align: center;
 }
 
 .section2 .tech_2 button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 10;
+position: absolute;
+top: 62%;
+transform: translateY(-50%);
+z-index: 10;
 }
 .section2 .tech_2 button.prev {
-	left: 0;
+left: 0;
 }
 .section2 .tech_2 button.next {
-	right: 0;
+right: 0;
 }
+.tech_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 20%;
+  background: var(--blue);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+}
+
+
 /* section2  tech 종료*/
 
-
+/* section 3 esg */
+.esg{
+	height: 100vh;
+}
+.esg_exp{
+	width: 47vw;
+}
+.esg_list{
+	width: 53vw;
+}
+.esg_list_exp{
+	width: 33.3%;
+	padding: calc(var(--base-unit) * 3) 55px;
+	border-left: 1px solid #fff;
+}
+.esg_list_exp_title_main{
+	font-size: 400px;
+	line-height: 400px;
+}
+.esg_hover > div{
+	margin-bottom: var(--base-unit);
+	gap: 100px;
+}
+.esg_hover .per::after{
+	content: '%';
+	font-size: 20px;
+}
+.esg_hover .tco::after{
+	content: '천톤 CO2e';
+	font-size: 20px;
+}
+.esg_hover .ton::after{
+	content: '톤';
+	font-size: 20px;
+}
+.esg_hover .case::after{
+	content: '건';
+	font-size: 20px;
+}
+.esg_hover .people::after{
+	content: '명';
+	font-size: 20px;
+}
+.esg_hover .won::after{
+	content: '억원';
+	font-size: 20px;
+}
+.esg_hover p{
+	width: 20vw;
+}
+.esg_hover span{
+	width: 20vw;
+	line-height: 102px;
+}
 
 
 /* section4_business_area */
