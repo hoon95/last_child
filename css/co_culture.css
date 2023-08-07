@@ -5,7 +5,7 @@ body{
 
 .co_culture_thumbnail_img{
   width: 100%;
-  height: 250vh;
+  height: 150vh;
   background: url("../img/co_culture/sdc_info.png") no-repeat 50% 50%;
   background-size: cover; 
   background-attachment: fixed; 
@@ -24,42 +24,21 @@ body{
 }
 .co_culture_section1 .first_text{
   padding-top: calc(var(--base-unit)*8);
-  opacity: 0;
-  transform: translate(-30%, 30%);
-  transition: 2s;
   box-sizing: border-box;
-}
-.co_culture_section1 .first_text.active{
-  opacity: 1;
-  transform: none;
 }
 .co_culture_section1 .first_text h1{
   color: var(--dark-blue);
 }
 .co_culture_section1 .second_text{
-  padding-top: calc(var(--base-unit)*18);
-  opacity: 0;
-  transform: translate(-30%, 30%);
-  transition: 2s 0.7s;
+  padding-top: calc(var(--base-unit)*10);
   box-sizing: border-box;
-}
-.co_culture_section1 .second_text.active{
-  opacity: 1;
-  transform: none;
 }
 .co_culture_section1 .second_text h1{
   color: var(--white);
 }
 .co_culture_section1 .third_text{
-  padding-top: calc(var(--base-unit)*18);
-  opacity: 0;
-  transform: translate(-30%, 30%);
-  transition: 2s;
+  padding-top: calc(var(--base-unit)*10);
   box-sizing: border-box;
-}
-.co_culture_section1 .third_text.active{
-  opacity: 1;
-  transform: none;
 }
 .co_culture_section1 .third_text h1{
   color: var(--light-blue);
@@ -67,12 +46,13 @@ body{
 /* co_culture_section2 SDC Culture 소개 */
 .co_culture_section2{
   background: var(--white);
-  transition: 3s;
-  opacity: 0;
   transform:translateX(40%);
+  transition: 2s;
+  opacity: 0;
 }
 .co_culture_section2.active{
-  transform: none;
+  background: var(--white);
+  transform:none;
   opacity: 1;
 }
 .co_culture_section2 .co_culture_info{
@@ -99,7 +79,7 @@ body{
 /* co_culture_section3 */
 .co_culture_section3{
   background: var(--white);
-  transition: 4s;
+  transition: 2s;
   transform:translateX(-40%);
 }
 .co_culture_section3.active{
@@ -131,7 +111,7 @@ body{
 /* co_culture_section4 */
 .co_culture_section4{
   background: var(--white);
-  transition: 4s;
+  transition: 2s;
   transform:translateX(40%);
 }
 .co_culture_section4.active{
@@ -218,6 +198,7 @@ body{
 
 .co_culture_section6{
   padding-top: calc(var(--base-unit)*12);
+
 }
 .co_culture_ending_img{
   width: 100%;
@@ -229,8 +210,10 @@ body{
   text-align: center;
 }
 .co_culture_ending_img h2{
-  padding: calc(var(--base-unit)*6) 0;
+  margin-bottom: calc(var(--base-unit)*6);
   color: var(--white);
+  background: rgba(0, 0, 0, 0.5);
+  
 }
 
 .co_culture_ending_video{
