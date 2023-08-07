@@ -61,6 +61,7 @@ let target = $('.s3');
 let scrollCount = 0;
 let isScrolling = false;
   
+if(matchMedia('(min-width: 480px)').matches){
   $(window).scroll(function() {
     let targetSection = $('.s3');
     if(targetSection.offset().top <= $(window).scrollTop()){
@@ -100,6 +101,7 @@ let isScrolling = false;
       }
     }
   });
+}
 
 
   // swiper

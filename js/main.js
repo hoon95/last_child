@@ -30,14 +30,18 @@ $('.esg_list_exp').hover(
         esgNumber();
         $(this).stop().animate({width: '52vw'});
         $(this).find('.esg_hover').css({display:'inline-block'});
-        $('.esg_exp').stop().animate({width: '13vw'})
-        $('.esg_title').css({writingMode: 'vertical-lr'})
+        $('.esg_exp').stop().animate({width: '13vw'});
+        $('.esg_exp').addClass('align-items-center');
+        $('.esg_title').css({writingMode: 'vertical-lr'});
         $('.esg_desc').css({display: 'none'});
+        numberFormat($('.esg_hover span'));
+
     },
     function(){
         $(this).stop().animate({width: '17.3vw'})
         $(this).find('.esg_hover').css({display:'none'});
         $('.esg_exp').stop().animate({width: '47vw'});
+        $('.esg_exp').removeClass('align-items-center');
         $('.esg_title').css({writingMode: ''})
         $('.esg_desc').css({display: 'block'});
     }
@@ -52,9 +56,13 @@ let esgNumber = function(){
         $({num:0}).animate({num:targetNum},{
             duration: 2500,
             progress: function(){
-                let change = Math.ceil(this.num)
+                let change = numberFormat(Math.ceil(this.num));
                 changeNum.text(change);
             }
         })
     })
+}
+
+function numberFormat(inputNumber) {
+   return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

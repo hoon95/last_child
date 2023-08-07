@@ -18,16 +18,17 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 3;
 }
 .s3 span.active{
     color:white;
-    z-index: 3;
+    z-index: 9999;
 }
 .s3 > div{
     position: sticky;
     height: 100vh;
     top: 0;
+    z-index: 2;
 }
 .s3 .sustain{
     background: url(../img/esg/esg_sustain.png) no-repeat;
@@ -50,7 +51,6 @@
 }
 .s3_title, .s3_content{
     font-weight: bold;
-    z-index: 2;
 }   
 
 /* 2. Sustainable Value */
@@ -69,7 +69,6 @@
 }
 .value .value_list:last-child{
     padding-top: calc(var(--base-unit) * 5);
-    text-align: center;
 }
 .value_list > div{
     position: relative;
@@ -155,4 +154,83 @@
 .report a {
     color: var(--white);
     z-index: 10;
+}
+
+
+
+@media (max-width: 1400px){
+    :root{
+        --h3-size: 50px;
+    }
+}
+@media (max-width: 1200px){
+    :root{
+        --h3-size: 46px;
+    }
+    .s3 .s3_title{
+        font-size: calc(var(--h1-size) * 1.6);
+        line-height: calc(var(--h1-size) * 1.6);
+    }
+}
+@media (max-width: 992px){
+    .s3 .s3_title{
+        font-size: calc(var(--h1-size) * 1.4);
+        line-height: calc(var(--h1-size) * 1.4);
+    }
+    .report_desc > div{
+        font-size : var(--default-size);
+    }
+}
+@media (max-width: 768px){
+    .value_title, .value_content{
+        width: 100%;
+        margin-left: 0;
+        padding: 0 37px;
+    }
+    .value_content{
+        font-size: var(--default-size);
+    }
+    .value_list_title{
+        font-size: 34px;
+        line-height: calc(var(--base-unit) * 4);
+    }
+}
+@media (max-width: 576px){
+    :root{
+        --h3-size: 40px
+    }
+    .s3 .s3_title{
+        font-size: calc(var(--h1-size) * 1.2);
+        line-height: calc(var(--h1-size) * 1.2);
+    }
+}
+@media (max-width: 480px){
+    .s3{
+        height: 100vh;
+    }
+    .s3 > div{
+        position: relative;
+        /* rotate: -90deg; */
+    }
+    .value_list_title{
+        font-size: 28px;
+    }
+    .report_desc{
+        text-align: center;
+    }
+    .report_desc p{
+        font-size: var(--default-size) !important;
+        line-height: 26px !important;
+    }
+    .report{
+        padding: 73px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: calc(var(--base-unit) * 4);
+    }
+    .report_year{
+        flex-direction: row !important;
+        font-size: var(--h3-size);
+        gap: 85px;
+    }
 }

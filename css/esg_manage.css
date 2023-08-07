@@ -55,7 +55,7 @@
 .sustdev_desc{
     padding: calc(var(--base-unit) * 12) 0 calc(var(--base-unit) * 7) 0;
 }
-.sustdev hgroup{
+.sustdev_desc > div{
     text-align: center;
 }
 .sustdev_outer_circle{
@@ -80,8 +80,9 @@
     color: var(--white);
     opacity: 0.9;
     gap: calc(var(--base-unit) * 2);
+    text-align: center;
 }
-.sustdev_inner_circle hgroup h4{
+.sustdev_inner_circle h4{
     text-transform: uppercase;
 }
 .sustdev_content{
