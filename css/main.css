@@ -17,6 +17,9 @@ hr{
 padding: calc(var(--base-unit)*5) 0;
 box-sizing: border-box;
 }
+.section2 .tech_box > .tech_2 {
+	padding-right: 40px;
+}
 .section2 .tech_box .tech {
 padding-left: 40px;
 }
@@ -50,6 +53,9 @@ padding-left: 32px;
 border-left: 5px solid rgba(255,255,255,0.3);
 color: var(--white);
 text-transform: uppercase;	
+}
+.section2 .tec_tab_list a.active > p {
+	color: var(--blue);
 }
 
 .tech_2 p {

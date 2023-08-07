@@ -18,9 +18,8 @@ techwrapperSwiper = new Swiper(".tech2-slide", {
 
     //
 });
+
 techwrapperSwiper.on("slideChange", function () {
-
-
    activeteb(techwrapperSwiper.realIndex);
 });
 
@@ -46,13 +45,14 @@ techMenu.on("click", function (e) {
 
     techwrapperSwiper.slideTo(activeIndex);
 
-    $(this).addClass("active").siblings().removeClass("active");
 
 });
 
 function activeteb(idx) {
     let techBarTop = techMenu.eq(idx).position().top;
     techBar.css({ top: techBarTop });
+    let techIDx = techMenu.eq(idx);
+    techIDx.addClass("active").siblings().removeClass("active");
 }
 
 // Main_section2_tech 종료
@@ -109,7 +109,7 @@ $(window).scroll(function(){
       $this.addClass('active');
     }
   });
-  console.log(SCT);
+  //console.log(SCT);
 });
 $(window).trigger('scroll');
 // Main_section4_tech 종료

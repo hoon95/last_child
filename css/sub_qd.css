@@ -338,10 +338,14 @@ main section + section {
 	color: var(--white);
 	gap: calc(var(--base-unit)*2) 0;
 }
-.qd_foot ul li .qd_foot_img {
+.qd_foot ul li {
 	overflow: hidden;
-	width: 292px;
-	height: 306px;
+	transform: scale(1.0);
+	/* width: 292px;
+	height: 306px; */
+}
+.qd_foot ul li a img {
+	object-fit: cover;
 }
 .qd_foot ul li:hover a img {
 	transform: scale(1.1);
