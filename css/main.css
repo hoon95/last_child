@@ -13,8 +13,7 @@ hr{
 
 /* section2  tech 시작*/
 
-.section2 .tech_box .tech,
-.section2 .tech_box .tech-wrapper-slide {
+.section2 .tech_box > div {
 padding: calc(var(--base-unit)*5) 0;
 box-sizing: border-box;
 }
