@@ -202,7 +202,7 @@ body{
 }
 .co_culture_ending_img{
   width: 100%;
-  height: 220vh;
+  height: 200vh;
   background: url("../img/co_culture/announce.jpg") no-repeat 50% 50%;
   background-size: cover; 
   background-attachment: fixed;
@@ -212,7 +212,7 @@ body{
 .co_culture_ending_img h2{
   margin-bottom: calc(var(--base-unit)*6);
   color: var(--white);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   
 }
 
@@ -227,9 +227,8 @@ body{
   width: 100%;
   /* object-fit: cover; */
 }
-
 .co_culture_section6 .recruit_info{
-  padding: calc(var(--base-unit)*12) 0 calc(var(--base-unit)*2) 0;
+  margin: calc(var(--base-unit)*12) 0 calc(var(--base-unit)*2) 0;
   color: var(--white);
 }
 .co_culture_section6 .recruit_img{
@@ -242,4 +241,11 @@ body{
   display: inline-block;
   padding: 10px 20px;
   border-radius: 15px;
+  cursor: pointer;
+}
+.co_culture_section6 .cover_bgimg{
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding-bottom: calc(var(--base-unit)*10);
+
 }
