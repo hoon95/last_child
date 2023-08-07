@@ -76,18 +76,18 @@
 }
 
 .content_wrap {
-  height: 12000px;
-  position: relative;
+  height: calc(4386px / 0.08);
 }
 
 .co_his_content .content {
   height: 4386px;
   position: sticky;
-  top: calc(var(--base-unit)*8);
+  top: calc(var(--base-unit)*15);
 }
 
 .co_his_content .content > svg {
   margin-top: 28px;
+  stroke-linecap: round;
 }
 
 .co_his_content .line {
