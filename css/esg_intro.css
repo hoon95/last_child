@@ -158,7 +158,7 @@
 
 
 
-@media (max-width: 1400px){
+/* @media (max-width: 1400px){
     :root{
         --h3-size: 50px;
     }
@@ -180,7 +180,7 @@
     .report_desc > div{
         font-size : var(--default-size);
     }
-}
+} */
 @media (max-width: 768px){
     .value_title, .value_content{
         width: 100%;
@@ -195,7 +195,7 @@
         line-height: calc(var(--base-unit) * 4);
     }
 }
-@media (max-width: 576px){
+/* @media (max-width: 576px){
     :root{
         --h3-size: 40px
     }
@@ -203,17 +203,13 @@
         font-size: calc(var(--h1-size) * 1.2);
         line-height: calc(var(--h1-size) * 1.2);
     }
-}
+} */
 @media (max-width: 480px){
-    .s3{
-        height: 100vh;
-    }
     .s3 > div{
-        position: relative;
-        /* rotate: -90deg; */
+        rotate: -90deg;
     }
-    .value_list_title{
-        font-size: 28px;
+    .value_list_content{
+        font-size: 15px;
     }
     .report_desc{
         text-align: center;
