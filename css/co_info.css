@@ -277,14 +277,9 @@
 }
 
 @media (max-width: 1200px){
-  .h2 {font-size: calc(var(--h2-size) - 26px);}
+  .h2 {font-size: calc(var(--h2-size) - 26px); line-height: calc(var(--base-unit)*6)}
   .h3,.h3_2 {font-size: calc(var(--h3-size) - 16px);}
   .h4,.h4_2 {font-size: calc(var(--h4-size) - 8px);}
-
-  .h2 {
-    line-height: calc(var(--base-unit)*6);
-  }
-
   .h4_2 {
     line-height: calc(var(--base-unit)*2.5);
   }
@@ -296,14 +291,15 @@
   .ceo_greeting .content figure {
     width: 85%;
   }
+
+  .ceo_greeting h3 br {
+    display: none;
+  }
 }
 
 @media (max-width: 992px){
-  :root {
-    --h2-size: 63px;
-    --h3-size: 44px;
-    --h4-size: 24px;
-  }
+  .h2 {font-size: calc(var(--h2-size) - 33px);}
+  .h3,.h3_2 {font-size: calc(var(--h3-size) - 20px);}
 
   .h3_2 {
     line-height: calc(var(--base-unit)*4);
@@ -323,8 +319,9 @@
     width: 90%;
   }
 
-  .ceo_greeting h3 br {
-    display: none;
+  .ceo_greeting .content .greeting_p_1,
+  .ceo_greeting .content .greeting_p_2 {
+    width: 100%;
   }
 
   .co_image h2 {
@@ -350,6 +347,12 @@
 }
 
 @media (max-width: 768px){
+  .h2 {font-size: var(--h2-size);}
+  .h3,.h3_2 {font-size: var(--h3-size);}
+  .h4,.h4_2 {font-size: var(--h4-size);}
+  .h3_2 {line-height: calc(var(--base-unit)*5);}
+  .h4_2 {line-height: calc(var(--base-unit)*3);}
+
   .ceo_greeting .content {
     text-align: left;
   }
@@ -382,8 +385,53 @@
     display: none;
   }
 
+  .business_area .slide .content {
+    width: 4330px;
+  }
+
   .business_area figure figcaption {
     bottom: 0;
   }
+
+  .business_area figure img {
+    margin-top: 120px;
+  }
+
+  .business_area figure:nth-of-type(2n) img {
+    margin-top: 40px;
+  }
+
+  .business_area figure:hover img {
+    width: 100%;
+  }
+
+  .business_area .slide .tv img,
+  .business_area .slide .monitor img {
+    transform: translateY(-50%);
+  }
+
+  .business_area .slide .content {
+    height: 80vh;
+    display: flex;
+    gap: 20px;
+  }
   
+  .business_area .slide .content figure {
+    width: 900px !important;
+  }
+
+  .business_area .slide .oled,
+  .business_area .slide .qd {
+    top: 20px;
+    position: absolute;
+  }
+
+  .business_area .slide .qd {
+    left: calc(544px * 6);
+  }
+
+  .business_area img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
