@@ -295,7 +295,7 @@
 }
 
 
-/* .qd_drag .qd_drag_box {
+.qd_drag .qd_drag_box {
 	position: relative;
 	width: 608px;
 	margin: 0 auto;
@@ -311,7 +311,7 @@
 }
 .qd_drag .qd_drag_box img:last-child {
 	right: 0;
-} */
+}
 
 .qd_foot {
 	padding: 620px 0 calc(var(--base-unit)*5) 0;
