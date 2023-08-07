@@ -14,22 +14,29 @@ hr{
 /* section2  tech 시작*/
 
 .section2 .tech_box > div {
-padding: calc(var(--base-unit)*5) 0;
-box-sizing: border-box;
+	padding: calc(var(--base-unit)*5) 0;
+	box-sizing: border-box;
+	width: 40%;
 }
-.section2 .tech_box > .tech_2 {
+.section2 .tech_box > div + div {
+	width: 60%;
+}
+.section2  {
 	padding-right: 40px;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 .section2 .tech_box .tech {
 padding-left: 40px;
+box-sizing: border-box;
 }
 .section2 .tech_box .tech_2 {
 position: relative;
 }
 .section2 .tech {
-display: inline-block;
+/* display: inline-block;
 width: 730px;
-height: 100vh;
+height: 100vh; */
 background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
 }
 
@@ -38,7 +45,7 @@ color: var(--light-blue);
 }
 .section2 .tech > p {
 color: var(--white);
-margin-bottom: 68px;
+margin-bottom: calc(var(--base-unit)*3);
 }
 .section2 .tec_tab_list {
 position: relative;
@@ -54,6 +61,9 @@ border-left: 5px solid rgba(255,255,255,0.3);
 color: var(--white);
 text-transform: uppercase;	
 }
+.section2 .tec_tab_list a > p {
+	text-transform: uppercase;
+}
 .section2 .tec_tab_list a.active > p {
 	color: var(--blue);
 }
@@ -62,13 +72,13 @@ text-transform: uppercase;
 margin-bottom: calc(var(--base-unit)*6);
 }
 .section2 .tech_box .swiper {
-max-width: 1023px;
+/* max-width: 1023px; */
 text-align: center;
 }
 
 .section2 .tech_2 button {
 position: absolute;
-top: 62%;
+top: 58%;
 transform: translateY(-50%);
 z-index: 10;
 }
@@ -89,6 +99,16 @@ right: 0;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
 }
 
+@media (max-width: 1440px) {
+.section2 .tech_2 p {
+	margin-bottom: calc(var(--base-unit)*3);
+}
+.section2 .slide_btn{
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+  }
+}
 
 /* section2  tech 종료*/
 
