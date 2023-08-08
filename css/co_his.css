@@ -257,6 +257,11 @@
   list-style: disc;
 }
 
+.co_his_content #blackLine path,
+.co_his_content #grayLine path {
+  stroke-width: 10px;
+}
+
 
 @media (max-width: 768px) {
   .content_wrap {
