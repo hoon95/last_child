@@ -15,7 +15,7 @@ $(window).scroll(function() {
       $(".qd_oled_box").removeClass("animate");
   }
 
-  let qdrowOST = $(".qd.row").offset().top - 350;
+  let qdrowOST = $(".qd .row").offset().top - 350;
   if($this >= qdrowOST) {
     $(".qd_oled_tv").addClass("animate");
     $(".qd_display_od ").addClass("animate");
