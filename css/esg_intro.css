@@ -160,30 +160,6 @@
 }
 
 
-
-/* @media (max-width: 1400px){
-    :root{
-        --h3-size: 50px;
-    }
-}
-@media (max-width: 1200px){
-    :root{
-        --h3-size: 46px;
-    }
-    .s3 .s3_title{
-        font-size: calc(var(--h1-size) * 1.6);
-        line-height: calc(var(--h1-size) * 1.6);
-    }
-}
-@media (max-width: 992px){
-    .s3 .s3_title{
-        font-size: calc(var(--h1-size) * 1.4);
-        line-height: calc(var(--h1-size) * 1.4);
-    }
-    .report_desc > div{
-        font-size : var(--default-size);
-    }
-} */
 @media (max-width: 768px){
     .value_title, .value_content{
         width: 100%;
@@ -197,20 +173,15 @@
         font-size: 34px;
         line-height: calc(var(--base-unit) * 4);
     }
+    .report_desc p{
+        padding-right: 200px;
+    }
 }
-/* @media (max-width: 576px){
-    :root{
-        --h3-size: 40px
-    }
-    .s3 .s3_title{
-        font-size: calc(var(--h1-size) * 1.2);
-        line-height: calc(var(--h1-size) * 1.2);
-    }
-} */
+
 @media (max-width: 480px){
     .s3 > div{
+        transform: rotate(-90deg);
         transform-origin: 50% 50%;
-        rotate: -90deg;
         height: 100vmin;
     }
     .value_list_content{
@@ -222,6 +193,7 @@
     .report_desc p{
         font-size: var(--default-size) !important;
         line-height: 26px !important;
+        padding: 0 58px;
     }
     .report{
         padding: 73px 0;
