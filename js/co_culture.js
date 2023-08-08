@@ -23,7 +23,6 @@ let visionOST = vision.find('img').offset().top;
 $(window).scroll(function(){
   let sct = $(this).scrollTop();
   console.log(sct);
-
   if(sct >= firstSamsungOST - windowHeight){
     firstSamsung.addClass('active');
   }
@@ -50,7 +49,6 @@ $(window).scroll(function(){
     vision.removeClass('active');
   }
 });
-
 /* active-slide */
 const activeSwiper = new Swiper('.co_culture_active-slide', {
     // Optional parameters
@@ -69,4 +67,3 @@ const activeSwiper = new Swiper('.co_culture_active-slide', {
   });
 
 
-/* pushin */
