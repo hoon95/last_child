@@ -28,7 +28,7 @@ let co_infoBox = $('.co_map .info_box .container');
 
 function initList(data){
   allData = data.country;
-  addCountry();
+  // addCountry();
 }
 
 
@@ -49,7 +49,7 @@ function addCountry(country, city){
       <span>${item.type}</span>
       <h3 class="h3">${item.storeName}</h3>
       <p class="h4_2">${item.address}</p>
-      <p class="h4_2">${item.phone}</p>
+      <p>Tel : ${item.phone}</p>
     </li>
     `
     console.log(co_infoBox.find('ul'));

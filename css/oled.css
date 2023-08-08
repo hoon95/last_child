@@ -190,18 +190,23 @@ body{
   position: relative;
   padding: 0;
 }
+.lcd_oled_img img{
+  object-fit: cover;
+  max-width: 1440px;
+}
+
 /* lce_oled 파트 왼쪽 img */
 .lcd_oled_img .lcd_oled_left{
-  width: 720px;
-  height: 700px;
+  width: 50%;
+  height: 50%;
   position: absolute;
   left: 0;
   bottom: 0;
 }
 /* lce_oled 파트 오른쪽 img */
 .lcd_oled_img .lcd_oled_right{
-  width: 720px;
-  height: 700px;
+  width: 50%;
+  height: 50%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -428,7 +433,6 @@ body{
   font-weight: bold;
   background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
   color: var(--black);
-  /* background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%); */
   border: 3px solid var(--white);
 }
 .oled_finder_banner img {
@@ -444,8 +448,7 @@ body{
   position: absolute; left: 0; bottom: 0;
   z-index: 10;
   color: var(--white);
-  /* background: rgba(0,0,0,0.6); */
-  background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+  background: rgba(0,0,0,0.6);
   width: 100%; height: 100%;
   padding: 15px;
   box-sizing: border-box;
@@ -470,7 +473,7 @@ body{
 }
 /* oled_section8 Why Samsung OLED? */
 .oled_section8{
-  padding: calc(var(--base-unit)*7) 0;
+  padding-top: calc(var(--base-unit)*7);
   width: 100%;
   text-align: center;
 }
@@ -533,5 +536,474 @@ body{
   background: #898B8F;
 }
 
+@media (max-width:1400px){
+  .lcd_oled_img img{
+    object-fit: cover;
+    max-width: 1100px;
+    max-height: 400px;
+  }
+  /* lcd_oled_img 안 왼쪽 텍스트 */
+  .lcd_oled_left .lcd_left_content{
+    right: 100px;
+    bottom: 30px;
+  }
+  /* lcd_oled_img 안 오른쪽 텍스트 */
+  .lcd_oled_right .lcd_right_content{
+    left: 100px;
+    bottom: 30px;
+  }
+  /* 명암비 */
+  .contrast_ratio{
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 80%;
+  }
+  .contrast_ratio_img img{
+    object-fit: cover;
+    max-width: 90%;
+    height: 550px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  .contrast_ratio_info{
+    padding-left: 80px;
+  }
+  .contrast_ratio_info h3{
+    font-size: calc(var(--base-unit)*2.5);
+    line-height: calc(var(--base-unit)*4);
+  }
+  .contrast_ratio_info p{
+    font-size: calc(var(--base-unit)*1.5);
+    line-height: calc(var(--base-unit)*3);
+  }
+  /* oled_section5 다이아몬드 픽셀 */
+  .oled_section5{
+    padding: calc(var(--base-unit)*7) 0;
+    width: 100%;
+  }
+  .diamond_fixel{
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width: 80%;
+    padding: 0;
+  }
+  .diamond_fixel_info{
+    padding-left: 80px;
+  }
+  .diamond_fixel_info h3{
+    font-size: calc(var(--base-unit)*2.5);
+    line-height: calc(var(--base-unit)*4);
+  }
+  .diamond_fixel_info p{
+    font-size: calc(var(--base-unit)*1.5);
+    line-height: calc(var(--base-unit)*3);
+  }
+  .diamond_fixel img{
+    height: 450px;
+    object-fit: cover;
+    max-width: 100%;
+    padding-left: 60px;
+  }
+
+}
+@media (max-width: 992px){
+  .oled_section2 h3{
+    font-size: calc(var(--base-unit)*3);
+  }
+  .layers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .layers_title{
+    padding-top: calc(var(--base-unit)*6);
+  }
+  .layer_name_list{
+    padding: calc(var(--base-unit)*4) 0;
+  }
+  .oled_section3{
+    height: 100%;
+    padding: calc(var(--base-unit)*6) 0;
+    text-align: center;
+  }
+  /* 압도적인 화질 */
+  .oled_section3 h3{
+    font-size: calc(var(--base-unit)*3);
+    padding-bottom: calc(var(--base-unit)*4);
+  }
+  .lcd_oled_img img{
+    object-fit: cover;
+    max-width: 720px;
+    max-height: 300px;
+  }
+   /* lcd_oled_img 안 왼쪽 텍스트 */
+  .lcd_oled_left .lcd_left_content{
+    right: 80px;
+    bottom: 20px;
+  }
+  .lcd_oled_left .lcd_left_content p:first-child{
+    font-size: 11px;
+  }
+  .lcd_oled_left .lcd_left_content p:last-child{
+    font-size: 22px;
+    line-height: 24px;
+  }
+  /* lcd_oled_img 안 오른쪽 텍스트 */
+  .lcd_oled_right .lcd_right_content{
+    left: 90px;
+    bottom: 20px;
+  }
+  .lcd_oled_right .lcd_right_content p:first-child{
+    font-size: 13px;
+  }
+  .lcd_oled_right .lcd_right_content p:last-child{
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .lcd_oled_info p{
+    font-size: calc(var(--base-unit)*1.5);
+    line-height: calc(var(--base-unit)*3);
+  }
+  /* 비교할수없는 속도 */
+  .reaction_speed_title{
+    font-size: calc(var(--base-unit)*2.5);
+    line-height: calc(var(--base-unit)*4);
+  }
+  .reaction_speed_img{
+    width: 500px;
+  }
+  .reaction_speed_img.active{
+    width: 700px;
+    margin: 0 auto;
+    transform: translateY(-15%);
+    opacity: 1;
+  }
+  .reaction_speed_info{
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+  .reaction_speed_double h4{
+    font-size: calc(var(--base-unit)*1.3);
+    line-height: calc(var(--base-unit)*2);
+  }
+  /* oled_finder*/
+  .oled_finder_banner {
+    width: 100%; height: 600px;
+  }
+  /* who OLED?*/
+  .human_banner_img,
+  .protect_banner_img,
+  .future_banner_img{
+    width: 60%;
+    height: 380px;
+  }
+  .human_banner_info h3,
+  .protect_banner_info h3,
+  .future_banner_info h3{
+    font-size: calc(var(--base-unit)*2.5);
+    line-height: calc(var(--base-unit)*4);
+  }
+}
+
+@media (max-width: 768px){
+  .oled_section2 h3{
+    font-size: calc(var(--base-unit)*2);
+  }
+  .oled_section2 p{
+    font-size: calc(var(--base-unit)*1.5);
+  }
+  .layers_title{
+    font-size: calc(var(--base-unit)*2);
+  }
+  /* who OLED?*/
+  .human_banner_img,
+  .protect_banner_img,
+  .future_banner_img{
+    width: 60%;
+    height: 300px;
+  }
+  .human_banner_info h3,
+  .protect_banner_info h3,
+  .future_banner_info h3{
+    font-size: calc(var(--base-unit)*2.5);
+    line-height: calc(var(--base-unit)*4);
+  }
+}
+
+@media (max-width: 480px){
+  body{
+    width: 100%;
+  }
+  .container{
+    width: 440px;
+  }
+  .oled_section2{
+    width: 100%;
+  }
+  .oled_section2 h3{
+    font-size: calc(var(--base-unit)*2);
+  }
+  .oled_section2 p{
+    font-size: calc(var(--base-unit)*1);
+    line-height: calc(var(--base-unit)*2);
+    font-weight: normal;
+  }
+  .layers_title{
+    font-size: calc(var(--base-unit)*2);
+  }
+  .lcd_layer{
+    width: 100%;
+  }
+  /* lcd img 순서*/
+  .lcd_layer .lcd_layer_item{
+    position: absolute;
+    left:10px;
+    transition: 1s;
+  }
+  .lcd_layer .lcd_layer_item.nth_1.active {
+    position: absolute;
+    left:40px;
+  }
+  .lcd_layer .lcd_layer_item.nth_2.active {
+    position: absolute;
+    left:70px;
+  }
+  .lcd_layer .lcd_layer_item.nth_3.active {
+    position: absolute;
+    left:100px;
+  }
+  .lcd_layer .lcd_layer_item.nth_4.active {
+    position: absolute;
+    left:130px;
+  }
+  .lcd_layer .lcd_layer_item.nth_5.active {
+    position: absolute;
+    left:160px;
+  }
+  .lcd_layer .lcd_layer_item.nth_6.active {
+    position: absolute;
+    left:190px;
+  }
+  .oled_layer{
+    width: 440px;
+    height: 835px;
+    position: relative;
+  }
+  /* oled img 순서*/
+  .oled_layer .oled_layer_item{
+    position: absolute;
+    left:120px;
+    transition: 1s;
+  }
+  .oled_layer .oled_layer_item.nth_1.active {
+    position: absolute;
+    left:60px
+  }
+  .oled_layer .oled_layer_item.nth_2.active {
+    position: absolute;
+    left:90px
+  }
+  .oled_layer .oled_layer_item.nth_3.active {
+    position: absolute;
+    left:120px
+  }
+  .oled_layer .oled_layer_item.nth_4.active {
+    position: absolute;
+    left:150px
+  }
+  .lcd_layer .layer_name_list{
+    text-align: right;
+  }
+  .lcd_oled_img{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .lcd_oled_img img{
+    object-fit: cover;
+    width: 438px;
+    height: 330px;
+  }
+  .oled_section3{
+    width: 100%;
+  }
+   /* lcd_oled_img 안 왼쪽 텍스트 */
+  .lcd_oled_left .lcd_left_content{
+    right: 60px;
+    bottom: 10px;
+  }
+  .lcd_oled_left .lcd_left_content p:first-child{
+    font-size: 9px;
+  }
+  .lcd_oled_left .lcd_left_content p:last-child{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* lcd_oled_img 안 오른쪽 텍스트 */
+  .lcd_oled_right .lcd_right_content{
+    left: 70px;
+    bottom: 10px;
+  }
+  .lcd_oled_right .lcd_right_content p:first-child{
+    font-size: 9px;
+  }
+  .lcd_oled_right .lcd_right_content p:last-child{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .lcd_oled_info p{
+    font-size: calc(var(--base-unit)*1);
+    line-height: calc(var(--base-unit)*2);
+  }
+  /* oled_section3 */
+  .oled_section3 p{
+    font-weight: normal;
+  }
+  /* 명암비 */
+  .oled_section4{
+    padding: calc(var(--base-unit)*3) 0;
+  }
+  .contrast_ratio{
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 80%;
+    padding-right: 0;
+  }
+  .contrast_ratio_img img{
+    object-fit: cover;
+    max-width: 400px;
+    height: 320px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  .contrast_ratio_info{
+    padding-left: 20px;
+    width: 400px;
+    height: 400px;
+    padding-right:0;
+  }
+  .contrast_ratio_info h3{
+    font-size: calc(var(--base-unit)*2);
+    line-height: calc(var(--base-unit)*2.5);
+  }
+  .contrast_ratio_info p{
+    font-size: calc(var(--base-unit)*1);
+    line-height: calc(var(--base-unit)*2);
+    font-weight: normal;
+  }
+  /* 화질의 최적화 */
+  .oled_section5{
+    padding: calc(var(--base-unit)*3) 0;
+  }
+  .diamond_fixel{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 2s;
+  }
+  .diamond_fixel.active{
+    opacity:1;
+    transform: none;
+  }
+  .diamond_fixel_info{
+    width: 400px;
+    padding-left: 20px;
+    height: 300px;
+  }
+  .diamond_fixel_info h3{
+    font-size: calc(var(--base-unit)*2);
+    line-height: calc(var(--base-unit)*2.5);
+  }
+  .diamond_fixel_info p{
+    font-size: calc(var(--base-unit)*1);
+    line-height: calc(var(--base-unit)*2);
+    font-weight: normal;
+  }
+  .diamond_fixel img{
+    padding-left: 20px;
+    width: 90%;
+    height: 320px;
+  }
+  /* 비교할수없는 속도 */
+  .reaction_speed_title{
+    font-size: calc(var(--base-unit)*2);
+    line-height: calc(var(--base-unit)*2.5);
+    padding-bottom: calc(var(--base-unit)*2);
+  }
+  .reaction_speed_img{
+    width: 300px;
+    position: relative;
+  }
+  .reaction_speed_img.active{
+    width: 430px;
+    height: 100%;
+  }
+  .reaction_speed_img img{
+    width: 90%;
+    height: 350px;
+    border:4px solid var(--white);
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  .reaction_speed_img.active{
+    transform: translateY(-20%);
+  }
+  .reaction_speed_info{
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+  .reaction_speed_info span{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 100;
+  }
+  .reaction_speed_double{
+    position: absolute;
+    bottom: 25px;
+    left: 68%;
+    animation: middle 2s infinite linear;
+  }
+  /* oled_section7 OLED Finder */
+  .oled_section8{
+    padding-top: calc(var(--base-unit)*5);
+  }
+  .oled_finder_banner{
+    height: 300px;
+  }
+  .oled_finder_info h3{
+    font-size: calc(var(--base-unit)*2);
+    line-height: calc(var(--base-unit)*2.5);
+  }
+  .oled_finder_info p{
+    font-size: calc(var(--base-unit)*1);
+    line-height: calc(var(--base-unit)*2);
+    font-weight: normal;
+  }
+
+  /* who OLED?*/
+  .human_banner_img,
+  .protect_banner_img,
+  .future_banner_img{
+    width: 60%;
+    height: 200px;
+  }
+  .human_banner_info h3,
+  .protect_banner_info h3,
+  .future_banner_info h3{
+    font-size: calc(var(--base-unit)*2);
+    line-height: calc(var(--base-unit)*2.5);
+  }
+
+}
 
 
