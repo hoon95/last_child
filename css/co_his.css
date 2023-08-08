@@ -130,6 +130,11 @@
 .co_his_content .item8 {top: 3830px;}
 .co_his_content .item9 {top: 4374px;}
 
+.co_his_content .item4 img,
+.co_his_content .item8 img {
+  height: 400px;
+  object-fit: cover;
+}
 
 .co_his_content .item .circle {
   width: 50px;

@@ -21,20 +21,20 @@ $(window).resize(function(){
     lineLength = blackLine.find('path').get(0).getTotalLength();
     circleLocation = [8142,8757,9807,11037,11892,12867,14007,15192,16257];
     
-    line(blackLine,lineLength,circleLocation);
+    line(blackLine,lineLength,circleLocation,0.08,0.15);
   } else{
     // console.log('mobile, tablet');
     blackLine = $('.tablet_line #blackLine');
     lineLength = blackLine.find('polyline').get(0).getTotalLength();
     circleLocation = [11828,13113,14583,16053,17523,18993,20463,21933,23403];
     
-    line(blackLine,lineLength,circleLocation);
+    line(blackLine,lineLength,circleLocation,0.1,0.2);
 
   }
 });
 $(window).trigger('resize');
 
-function line(target,lineLength,location){
+function line(target,lineLength,location,duration,lineDuration){
   target.css({
     strokeDasharray: lineLength,
     strokeDashoffset: lineLength
@@ -42,8 +42,8 @@ function line(target,lineLength,location){
 
   $(window).scroll(function(){
     let sct =$(this).scrollTop();
-    let newTop = parseInt($('.co_his_content').css('padding-top')) - sct*0.1;
-    let newLineLength = lineLength + sct*0.2;
+    let newTop = parseInt($('.co_his_content').css('padding-top')) - sct*duration;
+    let newLineLength = lineLength + sct*lineDuration;
     console.log(newLineLength);
   
     if(sct > co_conOST-300 && sct < co_conOSB){
