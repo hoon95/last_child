@@ -46,6 +46,10 @@ img, video {
   vertical-align: bottom;
 }
 
+.container {
+  box-sizing: border-box;
+}
+
 /* font */
 .h1 {
   font-size: var(--h1-size);
