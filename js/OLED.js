@@ -1,4 +1,5 @@
 let windowHeight = $(window).innerHeight();
+let windowOutHeight = $(window).outerHeight();
 /* lcd list */
 let lcdItem = $('.lcd_layer_list li');
 let lcdItemList = $('.lcd_layer_list');
@@ -50,14 +51,14 @@ $(window).scroll(function(){
 
   if(sct >= conRatioSCT - windowHeight){
     conRatio.addClass('active');
-  } else {
+  }  else {
     conRatio.removeClass('active');
   }
 
   if(sct >= diaPixelSCT - windowHeight){
     diaPixel.addClass('active');
   } else {
-    diaPixel.removeClass('active');
+    diaPixel.removeClassClass('active');
   }
 
   if(sct >= rsTitleOST - windowHeight){
@@ -70,6 +71,7 @@ $(window).scroll(function(){
   } else {
     rsImg.removeClass('active');
   }
+
 
 
   if(sct >= protectBannerOST - windowHeight){
