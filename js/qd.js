@@ -1,6 +1,6 @@
 $(window).scroll(function() {
   let $this = $(this).scrollTop();
-  let qddotOST = $(".qd_dot").offset().top-200;
+  let qddotOST = $(".qd_dot").offset().top-300;
   //let isActive = false;
   if($this >= qddotOST) {
     $(".qd_dot_ani > div").addClass("animate");

@@ -14,19 +14,30 @@ hr{
 /* section2  tech 시작*/
 
 .section2 .tech_box > div {
-padding: calc(var(--base-unit)*5) 0;
-box-sizing: border-box;
+	padding: 60px 40px;
+	box-sizing: border-box;
+	width: 40%;
+	height: 100vh;
+}
+
+.section2  {
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.section2 .tech_box  {
+	gap: 0 20px;
 }
 .section2 .tech_box .tech {
-padding-left: 40px;
+	box-sizing: border-box;
 }
 .section2 .tech_box .tech_2 {
-position: relative;
+	position: relative;
+	width: 60%;
 }
 .section2 .tech {
-display: inline-block;
+/* display: inline-block;
 width: 730px;
-height: 100vh;
+height: 100vh; */
 background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
 }
 
@@ -35,7 +46,7 @@ color: var(--light-blue);
 }
 .section2 .tech > p {
 color: var(--white);
-margin-bottom: 68px;
+margin-bottom: calc(var(--base-unit)*3);
 }
 .section2 .tec_tab_list {
 position: relative;
@@ -51,26 +62,34 @@ border-left: 5px solid rgba(255,255,255,0.3);
 color: var(--white);
 text-transform: uppercase;	
 }
+.section2 .tec_tab_list a > p {
+	text-transform: uppercase;
+}
+.section2 .tec_tab_list a.active > p {
+	color: var(--blue);
+}
 
 .tech_2 p {
-margin-bottom: calc(var(--base-unit)*6);
+	margin-top: var(--base-unit);
 }
 .section2 .tech_box .swiper {
-max-width: 1023px;
-text-align: center;
+/* max-width: 1023px; */
+	text-align: center;	
 }
-
+.section2 .tech_box .swiper img {
+	margin-top: calc(var(--base-unit)*3);
+}
 .section2 .tech_2 button {
-position: absolute;
-top: 62%;
-transform: translateY(-50%);
-z-index: 10;
+	position: absolute;
+	top: 65%;
+	transform: translateY(-50%);
+	z-index: 10;
 }
 .section2 .tech_2 button.prev {
-left: 0;
+	left: 6%;
 }
 .section2 .tech_2 button.next {
-right: 0;
+	right: 6%;
 }
 .tech_bar {
   position: absolute;
@@ -83,6 +102,81 @@ right: 0;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
 }
 
+@media (max-width: 1565px) {
+	.section2 .tech_box p {
+		font-size: calc(var(--h4-size)/1.5);
+		margin: 0;
+	}
+	.section2 .tech_box .swiper img {
+		width: 60%;
+	}
+	.section2 .tech_2 button {
+		top: 60%;
+	}
+}
+
+@media (max-width: 1242px) {
+	.section2 .tech_box > div {
+		height: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.section2 .tech_box {
+		flex-direction: column;
+	}
+	.section2 .tech_box > div {
+		width: 100%;
+		height: auto;
+	}
+	.section2 .tech_box .tech {
+    padding: 60px 20px 0;
+    box-sizing: border-box;
+	}
+	.section2 .tech_box .tech_2 {
+   width: 100%;
+	 /* padding-right: 0; */
+	}
+	.section2 .tec_tab_list {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+	.section2 .tec_tab_list a {
+		display: flex;
+		border: none;
+		padding: 0 30px;
+		border-bottom: 5px solid rgba(255,255,255,0.3);
+	}
+	.tech_bar {
+		position: absolute;
+		top: auto;
+    bottom: 0;
+    left: 0;
+    width: 12%;
+    height: 5px;
+	}
+	.section2 .tech_2 button {
+    top: 60%;
+	}
+}
+@media (max-width: 480px) {
+	.section2 .tech_box > div {
+    padding: 40px 20px;
+    box-sizing: border-box;
+	}
+	.section2 .tec_tab_list a {
+		justify-content: center;
+		padding: 0;
+    width: 70px;
+	}
+	.tech_bar {
+		width: 17.5%;
+	}
+	.section2 .tech_2 button {
+    top: 65%;
+	}
+}
 
 /* section2  tech 종료*/
 
@@ -261,7 +355,6 @@ right: 0;
 .section1 .main_video video{
     width: 100%;
 	}
-
 }
 
 @media (max-width: 480px){

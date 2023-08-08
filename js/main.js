@@ -18,10 +18,11 @@ techwrapperSwiper = new Swiper(".tech2-slide", {
 
     //
 });
+
 techwrapperSwiper.on("slideChange", function () {
-
-
+    console.log(techwrapperSwiper.realIndex);
    activeteb(techwrapperSwiper.realIndex);
+
 });
 
 let techMenu = $(".section2 .tec_tab_list > a"); //탭메뉴
@@ -41,18 +42,31 @@ techMenu.on("click", function (e) {
     e.preventDefault();
     //let teBox = techContent.index();
     let activeIndex = $(this).index();
-
-    activeteb(activeIndex);
+    console.log("activeIndex" + activeIndex);
 
     techwrapperSwiper.slideTo(activeIndex);
 
-    $(this).addClass("active").siblings().removeClass("active");
 
 });
 
 function activeteb(idx) {
-    let techBarTop = techMenu.eq(idx).position().top;
-    techBar.css({ top: techBarTop });
+
+let windowWidth = $(window).width();
+
+ if (windowWidth <= 768) {
+     let techBarTop = techMenu.eq(idx).position().left;
+     let techWidh = techMenu.eq(idx).outerWidth();
+     //let techBarWidth = techMenu.eq(activeTechIndex).outerWidth();
+         techBar.css({ left: techBarTop, width: techWidh });
+          techBar.css({ top: "auto" });
+ } else {
+let techBarTop = techMenu.eq(idx).position().top;
+    techBar.css({ top: techBarTop});
+    techBar.css({ left: 0});
+ }
+
+    let techIDx = techMenu.eq(idx);
+    techIDx.addClass("active").siblings().removeClass("active");
 }
 
 // Main_section2_tech 종료
@@ -118,6 +132,7 @@ $(window).scroll(function(){
       $this.addClass('active');
     }
   });
+  //console.log(SCT);
 });
 $(window).trigger('scroll');
 // Main_section4_tech 종료

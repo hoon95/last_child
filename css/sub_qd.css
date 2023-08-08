@@ -6,15 +6,11 @@
 	overflow: hidden;
 }
 
-/* img {
-	width: 100%;
-	height: 100%;
-} */
 main section + section {
 	padding: calc(var(--base-unit)*5) 0;
 	box-sizing: border-box;
 }
-.qd_oled_index section h2 {
+section h2 {
 	margin-bottom: calc(var(--base-unit)*5);
 	text-align: center;
 }
@@ -32,40 +28,34 @@ main section + section {
 	text-align: center;
 }
 
-/* .qd_dot .qd_dot_ani {
-	position: absolute;
-	top: 72%;
-	left: 50%;
-	display: inline-block;
-	transform: translate(-50%, -50%);
-} */
-
-/* .perspective{
+.perspective{
   perspective: 2000px;
   perspective-origin: 50% -200px;
-} */
+}
 
 .qd_dot_ani{
  	position: relative;
-	max-width: 968px;
+	 width: 50%;
+	 height: 100%;
+	 margin: 0 auto;
+	/* max-width: 968px;
 	height: 594px;
-	margin: 0 auto; 
-  transform-style:preserve-3d;
+	margin: 0 auto;  */
 }
 .qd_dot_ani > .qd_dot_ani1{
 	position: absolute;
 	top: 0;
-	left: 22.5%;
+	left: 10.5%;
 }
 .qd_dot_ani > .qd_dot_ani2{
 	position: absolute;
 	top: 0;
-	right: 22.5%;
+	right: 10.5%;
 }
 .qd_dot_ani > div > span {
 	display: block;
-	width: 303px;
-	height: 662px;
+	width: 300px;
+	height: 700px;
 	text-indent: -9999em;
 	background: url(../img/qd/flip.png) no-repeat center/contain;
 }
@@ -119,13 +109,13 @@ main section + section {
 
 .qd_oled {
 	position: relative;
-	height: 150vh;
+	height: 125vh;
 }
 .qd_oled .qd_oled_box {
 	position: absolute;
-	width: 700px;
-	height: 650px;
-	top: 50%;
+	width: 50%;
+	height: 100%;
+	top: 74%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -231,28 +221,7 @@ main section + section {
 .qd_compare .qd_arrow{
 	position: static
 }
-/* .qd_oled_arrow {
-	width: 362px;
-	height: 212px;
-	background-image: url(../img/qd/qd-oled_sec1_arrow.png);
-	animation: arrow 2s 3s infinite ease-in-out;
-}
-.qd_compare .qd_oled_arrow2 {
-	width: 366px;
-	height: 106px;
-	background-image: url(../img/qd/qd-oled_sec1_arrow2.png);
-}
-.qd_compare .qd_oled_arrow3 {
-	width: 401px;
-	height: 182px;
-	background-image: url(../img/qd/qd-oled_sec2_arrow.png);
-}
-.qd_compare .qd_oled_arrow4 {
-	width: 460px;
-	height: 78px;
-	background-image: url(../img/qd/qd-oled_sec2_arrow2.png);
-} 
-*/
+
 .qd_compare .qd > .qd_oled_tv .qd_arrow > img,
 .qd_compare .qd > .qd_display_od .qd_arrow > img {
 	opacity: 0;
@@ -302,17 +271,27 @@ main section + section {
 .qd_drag .qd_drag_box {
 	position: relative;
 	width: 80%;
-	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
+	opacity: 0.5;
+	transition: all 1s;
 }
 .qd_drag .qd_drag_box img {
+	width: 100%;
+}
+.qd_drag .qd_drag_box.animate {
+	opacity: 1;
+} 
+
+/* .qd_drag .qd_drag_box img {
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
-.qd_drag .qd_drag_box img:first-child {
+.qd_drag .qd_drag_box img {
 	left: 0;
+	opacity: 0.5;
+	transition: all 1s ease-in-out;
 }
 
 .qd_drag .qd_drag_box img:last-child {
@@ -320,14 +299,17 @@ main section + section {
 	opacity: 0;
 	transition: all 1s ease-in-out;
 }
-.qd_drag .qd_drag_box.animate img:last-child {
+.qd_drag .qd_drag_box.animate img:first-child {
 	opacity: 1;
 }
+.qd_drag .qd_drag_box.animate img:last-child {
+	opacity: 1;
+} */
 
 .qd_foot {
 	padding: 620px 0 calc(var(--base-unit)*5) 0;
 	text-align: center;
-	background: url(../img/qd/qd_bg.jpg) 0 0 /cover;
+	background: url(../img/qd/qd_bg.jpg) center /cover;
 	box-sizing: border-box;
 }
 
@@ -338,14 +320,18 @@ main section + section {
 	color: var(--white);
 	gap: calc(var(--base-unit)*2) 0;
 }
-.qd_foot ul li .qd_foot_img {
+.qd_foot .qd_foot_img {
 	overflow: hidden;
-	width: 292px;
-	height: 306px;
+	transform: scale(1.0);
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s;
 }
-.qd_foot ul li:hover a img {
+.qd_foot .qd_foot_img img {
+	width: 100%;
+}
+.qd_foot .qd_foot_img:hover img {
 	transform: scale(1.1);
-	transition: 0.3s ease-in-out;;
 }
 .qd_foot .btn {
 	display: inline-block;
@@ -354,4 +340,16 @@ main section + section {
 .qd_figure {
 	padding: calc(var(--base-unit)*5) 0;
 	background: url(../img/qd/qd_bg_2.jpg) 0 0 /cover;
+}
+@media (max-width: 1400px) {
+	main section h2.h3_2{
+		margin-bottom: calc(var(--base-unit)*2);
+		font-size: calc(var(--h3-size)/1.5);
+	}
+	.qd_dot_ani > .qd_dot_ani1{
+		left: 0%;
+	}
+	.qd_dot_ani > .qd_dot_ani2{
+		right: 0;
+	}
 }
