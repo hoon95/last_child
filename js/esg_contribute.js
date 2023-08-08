@@ -13,7 +13,8 @@ let swiper = new Swiper('.mySwiper', {
   effect: "cards",
   grabCursor: true,
   direction: 'horizontal',
-  slideShadows: false
+  slideShadows: false,
+  initialSlide: 2
 });
 
 AOS.init();
