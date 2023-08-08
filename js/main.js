@@ -44,16 +44,27 @@ techMenu.on("click", function (e) {
     let activeIndex = $(this).index();
     console.log("activeIndex" + activeIndex);
 
-
     techwrapperSwiper.slideTo(activeIndex);
 
 
 });
 
 function activeteb(idx) {
-    console.log("activeteb"+ idx);
-    let techBarTop = techMenu.eq(idx).position().top;
-    techBar.css({ top: techBarTop });
+
+let windowWidth = $(window).width();
+
+ if (windowWidth <= 768) {
+     let techBarTop = techMenu.eq(idx).position().left;
+     let techWidh = techMenu.eq(idx).outerWidth();
+     //let techBarWidth = techMenu.eq(activeTechIndex).outerWidth();
+         techBar.css({ left: techBarTop, width: techWidh });
+          techBar.css({ top: "auto" });
+ } else {
+let techBarTop = techMenu.eq(idx).position().top;
+    techBar.css({ top: techBarTop});
+    techBar.css({ left: 0});
+ }
+
     let techIDx = techMenu.eq(idx);
     techIDx.addClass("active").siblings().removeClass("active");
 }
