@@ -32,3 +32,44 @@
     height: 300px;
     margin: 25px;
 }
+
+
+@media (max-width: 768px){
+    .pushin-scene h2{
+        font-size: var(--h3-size);
+    }
+    .pushin-scene p{
+        font-size: var(--default-size);
+    }
+    .col-8{
+        width: 100%;
+    }
+    .coop_list > div{
+        flex-direction: column;
+        text-align: center;
+    }
+    .coop_list > div > div{
+        order: 1 !important;
+    }
+    .coop_content{
+        margin-bottom: calc(var(--base-unit) * 2);
+    }
+    .coop_content p{
+        font-size: var(--default-size);
+        line-height: calc(var(--base-unit) * 2);
+    }
+    .rec_desc > *{
+        margin-left: 0;
+    }
+    #target1, #target2, #target3 {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px){
+    #target1, #target2, #target3 {
+        width: 100px;
+        height: 100px;
+    }
+}
