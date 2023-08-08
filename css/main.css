@@ -1,3 +1,7 @@
+hr{
+	margin: 0;
+}
+
 /* section1_video */
 .section1 .main_video{
     width: 100%;
@@ -8,63 +12,78 @@
 
 
 /* section2  tech 시작*/
-.section2 .tech_box .tech,
-.section2 .tech_box .tech-wrapper-slide {
-	padding: calc(var(--base-unit)*5) 0;
-	box-sizing: border-box;
+
+.section2 .tech_box > div {
+padding: calc(var(--base-unit)*5) 0;
+box-sizing: border-box;
+}
+.section2 .tech_box .tech {
+padding-left: 40px;
+}
+.section2 .tech_box .tech_2 {
+position: relative;
 }
 .section2 .tech {
-	display: inline-block;
-	width: 730px;
-	height: 100vh;
-	background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
+display: inline-block;
+width: 730px;
+height: 100vh;
+background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
 }
 
 .section2 .tech h2 {
-	color: var(--light-blue);
+color: var(--light-blue);
 }
 .section2 .tech > p {
-	color: var(--white);
-	margin-bottom: 68px;
+color: var(--white);
+margin-bottom: 68px;
 }
-.section2 .tec_tab {
-	position: relative;
+.section2 .tec_tab_list {
+position: relative;
 }
 
 .section2 .tec_tab p.active {
-	color: #000;
+color: #000;
 }
-.section2 .tec_tab p a {
-	display: inline-block;
-	padding-left: 32px;
-	border-left: 4px solid rgba(255,255,255,0.3);
-	color: var(--white);
-	text-transform: uppercase;	
-	margin-left: 50px;
-}
-.section2 .tech_2 {
-	position: relative;
+.section2 .tec_tab_list a {
+display: block;
+padding-left: 32px;
+border-left: 5px solid rgba(255,255,255,0.3);
+color: var(--white);
+text-transform: uppercase;	
 }
 
+.tech_2 p {
+margin-bottom: calc(var(--base-unit)*6);
+}
 .section2 .tech_box .swiper {
-	position: relative;
-	max-width: 1023px;
-	margin: 0 auto;
-	text-align: center;
+max-width: 1023px;
+text-align: center;
 }
 
 .section2 .tech_2 button {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 10;
+position: absolute;
+top: 62%;
+transform: translateY(-50%);
+z-index: 10;
 }
 .section2 .tech_2 button.prev {
-	left: 0;
+left: 0;
 }
 .section2 .tech_2 button.next {
-	right: 0;
+right: 0;
 }
+.tech_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 20%;
+  background: var(--blue);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+}
+
+
 /* section2  tech 종료*/
 
 /* section 3 esg */
@@ -126,56 +145,91 @@
 
 /* section4_business_area */
 .section4 {
-    width: 100%;
-    /* height: 300vh; */
-    padding: calc(var(--base-unit)*8) 40px;
-    position: relative;
+	width: 100%;
+	/* height: 300vh; */
+	padding: calc(var(--base-unit)*8) 40px;
+	position: relative;
+	box-sizing: border-box;
 }
 
 .section4 .content {
-    height: 100%;
+	height: 100%;
+	max-width: 1823px;
 }
 
 .section4 h2 {
-    color: var(--light-blue);
+	color: var(--light-blue);
 }
 
 .section4 .text_box {
-    position: sticky;
-    top: calc(var(--base-unit)*11);
-    height: 80vh;
-    width: 35%;
+	position: sticky;
+	top: calc(var(--base-unit)*11);
+	height: 80vh;
+	width: 35%;
 }
 
 .section4 .text_box h3 {
-    margin: var(--base-unit) 0;
+	margin: var(--base-unit) 0;
 }
 
 .section4 .text_box .btn {
-    margin-top: calc(var(--base-unit)*3);
+	margin-top: calc(var(--base-unit)*3);
+	display: inline-block;
 }
 
 .section4 .slide_wrap {
-    width: 60%;
+	width: 60%;
 }
 
 .section4 ul {
-    /* background-color: #ddd; */
-    width: 48%;
+	/* background-color: #ddd; */
+	width: 48%;
 }
 
 .section4 ul:last-child {
-    margin-top: calc(var(--base-unit)*4);
+	margin-top: calc(var(--base-unit)*4);
 }
 
 .section4 li {
-    width: 100%;
-    height: 600px;
-    background-color: pink;
+	width: 100%;
+	height: 600px;
+	background-color: pink;
+	opacity: 0;
+	transition: .5s;
+	transform: translateY(-30px);
+}
+
+.section4 li.active {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .section4 li + li {
-    margin-top: calc(var(--base-unit)*2);
+	margin-top: calc(var(--base-unit)*2);
 }
 
+.section4 li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 /* //section4_business_area */
+
+@media (max-width: 768px){
+  .section1 .main_video{
+    width: 100%;
+	}
+.section1 .main_video video{
+    width: 100%;
+	}
+
+}
+
+@media (max-width: 480px){
+	.section1 .main_video{
+    width: 100%;
+	}
+.section1 .main_video video{
+    width: 100%;
+	}
+}
