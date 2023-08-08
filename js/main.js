@@ -18,10 +18,11 @@ techwrapperSwiper = new Swiper(".tech2-slide", {
 
     //
 });
+
 techwrapperSwiper.on("slideChange", function () {
-
-
+    console.log(techwrapperSwiper.realIndex);
    activeteb(techwrapperSwiper.realIndex);
+
 });
 
 let techMenu = $(".section2 .tec_tab_list > a"); //탭메뉴
@@ -41,22 +42,34 @@ techMenu.on("click", function (e) {
     e.preventDefault();
     //let teBox = techContent.index();
     let activeIndex = $(this).index();
-
-    activeteb(activeIndex);
+    console.log("activeIndex" + activeIndex);
 
     techwrapperSwiper.slideTo(activeIndex);
 
-    $(this).addClass("active").siblings().removeClass("active");
 
 });
 
 function activeteb(idx) {
-    let techBarTop = techMenu.eq(idx).position().top;
-    techBar.css({ top: techBarTop });
+
+let windowWidth = $(window).width();
+
+ if (windowWidth <= 768) {
+     let techBarTop = techMenu.eq(idx).position().left;
+     let techWidh = techMenu.eq(idx).outerWidth();
+     //let techBarWidth = techMenu.eq(activeTechIndex).outerWidth();
+         techBar.css({ left: techBarTop, width: techWidh });
+          techBar.css({ top: "auto" });
+ } else {
+let techBarTop = techMenu.eq(idx).position().top;
+    techBar.css({ top: techBarTop});
+    techBar.css({ left: 0});
+ }
+
+    let techIDx = techMenu.eq(idx);
+    techIDx.addClass("active").siblings().removeClass("active");
 }
 
 // Main_section2_tech 종료
-
 
 // Main_section3_esg
 $('.esg_hover').css({display: 'none'})
@@ -77,8 +90,6 @@ $('.esg_list_exp').hover(
             $('.esg').css({height: '150vh'});
             $(this).css({width: '100vw'});
             $(this).find('.esg_hover').css({display:'inline-block'});
-            $('.esg_hover p').stop().animate({width: '40vw'});
-            $('.esg_hover span').stop().animate({width: '40vw'});
             $('.esg_desc').css({display: 'none'});
         }
     },
@@ -91,12 +102,12 @@ $('.esg_list_exp').hover(
             $('.esg_title').css({writingMode: ''})
             $('.esg_desc').css({display: 'block'});
         }else{
+            $('.esg_exp').stop().animate({width: '100vw'});
             $('.esg_desc').css({width: '100vw', display: 'inline-block'});
             $('.esg_hover').css({display: 'none'});
         }
     }
 )
-// $(window).trigger('resize');
 
 let esgNumber = function(){
     let esgHover = $('.esg_hover > div');
@@ -134,7 +145,7 @@ $(window).scroll(function(){
       $this.addClass('active');
     }
   });
-  console.log(SCT);
+  //console.log(SCT);
 });
 $(window).trigger('scroll');
 // Main_section4_tech 종료
