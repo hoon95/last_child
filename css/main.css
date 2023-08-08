@@ -215,20 +215,17 @@ right: 0;
 /* //section4_business_area */
 
 @media (max-width: 768px){
-  .section1 .main_video{
-    width: 100%;
-	}
-.section1 .main_video video{
-    width: 100%;
-	}
-
+	/* section1 video */
+  
+	/* section2 tech */
+	
+	/* section3 esg */
 }
 
 @media (max-width: 480px){
-	.section1 .main_video{
-    width: 100%;
-	}
-.section1 .main_video video{
-    width: 100%;
-	}
+	/* section1 video */
+	
+	/* section2 tech */
+	/* section3 esg */
+	/* section4 esg */
 }
