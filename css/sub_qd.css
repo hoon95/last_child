@@ -482,11 +482,24 @@ section h2 {
 		line-height: calc(var(--base-unit)*3);
 	}
 	.h4_2 {
-    font-size: calc(var(--h4-size)/2.2);
+		font-size: calc(var(--h4-size)/2.2);
 		line-height: calc(var(--base-unit)*2);
 	}
 	main .qd.qd_compare, main .qd.qd_oled {
-    height: 60vh;
+		height: 60vh;
+	}
+	.qd_compare .qd_oled_tv.animate .qd_olde_img > img:nth-of-type(3) {
+		transform: translateY(206%);
+	}
+	.qd_compare .qd_display_od.animate .qd_olde_img > img:nth-of-type(2) {
+		transform: translateY(137%);
+	}
+	.qd_compare .qd_oled_tv .qd_arrow > img:first-child {
+		top: -4.5px;
+	}
+	.qd_compare .qd_display_od .qd_arrow > img:first-child {
+		top: -14px;
+		left: -3px;
 	}
 	.qd_bot {
     gap: 28px;
@@ -494,4 +507,7 @@ section h2 {
 	.qd_foot {
     padding: 306px 0 calc(var(--base-unit)*4) 0;
 	}	
+	.qd_foot h2 {
+		margin-bottom: calc(var(--base-unit)*1);
+	}
 }
