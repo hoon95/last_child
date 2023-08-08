@@ -213,3 +213,9 @@ right: 0;
 	object-fit: cover;
 }
 /* //section4_business_area */
+
+@media (max-width: 1200px) {
+	.section4 li {
+		height: 500px;
+	}
+}
