@@ -486,7 +486,7 @@ footer .foot_list li:hover {
     --h4-size: 28px;
     --default-size: 18px;
   }
-  /* header - 768px */
+  /* header */
   header .overlay.visible{
     top: 82px;
   }
@@ -500,7 +500,7 @@ footer .foot_list li:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* Hamburger button styles. - 768px */
+  /* Hamburger button styles. */
   .hamburger-button {
     width: 31px;
     height: 24px;
@@ -536,7 +536,7 @@ footer .foot_list li:hover {
     --h4-size: 24px;
     --default-size: 16px;
   }
-  /* header - 480px */
+  /* header */
   header .overlay.visible{
     top: 51px;
   }
@@ -548,7 +548,7 @@ footer .foot_list li:hover {
     padding-top:calc(var(--base-unit)*1);
     padding-bottom:calc(var(--base-unit)*1);
   }
-  /* overlay - 480px */
+  /* overlay */
   .overlay nav{
     width: 480px;
   }
@@ -575,7 +575,7 @@ footer .foot_list li:hover {
   .hamburger-button span:nth-child(1) {top: 0px;}
   .hamburger-button span:nth-child(2),.hamburger-button span:nth-child(3) {top: 6px;}
   .hamburger-button span:nth-child(4) {top: 12px;}
-  /* go_top, slide btn - 480px */
+  /* go_top, slide btn */
   .go_top, .slide_btn{
     width: 45px;
     height: 45px;
