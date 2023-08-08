@@ -488,6 +488,9 @@ section h2 {
 	main .qd.qd_compare, main .qd.qd_oled {
 		height: 60vh;
 	}
+	.qd_oled .qd_oled_box li {
+		left: 16%;
+	}
 	.qd_compare .qd_oled_tv.animate .qd_olde_img > img:nth-of-type(3) {
 		transform: translateY(206%);
 	}
