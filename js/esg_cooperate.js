@@ -1,4 +1,5 @@
 pushInStart({
+  breakpoints: [0,480,768,1920]
 });
 
 AOS.init();
