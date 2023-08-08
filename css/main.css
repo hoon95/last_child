@@ -215,6 +215,45 @@ right: 0;
 }
 /* //section4_business_area */
 
+@media (max-width: 1200px) {
+	.section4 .text_box h2 {
+		font-size: 28px;
+	}
+	.section4 .text_box h3 {
+		margin: 0 0 var(--base-unit);
+		font-size: 50px;
+		line-height: calc(var(--base-unit)*4);
+	}
+	.section4 li {
+		height: 500px;
+	}
+}
+
+@media (max-width: 992px){
+	.section4 .content {
+		align-items: center;
+	}
+	.section4 .text_box {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		position: static;
+		margin-bottom: calc(var(--base-unit)*8);
+	}
+	.section4 .text_box h3 {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.section4 .text_box p {
+		display: none;
+	}
+
+	.section4 .slide_wrap {
+		width: 100%;
+	}
+}
+
 @media (max-width: 768px){
   .section1 .main_video{
     width: 100%;
@@ -231,5 +270,9 @@ right: 0;
 	}
 .section1 .main_video video{
     width: 100%;
+	}
+
+	.section4 ul {
+		width: 100%;
 	}
 }

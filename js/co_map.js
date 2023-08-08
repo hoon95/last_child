@@ -2,21 +2,50 @@
 let co_mapContainer = $('.co_map .map_area'),
     co_country = co_mapContainer.find('.main_map .country'),
     co_mapBtn = $('.co_map .map_btn'),
-    co_cityBtn = co_mapContainer.find('>svg').not('.main_map').find('>g').not('#map');
+    co_cityBtn = co_mapContainer.find('>svg').not('.main_map').find('>g').not('#map'),
+    co_tabletBtnContainer = $('.tablet_btns'),
+    co_tablet_btn = co_tabletBtnContainer.find('li');
 
 
 
-co_country.click(function(){
+$(window).resize(function(){
+  let windowW = $(this).innerWidth();
+
+  if(windowW > 768){
+    // console.log('pc');
+    co_country.click(function(){
+      showCountry($(this));
+    });
+    co_mapBtn.click(function(){
+      co_mapContainer.find('>svg').hide();
+      $('.main_map').show();
+    });
+  } else{
+    // console.log('tablet');
+    co_tablet_btn.click(function(){
+      showCountry($(this));
+    });
+    co_mapBtn.click(function(){
+      // co_mapContainer.find('>svg').hide();
+      co_tabletBtnContainer.addClass('active');
+    });
+    co_tabletBtnContainer.click(function(){
+      co_tabletBtnContainer.removeClass('active');
+
+    });
+
+  }
+});
+$(window).trigger('resize');
+
+function showCountry(target){
   co_mapContainer.find('>svg').hide();
-  let countryName = $(this).attr('data-country');
+  let countryName = target.attr('data-country');
   console.log(countryName);
   co_mapContainer.find(countryName).fadeIn();
-});
+}
 
-co_mapBtn.click(function(){
-  co_mapContainer.find('>svg').hide();
-  $('.main_map').show();
-});
+
 
 
 /* co_map info_box */

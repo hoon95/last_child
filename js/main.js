@@ -118,7 +118,6 @@ $(window).scroll(function(){
       $this.addClass('active');
     }
   });
-  console.log(SCT);
 });
 $(window).trigger('scroll');
 // Main_section4_tech 종료
