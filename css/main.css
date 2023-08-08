@@ -14,24 +14,25 @@ hr{
 /* section2  tech 시작*/
 
 .section2 .tech_box > div {
-	padding: calc(var(--base-unit)*5) 0;
+	padding: 60px 40px;
 	box-sizing: border-box;
 	width: 40%;
+	height: 100vh;
 }
-.section2 .tech_box > div + div {
-	width: 60%;
-}
+
 .section2  {
-	padding-right: 40px;
 	box-sizing: border-box;
 	overflow: hidden;
 }
+.section2 .tech_box  {
+	gap: 0 20px;
+}
 .section2 .tech_box .tech {
-padding-left: 40px;
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .section2 .tech_box .tech_2 {
-position: relative;
+	position: relative;
+	width: 60%;
 }
 .section2 .tech {
 /* display: inline-block;
@@ -69,24 +70,28 @@ text-transform: uppercase;
 }
 
 .tech_2 p {
-margin-bottom: calc(var(--base-unit)*6);
+
+	margin-top: var(--base-unit);
+	min-height: 110px;
 }
 .section2 .tech_box .swiper {
 /* max-width: 1023px; */
-text-align: center;
+	text-align: center;	
 }
-
+.section2 .tech_box .swiper img {
+	margin-top: calc(var(--base-unit)*3);
+}
 .section2 .tech_2 button {
-position: absolute;
-top: 58%;
-transform: translateY(-50%);
-z-index: 10;
+	position: absolute;
+	top: 65%;
+	transform: translateY(-50%);
+	z-index: 10;
 }
 .section2 .tech_2 button.prev {
-left: 0;
+	left: 6%;
 }
 .section2 .tech_2 button.next {
-right: 0;
+	right: 6%;
 }
 .tech_bar {
   position: absolute;
@@ -99,15 +104,62 @@ right: 0;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
 }
 
-@media (max-width: 1440px) {
-.section2 .tech_2 p {
-	margin-bottom: calc(var(--base-unit)*3);
+@media (max-width: 1565px) {
+	.section2 .tech_box p {
+		font-size: calc(var(--h4-size)/1.2);
+	}
+	.section2 .tech_box .swiper img {
+		width: 60%;
+	}
+	.section2 .tech_2 button {
+		top: 60%;
+	}
 }
-.section2 .slide_btn{
-    width: 60px;
-    height: 60px;
-    font-size: 60px;
-  }
+
+@media (max-width: 1242px) {
+	.section2 .tech_box > div {
+		height: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.section2 .tech_box {
+		flex-direction: column;
+	}
+	.section2 .tech_box > div {
+		width: 100%;
+		height: auto;
+	}
+	.section2 .tech_box .tech {
+    padding: 0 40px;
+    box-sizing: border-box;
+	}
+	.section2 .tech_box .tech_2 {
+   width: 100%;
+	 padding-right: 0;
+	}
+	.section2 .tec_tab_list {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+	.section2 .tec_tab_list a {
+		display: flex;
+		border: none;
+		padding: 0 30px;
+		border-bottom: 5px solid rgba(255,255,255,0.3);
+	}
+	.tech_bar {
+		position: absolute;
+		top: auto;
+    bottom: 0;
+    left: 41px;
+    width: 15%;
+    height: 5px;
+	}
+	.section2 .tech_2 button {
+    top: 60%;
+}
 }
 
 /* section2  tech 종료*/

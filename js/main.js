@@ -3,7 +3,7 @@ let techwrapperSwiper;
 techwrapperSwiper = new Swiper(".tech2-slide", {
     // Optional parameters
     direction: "horizontal",
-    loop: false,
+    loop: true,
     // If we need pagination
     pagination: {
         el: ".swiper-pagination",
@@ -20,7 +20,9 @@ techwrapperSwiper = new Swiper(".tech2-slide", {
 });
 
 techwrapperSwiper.on("slideChange", function () {
+    console.log(techwrapperSwiper.realIndex);
    activeteb(techwrapperSwiper.realIndex);
+
 });
 
 let techMenu = $(".section2 .tec_tab_list > a"); //탭메뉴
@@ -40,8 +42,8 @@ techMenu.on("click", function (e) {
     e.preventDefault();
     //let teBox = techContent.index();
     let activeIndex = $(this).index();
+    console.log("activeIndex" + activeIndex);
 
-    activeteb(activeIndex);
 
     techwrapperSwiper.slideTo(activeIndex);
 
@@ -49,6 +51,7 @@ techMenu.on("click", function (e) {
 });
 
 function activeteb(idx) {
+    console.log("activeteb"+ idx);
     let techBarTop = techMenu.eq(idx).position().top;
     techBar.css({ top: techBarTop });
     let techIDx = techMenu.eq(idx);
