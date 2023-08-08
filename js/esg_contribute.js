@@ -1,7 +1,7 @@
 let ctrSlide = $('article').bxSlider({
     minSlides: 1,
     maxSlides: 4,
-    slideWidth: 1000,
+    slideWidth: 635,
     ticker: true,
     tickerHover: true,
     speed: 50000
