@@ -12,7 +12,6 @@ hr{
 
 
 /* section2  tech 시작*/
-
 .section2 .tech_box > div {
 	padding: 60px 40px;
 	box-sizing: border-box;
@@ -101,7 +100,6 @@ text-transform: uppercase;
   -webkit-transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
 }
-
 /* section2  tech 종료*/
 
 /* section 3 esg */
@@ -164,7 +162,6 @@ text-transform: uppercase;
 /* section4_business_area */
 .section4 {
 	width: 100%;
-	/* height: 300vh; */
 	padding: calc(var(--base-unit)*8) 40px;
 	position: relative;
 	box-sizing: border-box;
@@ -200,7 +197,6 @@ text-transform: uppercase;
 }
 
 .section4 ul {
-	/* background-color: #ddd; */
 	width: 48%;
 }
 
@@ -293,6 +289,7 @@ text-transform: uppercase;
 /* popup */
 
 @media (max-width: 1565px) {
+	/* section2 tech - 1565px */
 	.section2 .tech_box p {
 		font-size: calc(var(--h4-size)/1.5);
 		margin: 0;
@@ -306,13 +303,14 @@ text-transform: uppercase;
 }
 
 @media (max-width: 1242px) {
+	/* section2 tech - 1242px */
 	.section2 .tech_box > div {
 		height: auto;
-
 	}
 }
 
 @media (max-width: 1200px) {
+	/* section4 company - 1200px */
 	.section4 .text_box h2 {
 		font-size: 28px;
 	}
@@ -327,6 +325,7 @@ text-transform: uppercase;
 }
 
 @media (max-width: 1000px){
+	/* popup - 1000px */
 	.popup {
 		width: 85%;
 		left: 50%;
@@ -335,6 +334,7 @@ text-transform: uppercase;
 }
 
 @media (max-width: 992px){
+	/* section4 company - 1200px */
 	.section4 .content {
 		align-items: center;
 	}
@@ -362,7 +362,7 @@ text-transform: uppercase;
 @media (max-width: 768px){
 	/* section1 video */
   
-	/* section2 tech */
+	/* section2 tech - 768px */
 	.section2 .tech_box {
 		flex-direction: column;
 	}
@@ -402,16 +402,18 @@ text-transform: uppercase;
 	}	
 	/* section3 esg */
 
+	/* popup - 768px */
 	.popup {
 		top: 30px;
 	}
 }
 
 @media (max-width: 480px){
+	/* section1 video - 480px */
 	.section1 .main_video{
     width: 100%;
 	}
-.section1 .main_video video{
+  .section1 .main_video video{
     width: 100%;
 	}
 }
