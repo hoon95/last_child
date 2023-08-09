@@ -21,14 +21,14 @@ $(window).resize(function(){
     lineLength = blackLine.find('path').get(0).getTotalLength();
     circleLocation = [8142,8757,9807,11037,11892,12867,14007,15192,16257];
     
-    line(blackLine,lineLength,circleLocation,0.08,0.15);
+    line(blackLine,lineLength,circleLocation,0.18,0.32);
   } else{
     // console.log('mobile, tablet');
     blackLine = $('.tablet_line #blackLine');
     lineLength = blackLine.find('polyline').get(0).getTotalLength();
     circleLocation = [11828,13113,14583,16053,17523,18993,20463,21933,23403];
     
-    line(blackLine,lineLength,circleLocation,0.1,0.2);
+    line(blackLine,lineLength,circleLocation,0.17,0.32);
 
   }
 });
