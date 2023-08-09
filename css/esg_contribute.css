@@ -6,9 +6,8 @@
 .ctr_main{
   height: 100vh;
 }
-.ctr_main > div{
-    margin-bottom: calc(var(--base-unit) * 3);
-    box-sizing: content-box;
+.ctr_main_desc{
+    margin: calc(var(--base-unit) * 9) 0 calc(var(--base-unit) * 3);
 }
 .ctr_main article > div{
     text-align: center;
@@ -40,7 +39,7 @@
 
 /* 3. 사회공헌 목록 */
 .ctr_sub .row{
-  padding-right: calc(var(--base-unit) * 6);
+  padding-right: calc(var(--base-unit) * 10);
 }
 .ctr_sub_page img{
     width: 45%;
@@ -59,7 +58,19 @@
 
 @media (max-width: 768px){
   .ctr_sub .row{
-    padding: 0 calc(var(--base-unit) * 3);
+    padding: 0 calc(var(--base-unit) * 2);
+  }
+  .ctr_main_title{
+    align-items: center !important;
+  }
+  .ctr_main_desc{
+    margin: calc(var(--base-unit) * 4) 0 calc(var(--base-unit) * 3);
+  }
+  .swiper-wrapper{
+    transform: rotate(-90deg) !important;
+  }
+  .ctr_sub_page img{
+    transform: rotate(90deg);
   }
 }
 @media (max-width: 480px){

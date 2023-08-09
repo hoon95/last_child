@@ -78,7 +78,7 @@
 }
 
 .content_wrap {
-  height: calc(4386px / 0.08);
+  height: calc(4386px / 0.18);
 }
 
 .co_his_content .content {
@@ -265,7 +265,7 @@
 
 @media (max-width: 768px) {
   .content_wrap {
-    height: calc(6286.4px / 0.1);
+    height: calc(6286.4px / 0.17);
   }
   .co_his_content .content {
     height: 6286.4px;
