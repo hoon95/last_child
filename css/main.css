@@ -80,7 +80,7 @@ text-transform: uppercase;
 }
 .section2 .tech_2 button {
 	position: absolute;
-	top: 65%;
+	top: 56%;
 	transform: translateY(-50%);
 	z-index: 10;
 }
@@ -366,10 +366,14 @@ text-transform: uppercase;
 
 @media (max-width: 480px){
 	.section1 .main_video{
-    	width: 100%;
+		width: 100%;
 	}
 	.section1 .main_video video{
-    	width: 100%;
+		width: 100%;
+	}
+
+	.section2 .tec_tab_list a {
+		padding: 0px 22px;
 	}
 	.esg_list_exp_title_main{
 		font-size: 150px;
