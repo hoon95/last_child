@@ -68,7 +68,7 @@ text-transform: uppercase;
 	color: var(--blue);
 }
 
-.tech_2 p {
+.section2 .tech_2 p {
 	margin-top: var(--base-unit);
 }
 .section2 .tech_box .swiper {
@@ -90,7 +90,7 @@ text-transform: uppercase;
 .section2 .tech_2 button.next {
 	right: 6%;
 }
-.tech_bar {
+.section2 .tech_bar {
   position: absolute;
   top: 0;
   left: 0;
