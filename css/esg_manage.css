@@ -40,6 +40,9 @@
 }
 
 /* 경영정책_SECTION_02 */
+.green_sub > h2{
+    display: none;
+}
 .green_sub, .sub_wrapper{
     padding: calc(var(--base-unit) * 5) 0;
 }
