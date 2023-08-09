@@ -153,7 +153,6 @@ body{
 }
 /* lcd_layer_name */
 .layer_name{
-  padding-left:10px;
   color: var(--gray);
 }
 /* 레이어 네임 active 고려 */
@@ -165,7 +164,6 @@ body{
 }
 /* oled_layer_name */
 .layer_name_oled{
-  padding-left:10px;
   color: var(--gray);
 }
 /* 레이어 네임 active 고려 */
@@ -719,7 +717,11 @@ body{
   .layers_title{
     font-size: calc(var(--base-unit)*2);
   }
-  /* who OLED?*/
+  /* 명암비 */
+  .contrast_ratio_info{
+    height: 500px;
+  }
+  /* Why OLED?*/
   .human_banner_img,
   .protect_banner_img,
   .future_banner_img{

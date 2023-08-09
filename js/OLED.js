@@ -12,10 +12,10 @@ let layerWrapper = $('.layer_name_wrap');
 let layerWrapperSCT = layerWrapper.offset().top;
 /* 명암비 */
 let conRatio = $('.contrast_ratio');
-let conRatioSCT = conRatio.offset().top;
+let conRatioSCT = conRatio.find('.pheight').offset().top;
 /* 다이아몬드 픽셀 */
 let diaPixel = $('.diamond_fixel');
-let diaPixelSCT = diaPixel.offset().top;
+let diaPixelSCT = diaPixel.find('.pheight').offset().top;
 /* 반응속도 */
 let rsTitle = $('.reaction_speed_title');
 let rsTitleOST = rsTitle.offset().top;

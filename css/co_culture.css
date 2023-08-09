@@ -5,7 +5,7 @@ body{
 
 .co_culture_thumbnail_img{
   width: 100%;
-  height: 180vh;
+  height: 150vh;
   background: url("../img/co_culture/sdc_info.png") no-repeat 50% 50%;
   background-size: cover; 
   background-attachment: fixed; 
@@ -18,28 +18,28 @@ body{
   width: 100%;
   margin: 0 auto;
 }
-.samsung_display_culture h1{
+.samsung_display_culture .h1{
   padding: calc(var(--base-unit)*3);
 }
 .co_culture_section1 .first_text{
   padding-top: calc(var(--base-unit)*8);
   box-sizing: border-box;
 }
-.co_culture_section1 .first_text h1{
+.co_culture_section1 .first_text .h1{
   color: var(--dark-blue);
 }
 .co_culture_section1 .second_text{
   padding-top: calc(var(--base-unit)*10);
   box-sizing: border-box;
 }
-.co_culture_section1 .second_text h1{
+.co_culture_section1 .second_text .h1{
   color: var(--white);
 }
 .co_culture_section1 .third_text{
   padding-top: calc(var(--base-unit)*10);
   box-sizing: border-box;
 }
-.co_culture_section1 .third_text h1{
+.co_culture_section1 .third_text .h1{
   color: var(--light-blue);
 }
 /* co_culture_section2 SDC Culture 소개 */
@@ -246,6 +246,7 @@ body{
 .co_culture_section6 .cover_bgimg{
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
+  height: 100%;
   padding-bottom: calc(var(--base-unit)*10);
 }
 
@@ -257,11 +258,11 @@ body{
   .co_culture_section1{
     padding-top: calc(var(--base-unit)*8);
   }
-  .samsung_display_culture h1{
+  .samsung_display_culture .h1{
     padding: calc(var(--base-unit)*3);
   }
   .co_culture_section1 .first_text{
-    padding-top: calc(var(--base-unit)*15);
+    padding-top: calc(var(--base-unit)*5);
     justify-content: center;
     transform: translateX(-10%);
   }
