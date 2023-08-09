@@ -15,7 +15,7 @@ let conRatio = $('.contrast_ratio');
 let conRatioSCT = conRatio.find('.pheight').offset().top;
 /* 다이아몬드 픽셀 */
 let diaPixel = $('.diamond_fixel');
-let diaPixelSCT = diaPixel.find('.pheight').offset().top;
+let diaPixelSCT = diaPixel.find('.dheight').offset().top;
 /* 반응속도 */
 let rsTitle = $('.reaction_speed_title');
 let rsTitleOST = rsTitle.offset().top;
