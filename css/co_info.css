@@ -19,6 +19,12 @@
   white-space: nowrap;
   text-shadow: -1px 0 var(--black), 0 1px var(--black), 1px 0 var(--black), 0 -1px var(--black);
   color: white;
+  position: relative;
+  transition: .1s;
+}
+
+.ceo_greeting h2:after {
+  content: 'samsung display samsung';
 }
 
 .ceo_greeting .content {
@@ -57,13 +63,12 @@
 
 /* co_image */
 .co_image {
-  height: calc(100vh + 4000px);
+  height: calc(100vh + 3000px);
 }
 
 .co_image .content {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  position: relative;
   overflow: hidden;
   margin: calc(var(--base-unit)*10) 0;
   position: sticky;
@@ -82,6 +87,9 @@
 
 .co_image img {
   transform: scale(0.5);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* //co_image */
 
@@ -113,14 +121,21 @@
 
 .co_introduce .intro2 .text_box p {
   text-align: right;
-  width: 66%;
+  width: 80%;
+}
+
+.co_introduce img {
+  width: 100%;
 }
 /* //co_introduce */
 
 
 /* business_area */
+/* top: calc(var(--base-unit)*11) */
 .business_area {
   padding: calc(var(--base-unit)*14) 0 calc(var(--base-unit)*8);
+  position: relative;
+  width: 100%;
 }
 
 .business_area img {
@@ -155,9 +170,11 @@
   width: 105%;
 }
 
-.business_area .slide .smartphone:hover img {
-  height: 105%;
-  width: 100%;
+.business_area .slide {
+  padding: 0 60px;
+  position: sticky;
+  top: calc(var(--base-unit)*8);
+  overflow: hidden;
 }
 
 .business_area .slide .content {
@@ -182,7 +199,6 @@
 .business_area .slide .smartphone img {
   height: 100%;
   object-fit: cover;
-  transition: height .3s;
 }
 
 .business_area .slide .wearable {
@@ -241,3 +257,181 @@
 }
 
 /* //business_area */
+
+
+@media (max-width: 1400px) {
+  .h2 {font-size: calc(var(--h2-size) - 11px);}
+  .h3,.h3_2 {font-size: calc(var(--h3-size) - 11px);}
+  .h4,.h4_2 {font-size: calc(var(--h4-size) - 4px);}
+
+  .ceo_greeting h2 {
+    font-size: 380px;
+  }
+
+  .co_introduce .intro1 .text_box {
+    margin-left: 30px;
+  }
+  .container {
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1200px){
+  .h2 {font-size: calc(var(--h2-size) - 26px); line-height: calc(var(--base-unit)*6)}
+  .h3,.h3_2 {font-size: calc(var(--h3-size) - 16px);}
+  .h4,.h4_2 {font-size: calc(var(--h4-size) - 8px);}
+  .h4_2 {
+    line-height: calc(var(--base-unit)*2.5);
+  }
+
+  .ceo_greeting h2:after {
+    content: 'samsung display samsung display';
+  }
+
+  .ceo_greeting .content figure {
+    width: 85%;
+  }
+
+  .ceo_greeting h3 br {
+    display: none;
+  }
+}
+
+@media (max-width: 992px){
+  .h2 {font-size: calc(var(--h2-size) - 33px);}
+  .h3,.h3_2 {font-size: calc(var(--h3-size) - 20px);}
+
+  .h3_2 {
+    line-height: calc(var(--base-unit)*4);
+  } 
+
+  .ceo_greeting h2 {
+    font-size: 280px;
+    letter-spacing: -28.5px;
+    text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black), 0 -2px var(--black);
+  }
+
+  .ceo_greeting h2:after {
+    content: 'samsung display samsung display samsung display samsung';
+  }
+
+  .ceo_greeting .content figure {
+    width: 90%;
+  }
+
+  .ceo_greeting .content .greeting_p_1,
+  .ceo_greeting .content .greeting_p_2 {
+    width: 100%;
+  }
+
+  .co_image h2 {
+    line-height: 70px;
+  }
+
+  .co_introduce .intro1 .text_box {
+    margin-left: 0;
+  }
+
+  .co_introduce article .text_box h3 {
+    margin-top: var(--base-unit);
+  }
+
+  .co_introduce .intro2 .text_box {
+    margin-top: 0;
+  }
+
+  .co_introduce .intro2 .text_box p {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px){
+  .h2 {font-size: var(--h2-size);}
+  .h3,.h3_2 {font-size: var(--h3-size);}
+  .h4,.h4_2 {font-size: var(--h4-size);}
+  .h3_2 {line-height: calc(var(--base-unit)*5);}
+  .h4_2 {line-height: calc(var(--base-unit)*3);}
+
+  .ceo_greeting .content {
+    text-align: left;
+  }
+
+  .ceo_greeting h2 {
+    display: none;
+  }
+
+  .ceo_greeting .content figure {
+    width: 100%;
+    margin-bottom: calc(var(--base-unit)*2);
+  }
+
+  .ceo_greeting .content p {
+    margin-top: calc(var(--base-unit)*10);
+    text-align: left;
+  }
+
+  .ceo_greeting .content .greeting_p_1,
+  .ceo_greeting .content .greeting_p_2 {
+    width: 100%;
+  }
+
+  .co_image h2 {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .co_image h2 br {
+    display: none;
+  }
+
+  .business_area .slide .content {
+    width: 4330px;
+  }
+
+  .business_area figure figcaption {
+    bottom: 0;
+  }
+
+  .business_area figure img {
+    margin-top: 120px;
+  }
+
+  .business_area figure:nth-of-type(2n) img {
+    margin-top: 40px;
+  }
+
+  .business_area figure:hover img {
+    width: 100%;
+  }
+
+  .business_area .slide .tv img,
+  .business_area .slide .monitor img {
+    transform: translateY(-50%);
+  }
+
+  .business_area .slide .content {
+    height: 80vh;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .business_area .slide .content figure {
+    width: 900px !important;
+  }
+
+  .business_area .slide .oled,
+  .business_area .slide .qd {
+    top: 20px;
+    position: absolute;
+  }
+
+  .business_area .slide .qd {
+    left: calc(544px * 6);
+  }
+
+  .business_area img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

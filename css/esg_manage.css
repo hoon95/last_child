@@ -170,7 +170,6 @@ footer{
     .mover span{
         font-size: 96px;
     }
-
 }
 @media (max-width: 480px){
     .green_outer_circle, .sustdev_outer_circle{
