@@ -3,10 +3,11 @@ let windowOutHeight = $(window).outerHeight();
 /* lcd list */
 let lcdItem = $('.lcd_layer_list li');
 let lcdItemList = $('.lcd_layer_list');
+let lcdItemListSCT = lcdItemList.offset().top;
 /* oled list */
 let oledItem = $('.oled_layer_list li');
 let oledItemList = $('.oled_layer_list');
-let lcdItemListSCT = lcdItemList.offset().top; // = oledItemLlstSCT
+let oledItemLlstSCT = oledItemList.offset().top;
 /* lcd/oled 레이어 이름 */
 let layerWrapper = $('.layer_name_wrap');
 let layerWrapperSCT = layerWrapper.offset().top;
@@ -58,7 +59,7 @@ $(window).scroll(function(){
   if(sct >= diaPixelSCT - windowHeight){
     diaPixel.addClass('active');
   } else {
-    diaPixel.removeClassClass('active');
+    diaPixel.removeClass('active');
   }
 
   if(sct >= rsTitleOST - windowHeight){

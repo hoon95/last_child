@@ -35,7 +35,7 @@
 }
 
 .section2 .tech h2 {
-	color: var(--light-blue);
+color: var(--light-blue);
 }
 .section2 .tech > p {
 	color: var(--white);
@@ -46,7 +46,7 @@
 }
 
 .section2 .tec_tab p.active {
-	color: #000;
+color: #000;
 }
 .section2 .tec_tab_list a {
 	display: block;
@@ -193,16 +193,11 @@
 }
 
 .section4 ul {
-	/* background-color: #ddd; */
-	width: 48%;
-}
-
-.section4 ul:last-child {
-	margin-top: calc(var(--base-unit)*4);
+	width: 100%;
 }
 
 .section4 li {
-	width: 100%;
+	width: 48%;
 	height: 600px;
 	background-color: pink;
 	opacity: 0;
@@ -210,13 +205,13 @@
 	transform: translateY(-30px);
 }
 
+.section4 li:nth-child(2n){
+	margin-top: calc(var(--base-unit)*4);
+}
+
 .section4 li.active {
 	opacity: 1;
 	transform: translateY(0);
-}
-
-.section4 li + li {
-	margin-top: calc(var(--base-unit)*2);
 }
 
 .section4 li img {
@@ -474,4 +469,11 @@
 		font-size: 18px;
 	}
 	/* // ESG_SECTION_03 - 480px */
+
+	/* BUSINESS AREA_SECTION_04 - 480px */
+	.section4 li {width: 100%;}
+	.section4 li:nth-child(2n+1) {
+		margin-top: calc(var(--base-unit)*4);
+	}
+	/* // BUSINESS AREA_SECTION_04 - 480px */
 }

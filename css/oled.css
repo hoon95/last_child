@@ -589,6 +589,7 @@ body{
   }
   .diamond_fixel_info{
     padding-left: 80px;
+    height: 500px;
   }
   .diamond_fixel_info h3{
     font-size: calc(var(--base-unit)*2.5);
@@ -717,6 +718,7 @@ body{
   }
   .contrast_ratio_info{
     height: 500px;
+    padding-bottom: var(--base-unit);
   }
   /* oled_section5 다이아몬드 픽셀 */
   .oled_section5{
