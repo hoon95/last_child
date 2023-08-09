@@ -33,33 +33,30 @@ hr{
 	position: relative;
 	width: 60%;
 }
-.section2 .tech {
-/* display: inline-block;
-width: 730px;
-height: 100vh; */
-background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
+.section2 .tech {	
+	background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
 }
 
 .section2 .tech h2 {
-color: var(--light-blue);
+	color: var(--light-blue);
 }
 .section2 .tech > p {
-color: var(--white);
-margin-bottom: calc(var(--base-unit)*3);
+	color: var(--white);
+	margin-bottom: calc(var(--base-unit)*3);
 }
 .section2 .tec_tab_list {
-position: relative;
+	position: relative;
 }
 
 .section2 .tec_tab p.active {
-color: #000;
+	color: #000;
 }
 .section2 .tec_tab_list a {
-display: block;
-padding-left: 32px;
-border-left: 5px solid rgba(255,255,255,0.3);
-color: var(--white);
-text-transform: uppercase;	
+	display: block;
+	padding-left: 32px;
+	border-left: 5px solid rgba(255,255,255,0.3);
+	color: var(--white);
+	text-transform: uppercase;	
 }
 .section2 .tec_tab_list a > p {
 	text-transform: uppercase;
@@ -72,7 +69,6 @@ text-transform: uppercase;
 	margin-top: var(--base-unit);
 }
 .section2 .tech_box .swiper {
-/* max-width: 1023px; */
 	text-align: center;	
 }
 .section2 .tech_box .swiper img {

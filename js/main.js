@@ -1,27 +1,26 @@
 // Main_section2_tech 시작
 let techwrapperSwiper; 
 techwrapperSwiper = new Swiper(".tech2-slide", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    // If we need pagination
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: "#tech_tab .slide_btn.next",
-        prevEl: "#tech_tab .slide_btn.prev",
-    },
+  // Navigation arrows
+  navigation: {
+    nextEl: "#tech_tab .slide_btn.next",
+    prevEl: "#tech_tab .slide_btn.prev",
+  },
 
-    //
 });
 
 techwrapperSwiper.on("slideChange", function () {
-    console.log(techwrapperSwiper.realIndex);
-   activeteb(techwrapperSwiper.realIndex);
+  console.log(techwrapperSwiper.realIndex);
+  activetab(techwrapperSwiper.realIndex);
 
 });
 
@@ -39,34 +38,38 @@ let tectebIndex = tectebSlide.length;
 
 
 techMenu.on("click", function (e) {
-    e.preventDefault();
-    //let teBox = techContent.index();
-    let activeIndex = $(this).index();
-    console.log("activeIndex" + activeIndex);
+  e.preventDefault();
+  //let teBox = techContent.index();
+  let activeIndex = $(this).index();
+  //console.log("activeIndex" + activeIndex);
 
-    techwrapperSwiper.slideTo(activeIndex);
-
-
+  techwrapperSwiper.slideTo(activeIndex);
 });
 
-function activeteb(idx) {
+$(window).resize(function() {
+  activetab(0);
+})
 
-let windowWidth = $(window).width();
+function activetab(idx) {
 
- if (windowWidth <= 768) {
-     let techBarTop = techMenu.eq(idx).position().left;
-     let techWidh = techMenu.eq(idx).outerWidth();
-     //let techBarWidth = techMenu.eq(activeTechIndex).outerWidth();
-         techBar.css({ left: techBarTop, width: techWidh });
-          techBar.css({ top: "auto" });
- } else {
-let techBarTop = techMenu.eq(idx).position().top;
-    techBar.css({ top: techBarTop});
+  let windowWidth = $(window).width();
+  let techHeight = techMenu.eq(idx).outerHeight();
+
+  if (windowWidth <= 768) {
+    let techBarTop = techMenu.eq(idx).position().left;
+    let techWidh = techMenu.eq(idx).outerWidth();
+      
+    techBar.css({ left: techBarTop, width: techWidh, height: "5px" });
+    techBar.css({ top: "auto" });
+
+  } else {
+    let techBarTop = techMenu.eq(idx).position().top;
+    techBar.css({ top: techBarTop, width: "5px", height: techHeight});
     techBar.css({ left: 0});
- }
+  }
 
-    let techIDx = techMenu.eq(idx);
-    techIDx.addClass("active").siblings().removeClass("active");
+  let techIDx = techMenu.eq(idx);
+  techIDx.addClass("active").siblings().removeClass("active");
 }
 
 // Main_section2_tech 종료
