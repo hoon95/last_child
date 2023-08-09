@@ -13,7 +13,6 @@ $(window).resize(function(){
         let targetSRC = $(this).attr('src').split('.');
         let targetName = targetSRC[0];
         let targetExtension = targetSRC[1];
-        console.log(targetName);
         
         //이미지의 경로에 _mo를 붙여 모바일전용 사진으로 교체
         $(this).attr('src',`${targetName}_mo.${targetExtension}`);
