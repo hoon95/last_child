@@ -593,8 +593,11 @@ footer .foot_list li:hover {
   footer .foot_bot span{
     font-size: 16px;
   }
-  footer .foot_bot img {
-    width: 10%;
+  footer .foot_bot .foot_webicon{
+    width: 14%;
+  }
+  footer .foot_bot .foot_webicon img {
+    width: 100%;
   }
 }
 @media (max-width: 768px)  {
@@ -602,7 +605,7 @@ footer .foot_list li:hover {
     padding: 20px calc(var(--base-unit)*2);
   }
   footer .foot_left img {
-    width: 83%;
+    width: 65%;
   }
 }
 @media (max-width: 576px) {
