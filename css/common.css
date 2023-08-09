@@ -51,6 +51,11 @@ img, video {
   box-sizing: border-box;
 }
 
+hr{
+	margin: 0;
+}
+
+
 /* font */
 .h1 {
   font-size: var(--h1-size);

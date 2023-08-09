@@ -2,7 +2,7 @@
 let co_mapContainer = $('.co_map .map_area'),
     co_country = co_mapContainer.find('.main_map .country'),
     co_mapBtn = $('.co_map .map_btn'),
-    co_cityBtn = co_mapContainer.find('>svg').not('.main_map').find('>g').not('#map'),
+    co_cityBtn = co_mapContainer.find('>svg').not('.main_map').find('>g').not('.inner_map'),
     co_tabletBtnContainer = $('.tablet_btns'),
     co_tablet_btn = co_tabletBtnContainer.find('li');
 

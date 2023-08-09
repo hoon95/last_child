@@ -1,17 +1,14 @@
-hr{
-	margin: 0;
-}
-
-/* section1_video */
+/* HEADER & NAV BAR & VIDEO_SECTION_01 - 이강산 */
 .section1 .main_video{
-    width: 100%;
+	width: 100%;
 }
 .section1 .main_video video{
-    width: 100%;
+	width: 100%;
 }
+/* // HEADER & NAV BAR & VIDEO_SECTION_01 - 이강산 */
 
 
-/* section2  tech 시작*/
+/* TECHNOLOGY_SECTION_02 - 기서은 */
 .section2 .tech_box > div {
 	padding: 60px 40px;
 	box-sizing: border-box;
@@ -96,9 +93,10 @@ hr{
   -webkit-transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
 }
-/* section2  tech 종료*/
+/* // TECHNOLOGY_SECTION_02 - 기서은 */
 
-/* section 3 esg */
+
+/* ESG_SECTION_03 - 김다훈 */
 .esg{
 	height: 100vh;
 	overflow: hidden;
@@ -153,9 +151,10 @@ hr{
 	width: 20vw;
 	line-height: 102px;
 }
+/* // ESG_SECTION_03 - 김다훈 */
 
 
-/* section4_business_area */
+/* BUSINESS AREA_SECTION_04 - 나서영 */
 .section4 {
 	width: 100%;
 	/* height: 300vh; */
@@ -225,9 +224,10 @@ hr{
 	height: 100%;
 	object-fit: cover;
 }
-/* //section4_business_area */
+/* // BUSINESS AREA_SECTION_04 - 나서영 */
 
-/* popup */
+
+/* DIALOG POPUP - 나서영 */
 .popup {
   background: var(--white);
   position: fixed;
@@ -284,9 +284,12 @@ hr{
   color: var(--dark-blue);
 	font-weight: bold;
 }
-/* popup */
+/* // DIALOG POPUP - 나서영 */
+
+
 
 @media (max-width: 1565px) {
+	/* TECHNOLOGY_SECTION_02 - 1565px */
 	.section2 .tech_box p {
 		font-size: calc(var(--h4-size)/1.5);
 		margin: 0;
@@ -297,16 +300,19 @@ hr{
 	.section2 .tech_2 button {
 		top: 60%;
 	}
+	/* // TECHNOLOGY_SECTION_02 - 1565px */
 }
 
 @media (max-width: 1242px) {
+	/* TECHNOLOGY_SECTION_02 - 1242px */
 	.section2 .tech_box > div {
 		height: auto;
-
 	}
+	/* // TECHNOLOGY_SECTION_02 - 1242px */
 }
 
 @media (max-width: 1200px) {
+	/* BUSINESS AREA_SECTION_04 - 1200px */
 	.section4 .text_box h2 {
 		font-size: 28px;
 	}
@@ -318,9 +324,11 @@ hr{
 	.section4 li {
 		height: 500px;
 	}
+	/* // BUSINESS AREA_SECTION_04 - 1200px */
 }
 
 @media (max-width: 992px){
+	/* BUSINESS AREA_SECTION_04 - 992px */
 	.section4 .content {
 		align-items: center;
 	}
@@ -343,12 +351,13 @@ hr{
 	.section4 .slide_wrap {
 		width: 100%;
 	}
+	/* // BUSINESS AREA_SECTION_04 - 992px */
 }	
 
 @media (max-width: 768px){
 	/* section1 video */
   
-	/* section2 tech */
+	/* TECHNOLOGY_SECTION_02 - 768px */
 	.section2 .tech_box {
 		flex-direction: column;
 	}
@@ -386,7 +395,10 @@ hr{
 	.section2 .tech_2 button {
 		top: 60%;
 	}	
-	/* section3 esg */
+	/* // TECHNOLOGY_SECTION_02 - 768px */
+
+	
+	/* ESG_SECTION_03 - 768px */
 	.section3, .esg_list{
 		flex-direction: column;
 	}
@@ -417,22 +429,37 @@ hr{
 	.esg_hover > div{
 		gap: calc(var(--base-unit) * 3);
 	}
+	/* // ESG_SECTION_03 - 768px */
+
+
+	/* DIALOG POPUP - 768px */
 	.popup {
 		top: 30px;
+		left: 0;
+		margin: 0 30px;
 	}
+	/* // DIALOG POPUP - 768px */
 }
 
 @media (max-width: 480px){
+	/* VIDEO_SECTION_01 - 480px */
 	.section1 .main_video{
 		width: 100%;
 	}
 	.section1 .main_video video{
 		width: 100%;
 	}
+	/* // VIDEO_SECTION_01 - 480px */
 
+
+	/* TECHNOLOGY_SECTION_02 - 480px */
 	.section2 .tec_tab_list a {
 		padding: 0px 22px;
 	}
+	/* // TECHNOLOGY_SECTION_02 - 480px */
+
+
+	/* ESG_SECTION_03 - 480px */
 	.esg_list_exp_title_main{
 		font-size: 150px;
 		line-height: 150px;
@@ -446,4 +473,5 @@ hr{
 	.esg_hover p{
 		font-size: 18px;
 	}
+	/* // ESG_SECTION_03 - 480px */
 }
