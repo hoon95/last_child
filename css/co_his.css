@@ -1,10 +1,7 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
 
 
-
-
-/* co_intro */
+/* CO_HISTORY SECTION1 */
 .co_intro {
   height: calc(100vh + 102px);
   position: relative;
@@ -69,10 +66,10 @@
   }
   
 }
-/* //co_intro */
+/* // CO_HISTORY SECTION1 */
 
 
-/* co_his_content */
+/* CO_HISTORY SECTION2 */
 .co_his_content {
   padding: calc(var(--base-unit)*16) 0 calc(var(--base-unit)*37);
 }
@@ -140,7 +137,6 @@
   width: 50px;
   height: 50px;
   position: relative;
-  /* margin: 0 calc((144px - 50px)/2); */
 }
 
 .co_his_content .item .circle .g_bg {
@@ -261,9 +257,11 @@
 .co_his_content #grayLine path {
   stroke-width: 10px;
 }
+/* // CO_HISTORY SECTION2 */
 
 
 @media (max-width: 768px) {
+  /* CO_HISTORY SECTION2 - 768px */
   .content_wrap {
     height: calc(6286.4px / 0.17);
   }
@@ -299,10 +297,5 @@
   .co_his_content .item img {
     padding-top: calc(var(--base-unit)*5);
   }
-
+  /* // CO_HISTORY SECTION2 - 768px */
 }
-
-
-
-
-/* //co_his_content */
