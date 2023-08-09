@@ -1,5 +1,4 @@
-/* 1. 녹색경영 개요 */
-
+/* 경영정책_SECTION_01 */
 .green_title{
     padding: calc(var(--base-unit) * 4) 0 calc(var(--base-unit) * 11) 0;
     text-align: center;
@@ -40,7 +39,7 @@
     margin-top: var(--base-unit);
 }
 
-/* 2. 녹색경영 부가설명 */
+/* 경영정책_SECTION_02 */
 .green_sub, .sub_wrapper{
     padding: calc(var(--base-unit) * 5) 0;
 }
@@ -51,7 +50,7 @@
     text-align: left;
 }
 
-/* 3. 지속 가능한 개발 */
+/* 경영정책_SECTION_03 */
 .sustdev_desc{
     padding: calc(var(--base-unit) * 5) 0;
 }
@@ -110,7 +109,6 @@
     /* animation: move 5s linear infinite; */
     z-index: 3;
 }
-
 .mover_container svg{
     position: absolute;
     z-index: 2;
@@ -132,14 +130,12 @@
 footer{
     margin-top: calc(var(--base-unit) * 10);
 }
-
 @keyframes move {
     100% {offset-distance: 100%;}
 }
 
-
-
 @media (max-width: 768px){
+    /* 경영정책_SECTION_01 - 768px */
     .green_circle, .sustdev_circle{
         flex-direction: column;
         align-items: center;
@@ -148,6 +144,7 @@ footer{
     .green_inner_circle, .sustdev_inner_circle{
         left: 150px;
     }
+    /* 경영정책_SECTION_03 - 768px */
     .sub_content, .sustdev_desc h4{
         font-size: var(--default-size);
     }
@@ -172,6 +169,7 @@ footer{
     }
 }
 @media (max-width: 480px){
+    /* 경영정책_SECTION_01 - 480px */
     .green_outer_circle, .sustdev_outer_circle{
         width: 350px;
         height: 350px;
@@ -181,6 +179,7 @@ footer{
         width: 300px;
         height: 300px;
     }
+    /* 경영정책_SECTION_03 - 480px */
     .mover{
         left: 10%;
         offset-path: path("M0.5,238v700c0,131.168,53.166,237.5,184.333,237.5l0,0c131.168,0,184.333,-106.332,184.333,-237.5V238C369.168,106.833,315,0.5,183.833,0.5l0,0C52.666,0.5,0.5,106.833,0.5,238z");
