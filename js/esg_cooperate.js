@@ -1,12 +1,7 @@
-pushInStart({
-  breakpoints: [0,480,768,1920]
-});
-
+pushInStart({});
 AOS.init();
 
-
-
-
+/* 상생협력_SECTION_01 */
 let bar1 = new ProgressBar.Circle(target1, {
     color: '#963131',
     strokeWidth: 6,
@@ -46,8 +41,6 @@ let bar3 = new ProgressBar.Circle(target3, {
       circle.setText(value);
     }
   });
-  
-
 
 let isActive = false;
 $(window).scroll(function(){
