@@ -560,7 +560,7 @@ body{
   .contrast_ratio_img img{
     object-fit: cover;
     max-width: 90%;
-    height: 550px;
+    height: 450px;
     margin: 0 auto;
     padding-left: 100px;
   }
@@ -671,9 +671,9 @@ body{
     width: 500px;
   }
   .reaction_speed_img.active{
-    width: 700px;
+    width: 500px;
     margin: 0 auto;
-    transform: translateY(-15%);
+    transform: translateY(-20%);
     opacity: 1;
   }
   .reaction_speed_info{
@@ -708,16 +708,22 @@ body{
   .oled_section2 h3{
     font-size: calc(var(--base-unit)*2);
   }
-  .oled_section2 p{
-    font-size: calc(var(--base-unit)*1.5);
-  }
   .layers_title{
     font-size: calc(var(--base-unit)*2);
   }
-  /* 명암비 */
+  /* oled_section4 명암비 */
+  .oled_section4{
+    padding: 0;
+  }
   .contrast_ratio_info{
     height: 500px;
   }
+  /* oled_section5 다이아몬드 픽셀 */
+  .oled_section5{
+    padding: calc(var(--base-unit)*3) 0;
+    width: 100%;
+  }
+  
   /* Why OLED?*/
   .human_banner_img,
   .protect_banner_img,
@@ -730,6 +736,10 @@ body{
   .future_banner_info h3{
     font-size: calc(var(--base-unit)*2.5);
     line-height: calc(var(--base-unit)*4);
+  }
+  /* 마지막 슬라이드 딜레이 */
+  .future_banner.active{
+    transition-delay: none;
   }
 }
 
@@ -747,7 +757,6 @@ body{
     font-size: calc(var(--base-unit)*2);
   }
   .oled_section2 p{
-    font-size: calc(var(--base-unit)*1);
     line-height: calc(var(--base-unit)*2);
     font-weight: normal;
   }
