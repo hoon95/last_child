@@ -1,6 +1,3 @@
-hr{
-	margin: 0;
-}
 
 /* section1_video */
 .section1 .main_video{
@@ -423,6 +420,8 @@ text-transform: uppercase;
 	}
 	.popup {
 		top: 30px;
+		left: 0;
+		margin: 0 30px;
 	}
 }
 
