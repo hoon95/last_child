@@ -1,8 +1,53 @@
+let myswitch = false;
+/* 브라우저 너비에 따라 img src 수정 */
+
+$(window).resize(function(){
+  let imgtarget = $('.change_img');
+  let windowW = $(window).innerWidth();
+  if(windowW <= 992){
+    if(!myswitch){
+      imgtarget.each(function(){
+        let targetSRC = $(this).attr('src').split('.');
+        let targetName = targetSRC[0];
+        let targetExtension = targetSRC[1];
+        console.log(targetName);
+        
+        $(this).attr('src',`${targetName}_mo.${targetExtension}`);
+        myswitch = true;
+      });
+    }
+  } else{
+    imgtarget.each(function(){
+      let targetSRC =$(this).attr('src');
+      let newSRC = targetSRC.replace('_mo','');
+      $(this).attr('src',newSRC);
+    });
+    
+  }
+});
+$(window).trigger('resize');
+
+
+
+
 /* company 서브페이지 aos 라이브러리 */
 AOS.init({
   duration: 600,
   delay: 200
 });
+let co_introduceItem = $('.co_introduce article');
+let co_introItemATTR = co_introduceItem.attr('data-aos');
+
+$(window).resize(function(){
+  let windowW = $(this).innerWidth();
+
+  if(windowW <= 768){
+    co_introduceItem.attr('data-aos','fade-bottom');
+  }
+});
+$(window).trigger('resize');
+
+
 
 /* co_info title 이동 */
 let co_infoTitle = $('.ceo_greeting .title');
@@ -59,7 +104,7 @@ $(window).scroll(function(){
   let SCT = $(this).scrollTop();
   let myScroll2 = SCT - contentOST ;
   console.log(myScroll2);
-  if(myScroll2 > 0 && myScroll2 < getHeight+100){//+100 content오른쪽여백
+  if(myScroll2 > 0 && myScroll2 < getHeight+200){//+100 content오른쪽여백
     co_slide.css({transform: `translateX(-${myScroll2}px)`});
     lastTras = myScroll2;
   } else{

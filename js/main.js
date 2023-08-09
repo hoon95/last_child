@@ -71,28 +71,41 @@ let techBarTop = techMenu.eq(idx).position().top;
 
 // Main_section2_tech 종료
 
-
 // Main_section3_esg
 $('.esg_hover').css({display: 'none'})
+
 $('.esg_list_exp').hover(
     function(){
         esgNumber();
-        $(this).stop().animate({width: '52vw'});
-        $(this).find('.esg_hover').css({display:'inline-block'});
-        $('.esg_exp').stop().animate({width: '13vw'});
-        $('.esg_exp').addClass('align-items-center');
-        $('.esg_title').css({writingMode: 'vertical-lr'});
-        $('.esg_desc').css({display: 'none'});
-        numberFormat($('.esg_hover span'));
-
+        if($(window).innerWidth() > 768){ 
+            $('.esg').css({height: '100vh'});
+            $(this).stop().animate({width: '52vw'});
+            $(this).find('.esg_hover').css({display:'inline-block'});
+            $('.esg_exp').stop().animate({width: '13vw'});
+            $('.esg_exp').addClass('align-items-center');
+            $('.esg_title').css({writingMode: 'vertical-lr'});
+            $('.esg_desc').css({display: 'none'});
+            numberFormat($('.esg_hover span'));
+        }else{
+            $('.esg').css({height: '150vh'});
+            $(this).css({width: '100vw'});
+            $(this).find('.esg_hover').css({display:'inline-block'});
+            $('.esg_desc').css({display: 'none'});
+        }
     },
     function(){
-        $(this).stop().animate({width: '17.3vw'})
-        $(this).find('.esg_hover').css({display:'none'});
-        $('.esg_exp').stop().animate({width: '47vw'});
-        $('.esg_exp').removeClass('align-items-center');
-        $('.esg_title').css({writingMode: ''})
-        $('.esg_desc').css({display: 'block'});
+        if($(window).innerWidth() > 768){
+            $(this).stop().animate({width: '17.3vw'})
+            $(this).find('.esg_hover').css({display:'none'});
+            $('.esg_exp').stop().animate({width: '47vw'});
+            $('.esg_exp').removeClass('align-items-center');
+            $('.esg_title').css({writingMode: ''})
+            $('.esg_desc').css({display: 'block'});
+        }else{
+            $('.esg_exp').stop().animate({width: '100vw'});
+            $('.esg_desc').css({width: '100vw', display: 'inline-block'});
+            $('.esg_hover').css({display: 'none'});
+        }
     }
 )
 
