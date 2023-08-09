@@ -18,8 +18,9 @@ techwrapperSwiper = new Swiper(".tech2-slide", {
 });
 
 techwrapperSwiper.on("slideChange", function () {
-  console.log(techwrapperSwiper.realIndex);
-  activeteb(techwrapperSwiper.realIndex);
+  //0console.log(techwrapperSwiper.realIndex);
+  activetab(techwrapperSwiper.realIndex);
+
 });
 
 let techMenu = $(".section2 .tec_tab_list > a"); //탭메뉴
@@ -38,24 +39,30 @@ techMenu.on("click", function (e) {
   e.preventDefault();
   //let teBox = techContent.index();
   let activeIndex = $(this).index();
-  console.log("activeIndex" + activeIndex);
+  //console.log("activeIndex" + activeIndex);
 
   techwrapperSwiper.slideTo(activeIndex);
 });
 
-function activeteb(idx) {
+$(window).resize(function() {
+  activetab(0);
+})
+
+function activetab(idx) {
 
   let windowWidth = $(window).width();
+  let techHeight = techMenu.eq(idx).outerHeight();
 
   if (windowWidth <= 768) {
     let techBarTop = techMenu.eq(idx).position().left;
     let techWidh = techMenu.eq(idx).outerWidth();
-    //let techBarWidth = techMenu.eq(activeTechIndex).outerWidth();
-    techBar.css({ left: techBarTop, width: techWidh });
+      
+    techBar.css({ left: techBarTop, width: techWidh, height: "5px" });
     techBar.css({ top: "auto" });
+
   } else {
     let techBarTop = techMenu.eq(idx).position().top;
-    techBar.css({ top: techBarTop});
+    techBar.css({ top: techBarTop, width: "5px", height: techHeight});
     techBar.css({ left: 0});
   }
 

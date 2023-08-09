@@ -30,10 +30,7 @@
 	position: relative;
 	width: 60%;
 }
-.section2 .tech {
-/* display: inline-block;
-width: 730px;
-height: 100vh; */
+.section2 .tech {	
 	background: url(../img/tech/tech_bg.png) no-repeat 0 0 / cover;
 }
 
@@ -65,11 +62,10 @@ color: #000;
 	color: var(--blue);
 }
 
-.tech_2 p {
+.section2 .tech_2 p {
 	margin-top: var(--base-unit);
 }
 .section2 .tech_box .swiper {
-/* max-width: 1023px; */
 	text-align: center;	
 }
 .section2 .tech_box .swiper img {
@@ -87,7 +83,7 @@ color: #000;
 .section2 .tech_2 button.next {
 	right: 6%;
 }
-.tech_bar {
+.section2 .tech_bar {
   position: absolute;
   top: 0;
   left: 0;
