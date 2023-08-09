@@ -16,7 +16,7 @@ section h2 {
 }
 
 .qd_bg {
-	background: url(../img/qd/qd_banner.png) no-repeat center;
+	background: url(../img/qd/qd_bg3.png) no-repeat center / cover;
 }
 
 .qd.qd_dot {
@@ -289,7 +289,7 @@ section h2 {
 	box-sizing: border-box;
 }
 .qd_foot h2 {
-	margin-bottom: calc(var(--base-unit)*3);
+	margin-bottom: (var(--base-unit));
 }
 .qd_foot a {
 	color: var(--white);
@@ -300,10 +300,11 @@ section h2 {
 }
 .qd_foot .qd_foot_img {
 	overflow: hidden;
-	transform: scale(1.0);
 	width: 100%;
 	height: auto;
-	transition: transform 3s ease-in-out;
+}
+.qd_foot .qd_foot_img img {
+	transition: 0.3s;
 }
 .qd_foot .qd_foot_img img {
 	width: 100%;
@@ -346,7 +347,7 @@ section h2 {
 		line-height: calc(var(--base-unit)*4);
 	}
 	.h3 {
-		font-size: calc(var(--h3-size)/1.5);
+		font-size: calc(var(--h3-size)/1);
 			line-height: calc(var(--base-unit)*5);
 	}
 	.h4_2 {
@@ -463,6 +464,10 @@ section h2 {
 	.qd_foot span {
 		font-size: calc(var(--h3-size)/1.5);
 	}
+
+	.qd_figure img {
+		width: 18%;
+	}
 }
 @media  (max-width: 480px) {
 	main .qd, .qd.qd_dot {
@@ -513,4 +518,14 @@ section h2 {
 	.qd_foot h2 {
 		margin-bottom: calc(var(--base-unit)*1);
 	}
+	.qd_foot ul a {
+    gap: calc(var(--base-unit)1.2) 0;
+	}
+	.qd_foot span {
+    font-size: calc(var(--h3-size)/1.7);
+	}
+	.qd_figure img {
+		width: 20%;
+	}
+	
 }
