@@ -1,28 +1,25 @@
-// Main_section2_tech 시작
+/* TECHNOLOGY_SECTION_02 - 기서은 */
 let techwrapperSwiper; 
 techwrapperSwiper = new Swiper(".tech2-slide", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    // If we need pagination
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: "#tech_tab .slide_btn.next",
-        prevEl: "#tech_tab .slide_btn.prev",
-    },
-
-    //
+  // Navigation arrows
+  navigation: {
+    nextEl: "#tech_tab .slide_btn.next",
+    prevEl: "#tech_tab .slide_btn.prev",
+  },
 });
 
 techwrapperSwiper.on("slideChange", function () {
-    console.log(techwrapperSwiper.realIndex);
-   activeteb(techwrapperSwiper.realIndex);
-
+  console.log(techwrapperSwiper.realIndex);
+  activeteb(techwrapperSwiper.realIndex);
 });
 
 let techMenu = $(".section2 .tec_tab_list > a"); //탭메뉴
@@ -37,104 +34,101 @@ let techMenuIdx = techMenu.length;
 let tectebIndex = tectebSlide.length;
 
 
-
 techMenu.on("click", function (e) {
-    e.preventDefault();
-    //let teBox = techContent.index();
-    let activeIndex = $(this).index();
-    console.log("activeIndex" + activeIndex);
+  e.preventDefault();
+  //let teBox = techContent.index();
+  let activeIndex = $(this).index();
+  console.log("activeIndex" + activeIndex);
 
-    techwrapperSwiper.slideTo(activeIndex);
-
-
+  techwrapperSwiper.slideTo(activeIndex);
 });
 
 function activeteb(idx) {
 
-let windowWidth = $(window).width();
+  let windowWidth = $(window).width();
 
- if (windowWidth <= 768) {
-     let techBarTop = techMenu.eq(idx).position().left;
-     let techWidh = techMenu.eq(idx).outerWidth();
-     //let techBarWidth = techMenu.eq(activeTechIndex).outerWidth();
-         techBar.css({ left: techBarTop, width: techWidh });
-          techBar.css({ top: "auto" });
- } else {
-let techBarTop = techMenu.eq(idx).position().top;
+  if (windowWidth <= 768) {
+    let techBarTop = techMenu.eq(idx).position().left;
+    let techWidh = techMenu.eq(idx).outerWidth();
+    //let techBarWidth = techMenu.eq(activeTechIndex).outerWidth();
+    techBar.css({ left: techBarTop, width: techWidh });
+    techBar.css({ top: "auto" });
+  } else {
+    let techBarTop = techMenu.eq(idx).position().top;
     techBar.css({ top: techBarTop});
     techBar.css({ left: 0});
- }
+  }
 
-    let techIDx = techMenu.eq(idx);
-    techIDx.addClass("active").siblings().removeClass("active");
+  let techIDx = techMenu.eq(idx);
+  techIDx.addClass("active").siblings().removeClass("active");
 }
+/* // TECHNOLOGY_SECTION_02 - 기서은 */
 
-// Main_section2_tech 종료
 
-// Main_section3_esg
+/* ESG_SECTION_03 - 김다훈 */
 $('.esg_hover').css({display: 'none'})
 
 $('.esg_list_exp').hover(
-    function(){
-        esgNumber();
-        if($(window).innerWidth() > 768){ 
-            $('.esg').css({height: '100vh'});
-            $(this).stop().animate({width: '52vw'});
-            $(this).find('.esg_hover').css({display:'inline-block'});
-            $('.esg_exp').stop().animate({width: '13vw'});
-            $('.esg_exp').addClass('align-items-center');
-            $('.esg_title').css({writingMode: 'vertical-lr'});
-            $('.esg_desc').css({display: 'none'});
-            numberFormat($('.esg_hover span'));
-        }else{
-            $('.esg').css({height: '150vh'});
-            $(this).css({width: '100vw'});
-            $(this).find('.esg_hover').css({display:'inline-block'});
-            $('.esg_desc').css({display: 'none'});
-        }
-    },
-    function(){
-        if($(window).innerWidth() > 768){
-            $(this).stop().animate({width: '17.3vw'})
-            $(this).find('.esg_hover').css({display:'none'});
-            $('.esg_exp').stop().animate({width: '47vw'});
-            $('.esg_exp').removeClass('align-items-center');
-            $('.esg_title').css({writingMode: ''})
-            $('.esg_desc').css({display: 'block'});
-        }else{
-            $('.esg_exp').stop().animate({width: '100vw'});
-            $('.esg_desc').css({width: '100vw', display: 'inline-block'});
-            $('.esg_hover').css({display: 'none'});
-        }
+  function(){
+    esgNumber();
+    if($(window).innerWidth() > 768){ 
+      $('.esg').css({height: '100vh'});
+      $(this).stop().animate({width: '52vw'});
+      $(this).find('.esg_hover').css({display:'inline-block'});
+      $('.esg_exp').stop().animate({width: '13vw'});
+      $('.esg_exp').addClass('align-items-center');
+      $('.esg_title').css({writingMode: 'vertical-lr'});
+      $('.esg_desc').css({display: 'none'});
+      numberFormat($('.esg_hover span'));
+    }else{
+      $('.esg').css({height: '150vh'});
+      $(this).css({width: '100vw'});
+      $(this).find('.esg_hover').css({display:'inline-block'});
+      $('.esg_desc').css({display: 'none'});
     }
+  },
+  function(){
+    if($(window).innerWidth() > 768){
+      $(this).stop().animate({width: '17.3vw'})
+      $(this).find('.esg_hover').css({display:'none'});
+      $('.esg_exp').stop().animate({width: '47vw'});
+      $('.esg_exp').removeClass('align-items-center');
+      $('.esg_title').css({writingMode: ''})
+      $('.esg_desc').css({display: 'block'});
+    }else{
+      $('.esg_exp').stop().animate({width: '100vw'});
+      $('.esg_desc').css({width: '100vw', display: 'inline-block'});
+      $('.esg_hover').css({display: 'none'});
+    }
+  }
 )
 
 let esgNumber = function(){
-    let esgHover = $('.esg_hover > div');
-    esgHover.each(function(){
-        let changeNum = $(this).find('span')
-        let targetNum = changeNum.attr('data-num');
-    
-        $({num:0}).animate({num:targetNum},{
-            duration: 2500,
-            progress: function(){
-                let change = numberFormat(Math.ceil(this.num));
-                changeNum.text(change);
-            }
-        })
-    })
+  let esgHover = $('.esg_hover > div');
+  esgHover.each(function(){
+    let changeNum = $(this).find('span')
+    let targetNum = changeNum.attr('data-num');
+  
+    $({num:0}).animate({num:targetNum},{
+      duration: 2500,
+      progress: function(){
+        let change = numberFormat(Math.ceil(this.num));
+        changeNum.text(change);
+      }
+    });
+  });
 }
 
 function numberFormat(inputNumber) {
-   return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+/* // ESG_SECTION_03 - 김다훈 */
 
 
-// Main_section4_tech 시작
+/* BUSINESS AREA_SECTION_04 - 나서영 */
 let sec4_itemContainer = $('.section4 .slide_wrap');
 let sec4_item = $('.section4 .slide_wrap li');
 let sec4OST = $('.section4').offset().top;
-
 
 $(window).scroll(function(){
   let SCT = $(this).scrollTop() - sec4OST;
@@ -148,9 +142,10 @@ $(window).scroll(function(){
   //console.log(SCT);
 });
 $(window).trigger('scroll');
-// Main_section4_tech 종료
+/* // BUSINESS AREA_SECTION_04 - 나서영 */
 
-/* popup */
+
+/* DIALOG POPUP - 나서영 */
 var popup = $(".popup");
 var popup_closeBtn = popup.find("#close");
 var popup_input = popup.find("#daycheck");
@@ -199,4 +194,4 @@ function setCookie(name, value, day) {
 
   document.cookie = name + '=' + value + ';expires=' + date.toUTCString();
 }
-/* popup */
+/* // DIALOG POPUP - 나서영 */
