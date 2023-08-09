@@ -2,7 +2,7 @@
     padding: calc(var(--base-unit) * 9) 0;
     overflow: hidden;
 }
-/* 1. 사회공헌 개요 */
+/* 사회공헌_SECTION_01 */
 .ctr_main{
   height: 100vh;
 }
@@ -22,7 +22,7 @@
     gap: 82px;
 }
 
-/* 2. 나눔경영 */
+/* 사회공헌_SECTION_02 */
 .share_sub_title{
   color: var(--blue);
 }
@@ -37,7 +37,7 @@
 }
 
 
-/* 3. 사회공헌 목록 */
+/* 사회공헌_SECTION_03 */
 .ctr_sub .row{
   padding-right: calc(var(--base-unit) * 10);
 }
@@ -57,6 +57,7 @@
 }
 
 @media (max-width: 768px){
+  /* 사회공헌_SECTION_01 - 768px */
   .ctr_sub .row{
     padding: 0 calc(var(--base-unit) * 2);
   }
@@ -74,6 +75,7 @@
   }
 }
 @media (max-width: 480px){
+  /* 사회공헌_SECTION_01 - 480px */
   .ctr_main img{
     width: 100%;
   }
