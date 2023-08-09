@@ -4,70 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samsung Display OLED</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css" integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css" integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/oled.css">
 </head>
 <body class="black">
-  <header class="menubar">
-    <div>
-      <h1>
-        <a href="index.html">
-          <img src="img/logo.png" alt="Logo" id="logo">
-        </a>
-        <a href="#" class="hamburger-button">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </h1>
-    </div>
-    <div class="overlay">
-      <nav>
-        <ul class="menu_overlay">
-          <li>
-            <a href="#">Company</a>
-            <ul class="submenu_overlay">
-              <li><a href="co_info.html">기업개요</a></li>
-              <li><a href="co_his.html">연혁</a></li>
-              <li><a href="co_map.html">사업장정보</a></li>
-              <li><a href="co_culture.html">기업문화</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Technology</a>
-            <ul class="submenu_overlay">
-              <li><a href="OLED.html">OLED</a></li>
-              <li><a href="qd.html">QD-OLED</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">ESG</a>
-            <ul class="submenu_overlay">
-              <li><a href="esg_intro.html">ESG전략</a></li>
-              <li><a href="esg_contribute.html">사회공헌</a></li>
-              <li><a href="esg_manage.html">경영정책</a></li>
-              <li><a href="esg_cooperate.html">상생협력</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="https://news.samsungdisplay.com/">NEWS</a>
-          </li>
-          <li>
-            <a href="https://www.samsungcareers.com/">인재 / 채용</a>
-          </li>
-        </ul>
-        <ul>
-          <li class="language">
-            <a href="#" class="Eng">ENG</a><span></span><a href="#">CHN</a><span></span><a href="#">VIT</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="menubar">
+  <div>
+    <h1>
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo" id="logo">
+      </a>
+      <a href="#" class="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </h1>  
+  </div>
+  <div class="overlay">
+    <nav>
+      <ul class="menu_overlay">
+        <li>
+          <a href="#">Company</a>
+          <ul class="submenu_overlay">
+            <li><a href="co_info.html">기업개요</a></li>
+            <li><a href="co_his.html">연혁</a></li>
+            <li><a href="co_map.html">사업장정보</a></li>
+            <li><a href="co_culture.html">기업문화</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Technology</a>
+          <ul class="submenu_overlay">
+            <li><a href="OLED.html">OLED</a></li>
+            <li><a href="qd.html">QD-OLED</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">ESG</a>
+          <ul class="submenu_overlay">
+            <li><a href="esg_intro.html">ESG전략</a></li>
+            <li><a href="esg_contribute.html">사회공헌</a></li>
+            <li><a href="esg_manage.html">경영정책</a></li>
+            <li><a href="esg_cooperate.html">상생협력</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://news.samsungdisplay.com/">NEWS</a>
+        </li>
+        <li>
+          <a href="https://www.samsungcareers.com/">인재 / 채용</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="language">
+        <a href="#" class="Eng">ENG</a><span></span><a href="#">CHN</a><span></span><a href="#">VIT</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <section class="oled_section1">
+  <h2 class="hidden">Introduce OLED</h2>
   <div class="oled_video">
     <video src="https://res.cloudinary.com/dtbswuma8/video/upload/v1691048731/Samsung_Display_project/oled_samsung_odyssey_m2rzr7.mp4" class="object-fit-contain" autoplay muted loop></video>
   </div>
@@ -124,51 +125,49 @@
         </li>
       </ul>
       <div class="layer_name_wrap container">
-        <ul class="layer_name_list d-flex">
-          <div class="row">
-            <li class="layer_name_item_lcd1">
+        <ul class="layer_name_list row">
+            <li class="layer_name_item_lcd1 col">
                 <p class="layer_name">
                     <span class="layer_name_number">1 &nbsp;</span>
                     Backlight
                 </p>
             </li>
-            <li class="layer_name_item_lcd2">
+            <li class="layer_name_item_lcd2 col">
                 <p class="layer_name col">
                     <span class="layer_name_number">2 &nbsp;</span>
                     POL
                 </p>
             </li>
-          </div>
-          <div class="row">
-            <li class="layer_name_item_lcd3">
+          </ul>
+          <ul class="layer_name_list row">
+            <li class="layer_name_item_lcd3 col">
                 <p class="layer_name">
                     <span class="layer_name_number">3 &nbsp;</span>
                     TFT
                 </p>
             </li>
-            <li class="layer_name_item_lcd4">
+            <li class="layer_name_item_lcd4 col">
                 <p class="layer_name">
                     <span class="layer_name_number">4 &nbsp;</span>
                     Liquid Crystal
                 </p>
             </li>
-          </div>
-          <div class="row">
-            <li class="layer_name_item_lcd5">
+          </ul>
+          <ul class="layer_name_list row">
+            <li class="layer_name_item_lcd5 col">
                 <p class="layer_name">
                     <span class="layer_name_number">5 &nbsp;</span>
                     Color Filter
                 </p>
             </li>
-            <li class="layer_name_item_lcd6">
+            <li class="layer_name_item_lcd6 col">
                 <p class="layer_name">
                     <span class="layer_name_number">6 &nbsp;</span>
                     Cover Window
                 </p>
             </li>
-          </div>
-        </ul>
-      </div>
+          </ul>
+      </div>   
     </div>
     <!-- OLED_Layer -->
     <div class="oled_layer col-6">
@@ -201,40 +200,41 @@
         </li>
       </ul>
       <div class="layer_name_wrap container">
-        <ul class="layer_name_list d-flex">
-          <div class="row">
-            <li class="layer_name_item_oled1 col">
-                <p class="layer_name_oled">
-                    <span class="layer_name_number">1 &nbsp;</span>
-                    Cover Window
-                </p>
-            </li>
-            <li class="layer_name_item_oled2 col">
-                <p class="layer_name_oled">
-                    <span class="layer_name_number">2 &nbsp;</span>
-                    ENCAP
-                </p>
-            </li>
-          </div>
-          <div class="row">
-            <li class="layer_name_item_oled3 col">
-                <p class="layer_name_oled">
-                    <span class="layer_name_number">3 &nbsp;</span>
-                    Self Emitting Organic Layer
-                </p>
-            </li>
-            <li class="layer_name_item_oled4 col">
-                <p class="layer_name_oled">
-                    <span class="layer_name_number">4 &nbsp;</span>
-                    TFT
-                </p>
-            </li>
-          </div>
+        <ul class="layer_name_list row">
+          <li class="layer_name_item_oled1 col">
+              <p class="layer_name_oled">
+                  <span class="layer_name_number">1 &nbsp;</span>
+                  Cover Window
+              </p>
+          </li>
+          <li class="layer_name_item_oled2 col">
+              <p class="layer_name_oled">
+                  <span class="layer_name_number">2 &nbsp;</span>
+                  ENCAP
+              </p>
+          </li>
+        </ul>
+        <ul class="layer_name_list row">
+          <li class="layer_name_item_oled3 col">
+              <p class="layer_name_oled">
+                  <span class="layer_name_number">3 &nbsp;</span>
+                  Self Emitting Organic Layer
+              </p>
+          </li>
+          <li class="layer_name_item_oled4 col">
+              <p class="layer_name_oled">
+                  <span class="layer_name_number">4 &nbsp;</span>
+                  TFT
+              </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
+</div>
 
-<div class="container d-flex"></div>
+<div class="container d-flex">
   <section class="oled_section3 row">
     <h3 class="h3 col-12">압도적인 화질</h3>
   <div class="lcd_oled_img">
@@ -304,7 +304,6 @@
           <h4 class="h4_2">반응속도<br>1.5배 UP</h4>
         </div>
       </div>
-    </div>
   </section>
 
 <section class="oled_section7">
@@ -323,6 +322,7 @@
       <h3 class="h3">OLED FINDER</h3>
       <p class="h4">지금 바로 OLED를 찾아보세요!</p>
     </div>
+  </div>
 </section>
 <section class="oled_section8">
   <h3 class="h3">Why 삼성 OLED?</h3>
@@ -339,7 +339,7 @@
       <h3 class="h3">protect<br>the earth</h3>
     </div>
     <div class="protect_banner_img">
-      <img src="img/oled/Prodtect The Earth.png" alt="prodtect_earth">
+      <img src="img/oled/Prodtect_The_Earth.png" alt="prodtect_earth">
     </div>
   </div>
   <div class="future_banner d-flex">

@@ -619,9 +619,6 @@ body{
   .layers_title{
     padding-top: calc(var(--base-unit)*6);
   }
-  .layer_name_list{
-    padding: calc(var(--base-unit)*4) 0;
-  }
   .oled_section3{
     height: 100%;
     padding: calc(var(--base-unit)*6) 0;
