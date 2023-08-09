@@ -302,11 +302,11 @@ text-transform: uppercase;
 		height: auto;
 	}
 	.section2 .tech_box .tech {
-    	padding: 60px 20px 0;
-    	box-sizing: border-box;
+		padding: 60px 20px 0;
+		box-sizing: border-box;
 	}
 	.section2 .tech_box .tech_2 {
-   		width: 100%;
+		width: 100%;
 	 	/* padding-right: 0; */
 	}
 	.section2 .tec_tab_list {
@@ -323,13 +323,13 @@ text-transform: uppercase;
 	.section2 .tech_bar {
 		position: absolute;
 		top: auto;
-    	bottom: 0;
-    	left: 0;
-    	width: 12%;
-    	height: 5px;
+		bottom: 0;
+		left: 0;
+		width: 12%;
+		height: 5px;
 	}
 	.section2 .tech_2 button {
-    	top: 60%;
+		top: 60%;
 	}	
 	/* section3 esg */
 	.section3, .esg_list{
@@ -366,10 +366,10 @@ text-transform: uppercase;
 
 @media (max-width: 480px){
 	.section1 .main_video{
-    	width: 100%;
+		width: 100%;
 	}
 	.section1 .main_video video{
-    	width: 100%;
+		width: 100%;
 	}
 	.esg_list_exp_title_main{
 		font-size: 150px;
