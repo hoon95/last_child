@@ -35,7 +35,7 @@
 }
 
 .section2 .tech h2 {
-	color: var(--light-blue);
+color: var(--light-blue);
 }
 .section2 .tech > p {
 	color: var(--white);
@@ -46,7 +46,7 @@
 }
 
 .section2 .tec_tab p.active {
-	color: #000;
+color: #000;
 }
 .section2 .tec_tab_list a {
 	display: block;

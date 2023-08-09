@@ -53,7 +53,7 @@
 
 /* 3. 지속 가능한 개발 */
 .sustdev_desc{
-    padding: calc(var(--base-unit) * 12) 0 calc(var(--base-unit) * 7) 0;
+    padding: calc(var(--base-unit) * 5) 0;
 }
 .sustdev_desc > div{
     text-align: center;
@@ -107,7 +107,7 @@
     left: 0;
     offset-path: path("M238,0.5h944c131.168,0,237.5,106.333,237.5,237.5l0,0c0,131.168-106.332,237.5-237.5,237.5H238C106.833,475.5,0.5,369.168,0.5,238l0,0C0.5,106.833,106.833,0.5,238,0.5z");
     offset-distance: 0%;
-    animation: move 5s linear infinite;
+    /* animation: move 5s linear infinite; */
     z-index: 3;
 }
 
@@ -120,6 +120,17 @@
     text-align: center;
     font-size: 128px;
     rotate: 90deg;
+}
+.sustdev{
+    height: 400vh;
+}
+.sustdev > div{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+footer{
+    margin-top: calc(var(--base-unit) * 10);
 }
 
 @keyframes move {
@@ -140,9 +151,21 @@
     .sub_content, .sustdev_desc h4{
         font-size: var(--default-size);
     }
+    .sustdev{
+        height: 100%;
+    }
+    .sustdev > div{
+        position: relative;
+        top: 0;
+        height: 100%;
+    }
+    footer{
+        margin-top: 0;
+    }
     .mover{
         left: 100px;
         offset-path: path("M0.5,238v1000c0,131.168,106.333,237.5,237.5,237.5l0,0c131.168,0,237.5,-106.332,237.5,-237.5V238C475.5,106.833,369.168,0.5,238,0.5l0,0C106.833,0.5,0.5,106.833,0.5,238z");
+        animation: move 5s linear infinite;
     }
     .mover span{
         font-size: 96px;
