@@ -43,6 +43,8 @@ $(window).resize(function(){
 
   if(windowW <= 768){
     co_introduceItem.attr('data-aos','fade-bottom');
+    $('.ceo_greeting .content *').attr('data-aos','fade-bottom');
+    $('.ceo_greeting .content *:nth-child(1)').removeAttr('data-aos');
   }
 });
 $(window).trigger('resize');
