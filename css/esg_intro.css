@@ -57,6 +57,9 @@
 }   
 
 /* ESG 전략_SECTION_02 */
+.value > h2{
+    display: none;
+}
 .value .value_intro{
     text-align: center;
     padding: calc(var(--base-unit) * 5) 0;
