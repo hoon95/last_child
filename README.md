@@ -47,7 +47,7 @@
 
 <br>
 <div>
-  <img src="https://img.shields.io/badge/VISUALSTUDIOCODE-007ACC?style=flat&logo=VisualStudioCode&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VSCODE-007ACC?style=flat&logo=VisualStudioCode&logoColor=white"/>
   <img src="https://img.shields.io/badge/SLACK-4A154B?style=flat&logo=Slack&logoColor=white"/>
   <img src="https://img.shields.io/badge/GITHUB-181717?style=flat&logo=Github&logoColor=white"/>
 </div>
@@ -84,9 +84,19 @@
 
 <br>
 
-## 디자인 시안
+## 디자인 시안(모바일 버전)
 
 <br>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/dtbswuma8/image/upload/v1691635816/Samsung_Display_project/design/0._Main_Mobile_vjbmqk.png" height="1000px">
+  <img src="https://res.cloudinary.com/dtbswuma8/image/upload/v1691636240/Samsung_Display_project/design/1._Company_Overview_Mobile_jrvct9.png" height="1000px">
+  <img src="https://res.cloudinary.com/dtbswuma8/image/upload/v1691636239/Samsung_Display_project/design/1._Company_History_Mobile_xpxk5f.png" height="1000px">
+  <img src="https://res.cloudinary.com/dtbswuma8/image/upload/v1691636239/Samsung_Display_project/design/1._Company_Map_Default_Mobile_s5x5zs.png" height="1000px">
+  <img src="https://res.cloudinary.com/dtbswuma8/image/upload/v1691637083/Samsung_Display_project/design/2._OLED_Mobile_ua4atr.png" height="1000px">
+  <img src="https://res.cloudinary.com/dtbswuma8/image/upload/v1691636240/Samsung_Display_project/design/3._QD-OLED_Mobile_bh4ffp.png" height="1000px">
+  
+</p>
 
 
 <br>
