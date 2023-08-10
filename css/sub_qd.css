@@ -252,12 +252,12 @@ section h2 {
 }
 
 .qd_compare .qd_oled_tv.animate .qd_arrow > img {
-	animation: arrow 2.5s  ease-in-out;
+	animation: arrow 1.5s  ease-in-out;
 	opacity: 1;
 }
 
 .qd_compare .qd_display_od.animate .qd_arrow > img {
-	animation: arrow 2.5s ease-in-out;
+	animation: arrow 1.5s ease-in-out;
 	opacity: 1;
 }
 
@@ -342,7 +342,7 @@ section h2 {
 
 .qd_foot ul a {
 	color: var(--white);
-	gap: calc(var(--base-unit)*2) 0;
+	gap: calc(var(--base-unit)*1.5) 0;
 }
 
 .qd_foot .qd_foot_img {
@@ -644,7 +644,7 @@ section h2 {
 	}
 
 	.qd_foot ul a {
-    gap: calc(var(--base-unit)1.2) 0;
+    gap: calc(var(--base-unit)*1) 0;
 	}
 
 	.qd_foot span {

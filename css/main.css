@@ -436,6 +436,13 @@ color: #000;
 	/* // DIALOG POPUP - 768px */
 }
 
+/* TECHNOLOGY_SECTION_02 - 500px */
+@media (max-width: 500px) {
+	.section2 .tec_tab_list a {
+    padding: 0px 21px;
+	}
+}
+/* //TECHNOLOGY_SECTION_02 - 500px */
 @media (max-width: 480px){
 	/* VIDEO_SECTION_01 - 480px */
 	.section1 .main_video{
