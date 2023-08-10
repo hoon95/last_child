@@ -2,7 +2,7 @@
 
 /* samsung display culture */
 let windowHeight = $(window).innerHeight();
-let windowWidth = $(window).width();
+let windowWidth = $(window).outerWidth();
 
 let firstSamsung = $('.first_text');
 let firstSamsungOST = firstSamsung.find('.h1').offset().top;
@@ -22,6 +22,7 @@ let vision = $('.co_culture_section4');
 let visionOST = vision.offset().top;
 let visionImgOST = vision.find('img').offset().top;
 
+console.log(windowWidth);
 $(window).scroll(function(){
   let sct = $(this).scrollTop();
   
