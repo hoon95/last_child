@@ -22,7 +22,6 @@ let vision = $('.co_culture_section4');
 let visionOST = vision.offset().top;
 let visionImgOST = vision.find('img').offset().top;
 
-console.log(windowWidth);
 $(window).scroll(function(){
   let sct = $(this).scrollTop();
   
