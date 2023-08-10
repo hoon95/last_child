@@ -76,7 +76,7 @@
 | <div style="color:#4593fc">이강산</div> | 헤더, 메인_INTRO, 기업문화, OLED            | <div style="color:#4593fc">100 %</div> |
 | <div style="color:#4593fc">기서은</div> | 메인_TECHNOLOGY, 푸터                      | <div style="color:#4593fc">100 %</div> |
 | <div style="color:#4593fc">김다훈</div> | 메인_ESG, 사회공헌, 경영정책, 상생협력      | <div style="color:#4593fc">100 %</div> |
-| <div style="color:#4593fc">나서영</div> | 메인_BISINESS, 기업개요, 연혁, 사업장정보   | <div style="color:#4593fc">100 %</div>  |
+| <div style="color:#4593fc">나서영</div> | 메인_BUSINESS, 기업개요, 연혁, 사업장정보, 팝업   | <div style="color:#4593fc">100 %</div>  |
 
   <br>
 
