@@ -97,57 +97,57 @@ color: #000;
 
 
 /* ESG_SECTION_03 - 김다훈 */
-.section3{
+.esg{
 	height: 100vh;
 	overflow: hidden;
 }
-.section3 .esg_exp{
+.esg_exp{
 	width: 47vw;
 	margin: 0 27px;
 }
-.section3 .esg_list{
+.esg_list{
 	width: 53vw;
 }
-.section3 .esg_list_exp{
+.esg_list_exp{
 	width: 33.3%;
 	padding: calc(var(--base-unit) * 3) 55px;
 	border-left: 1px solid #fff;
 }
-.section3 .esg_list_exp_title_main{
+.esg_list_exp_title_main{
 	font-size: 400px;
 	line-height: 300px;
 }
-.section3 .esg_hover > div{
+.esg_hover > div{
 	gap: 100px;
 }
-.section3 .esg_hover .per::after{
+.esg_hover .per::after{
 	content: '%';
 	font-size: 20px;
 }
-.section3 .esg_hover .tco::after{
+.esg_hover .tco::after{
 	content: '천톤 CO2e';
 	font-size: 20px;
 }
-.section3 .esg_hover .ton::after{
+.esg_hover .ton::after{
 	content: '톤';
 	font-size: 20px;
 }
-.section3 .esg_hover .case::after{
+.esg_hover .case::after{
 	content: '건';
 	font-size: 20px;
 }
-.section3 .esg_hover .people::after{
+.esg_hover .people::after{
 	content: '명';
 	font-size: 20px;
 }
-.section3 .esg_hover .won::after{
+.esg_hover .won::after{
 	content: '억원';
 	font-size: 20px;
 }
-.section3 .esg_hover p{
+.esg_hover p{
 	width: 20vw;
 }
-.section3 .esg_hover span{
+.esg_hover span{
 	width: 20vw;
 	line-height: 102px;
 }
