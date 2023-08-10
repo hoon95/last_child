@@ -348,6 +348,10 @@ header .menu_overlay li{
 .menu_overlay li a:hover{
   color: var(--dark-blue);
 }
+.menu_overlay li p{
+  color: var(--gray);
+  cursor: pointer;
+}
 
 .menu_overlay li ul{
   display: flex;

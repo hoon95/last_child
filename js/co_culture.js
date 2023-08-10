@@ -2,7 +2,7 @@
 
 /* samsung display culture */
 let windowHeight = $(window).innerHeight();
-let windowWidth = $(window).width();
+let windowWidth = $(window).outerWidth();
 
 let firstSamsung = $('.first_text');
 let firstSamsungOST = firstSamsung.find('.h1').offset().top;
