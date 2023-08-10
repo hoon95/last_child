@@ -246,7 +246,7 @@ body{
 .co_culture_section6 .cover_bgimg{
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100%;
+  height: 40%;
   padding-bottom: calc(var(--base-unit)*10);
 }
 
@@ -317,6 +317,12 @@ body{
   .co_culture_ending_video{
     width: 100%;
   }
+  .co_culture_section6 .recruit_info{
+    margin: calc(var(--base-unit)*2) 0 calc(var(--base-unit)*2) 0;
+  }
+  .co_culture_section6 .cover_bgimg{
+    height: 60%;
+  }
   .recruit_img img{
     width: 500px;
   }
@@ -385,7 +391,7 @@ body{
     height: 260px;
   }
   .co_culture_section5 .swiper-slide p{
-    font-size: 14px;
+    font-size: 12px;
     padding: 3px 5px;
   }
   /* ending img */
