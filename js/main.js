@@ -46,6 +46,7 @@ techMenu.on("click", function (e) {
 
 $(window).resize(function() {
   activetab(0);
+  techwrapperSwiper.slideTo(0);
 })
 
 function activetab(idx) {
